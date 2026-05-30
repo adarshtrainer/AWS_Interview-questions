@@ -1,0 +1,377 @@
+ IAM Fundamentals (1–60)
+
+1. What is IAM?
+2. Why is IAM required?
+3. What problems does IAM solve?
+4. Is IAM a global service?
+5. What are IAM components?
+6. What is authentication?
+7. What is authorization?
+8. Difference between authentication and authorization?
+9. What is identity management?
+10. What is access management?
+11. What is least privilege access?
+12. Why is least privilege important?
+13. What is root user?
+14. Why should root user not be used daily?
+15. What tasks require root user?
+16. What is IAM user?
+17. What is IAM group?
+18. What is IAM role?
+19. What is IAM policy?
+20. How does IAM evaluate permissions?
+21. What is an IAM principal?
+22. What is an IAM entity?
+23. What is an AWS account?
+24. How does IAM work within an AWS account?
+25. Can IAM users exist without groups?
+26. Can IAM groups exist without users?
+27. Can groups be nested?
+28. Can roles belong to groups?
+29. Can users assume roles?
+30. What is an ARN?
+31. Why are ARNs important?
+32. What is IAM credential management?
+33. What credentials can IAM users have?
+34. What is an access key?
+35. What is a secret access key?
+36. What is a console password?
+37. What is MFA?
+38. Why is MFA important?
+39. What MFA devices are supported?
+40. How do you enable MFA?
+41. What is virtual MFA?
+42. What is hardware MFA?
+43. What is IAM account alias?
+44. Why use account aliases?
+45. What is the IAM dashboard?
+46. What are IAM security recommendations?
+47. What is IAM Access Analyzer?
+48. What is IAM Credential Report?
+49. What is IAM Access Advisor?
+50. How do you audit IAM?
+51. What are IAM quotas?
+52. What are IAM limits?
+53. What is IAM best practice?
+54. What is IAM governance?
+55. What is IAM lifecycle management?
+56. What is identity governance?
+57. What is centralized identity management?
+58. What is IAM risk management?
+59. What are common IAM interview questions?
+60. Real-world IAM use cases?
+
+---
+
+# IAM Users & Groups (61–110)
+
+61. What is an IAM user?
+62. When should IAM users be created?
+63. What credentials can IAM users have?
+64. What is password policy?
+65. How do you enforce password complexity?
+66. How do you enforce password rotation?
+67. What is password expiration?
+68. What is access key rotation?
+69. Why rotate access keys?
+70. How often should keys be rotated?
+71. How do you identify unused access keys?
+72. What is IAM group?
+73. Why use groups?
+74. What permissions do groups provide?
+75. Can users belong to multiple groups?
+76. How are permissions inherited?
+77. What is group-based access control?
+78. What is role-based access control?
+79. What is user-based access control?
+80. Difference between user permissions and group permissions?
+81. How do group policies work?
+82. What happens when a user belongs to multiple groups?
+83. How are permissions merged?
+84. What is explicit deny?
+85. Why does explicit deny override allow?
+86. What is implicit deny?
+87. What are IAM user best practices?
+88. What are group best practices?
+89. What are common mistakes with IAM users?
+90. Why should access keys be avoided?
+91. What are alternatives to access keys?
+92. How do you secure IAM users?
+93. How do you audit IAM users?
+94. How do you identify inactive users?
+95. How do you identify unused credentials?
+96. How do you identify excessive permissions?
+97. What is user lifecycle management?
+98. What is user onboarding?
+99. What is user offboarding?
+100. What is break-glass access?
+101. How do you secure administrative users?
+102. How do you secure developer users?
+103. How do you secure read-only users?
+104. What are IAM naming conventions?
+105. How do enterprises manage thousands of IAM users?
+106. What are IAM user limitations?
+107. What are IAM group limitations?
+108. Real-world user management scenario?
+109. Real-world group management scenario?
+110. Design IAM access for an organization.
+
+---
+
+# IAM Policies (111–180)
+
+111. What is an IAM policy?
+112. Why are policies needed?
+113. What is JSON policy syntax?
+114. What are policy statements?
+115. What is Version element?
+116. What is Effect element?
+117. What is Action element?
+118. What is Resource element?
+119. What is Condition element?
+120. What is Sid?
+121. Difference between Allow and Deny?
+122. What is explicit deny?
+123. What is implicit deny?
+124. What are AWS managed policies?
+125. What are customer managed policies?
+126. What are inline policies?
+127. Difference between managed and inline policies?
+128. What is policy inheritance?
+129. How are multiple policies evaluated?
+130. What is policy evaluation logic?
+131. What is policy simulator?
+132. How do you test policies?
+133. What are policy conditions?
+134. What is aws:SourceIp condition?
+135. What is aws:MultiFactorAuthPresent condition?
+136. What is aws:PrincipalArn condition?
+137. What is aws:RequestTag condition?
+138. What is aws:ResourceTag condition?
+139. What are tag-based permissions?
+140. What is ABAC?
+141. Difference between ABAC and RBAC?
+142. What is resource-level permission?
+143. What is action-level permission?
+144. What is wildcard usage?
+145. Why avoid wildcard permissions?
+146. What is AdministratorAccess policy?
+147. Why is AdministratorAccess risky?
+148. What is PowerUserAccess?
+149. What is ReadOnlyAccess?
+150. How do you create least privilege policies?
+151. What are policy best practices?
+152. What are policy anti-patterns?
+153. What is permission creep?
+154. How do you identify over-permissioned users?
+155. What is IAM Access Analyzer?
+156. How does Access Analyzer help?
+157. What are policy boundaries?
+158. What are permissions boundaries?
+159. Why use permissions boundaries?
+160. What are SCPs?
+161. Difference between SCP and IAM policy?
+162. How do SCPs affect permissions?
+163. What is policy troubleshooting?
+164. Why is access denied occurring?
+165. How do you debug policy evaluation?
+166. How do you troubleshoot permission issues?
+167. What are common policy interview questions?
+168. What is policy versioning?
+169. How many policy versions can exist?
+170. What is policy rollback?
+171. What are policy limits?
+172. How do you secure policies?
+173. How do you audit policies?
+174. What is policy governance?
+175. What is enterprise policy strategy?
+176. Real-world least privilege example?
+177. Real-world tag-based access example?
+178. Real-world SCP example?
+179. Real-world permission boundary example?
+180. Design least-privilege policy architecture.
+
+---
+
+# IAM Roles & Trust Relationships (181–250)
+
+181. What is an IAM role?
+182. Why use roles instead of users?
+183. What is role assumption?
+184. What is temporary security credential?
+185. How do roles provide credentials?
+186. What is STS?
+187. What is AWS Security Token Service?
+188. What are STS credentials?
+189. How long are temporary credentials valid?
+190. What is AssumeRole API?
+191. What is role chaining?
+192. What is a trust relationship?
+193. Why are trust relationships needed?
+194. What is a trust policy?
+195. Difference between trust policy and permission policy?
+196. What principals can assume roles?
+197. Can users assume roles?
+198. Can services assume roles?
+199. Can accounts assume roles?
+200. What is service role?
+201. What is service-linked role?
+202. What AWS services create service-linked roles?
+203. What is EC2 role?
+204. Why attach roles to EC2?
+205. What is instance profile?
+206. Difference between role and instance profile?
+207. How does EC2 retrieve credentials?
+208. What is ECS task role?
+209. What is Lambda execution role?
+210. What is EKS IAM role?
+211. How do roles improve security?
+212. Why avoid access keys on EC2?
+213. What is role delegation?
+214. What is role hierarchy?
+215. What are role best practices?
+216. What are trust relationship best practices?
+217. What are role limitations?
+218. What is role session duration?
+219. What is external ID?
+220. Why use external ID?
+221. What is confused deputy problem?
+222. How does external ID solve it?
+223. What is MFA-protected role assumption?
+224. What is role session policy?
+225. What is role session tagging?
+226. How do you audit roles?
+227. How do you identify unused roles?
+228. How do you identify risky trust relationships?
+229. How do you secure trust policies?
+230. What are role troubleshooting scenarios?
+231. Why can't a role be assumed?
+232. Why does AssumeRole fail?
+233. Why are credentials missing on EC2?
+234. Why is access denied after assuming a role?
+235. How do you troubleshoot trust policy issues?
+236. What are common role interview questions?
+237. Real-world EC2 role design?
+238. Real-world Lambda role design?
+239. Real-world ECS role design?
+240. Real-world cross-account role design?
+241. Design role architecture for DevOps teams.
+242. Design role architecture for developers.
+243. Design role architecture for auditors.
+244. Design role architecture for administrators.
+245. Design secure trust relationships.
+246. Design role assumption workflow.
+247. Design enterprise role strategy.
+248. Explain role evaluation logic.
+249. Explain trust policy evaluation.
+250. Compare users, groups, and roles.
+
+---
+
+# Federation & SSO (251–300)
+
+251. What is federation?
+252. Why use federation?
+253. What is identity federation?
+254. What is SAML?
+255. What is OAuth?
+256. What is OpenID Connect?
+257. Difference between SAML and OIDC?
+258. What is AWS IAM Identity Center?
+259. What is AWS SSO?
+260. Why use AWS SSO?
+261. How does AWS SSO work?
+262. What identity providers are supported?
+263. How does Active Directory integrate?
+264. What is Azure AD federation?
+265. What is Okta federation?
+266. What is Ping federation?
+267. What is Google federation?
+268. What is corporate identity integration?
+269. Why avoid local IAM users?
+270. What is centralized identity management?
+271. What is workforce identity federation?
+272. What is workload identity federation?
+273. What is federated role assumption?
+274. How do SAML assertions work?
+275. What is IdP?
+276. What is SP?
+277. How do identity providers authenticate users?
+278. What are federation benefits?
+279. What are federation limitations?
+280. How do you secure federation?
+281. How do you troubleshoot federation issues?
+282. Why is SAML login failing?
+283. Why is SSO login failing?
+284. Why is role mapping failing?
+285. How do you audit federated access?
+286. What are federation best practices?
+287. What are enterprise federation strategies?
+288. What are common federation interview questions?
+289. Real-world enterprise SSO architecture?
+290. Real-world AD integration architecture?
+291. Real-world Okta integration architecture?
+292. Design centralized authentication architecture.
+293. Design federated identity architecture.
+294. Design multi-account SSO architecture.
+295. Design enterprise identity strategy.
+296. Compare IAM users and federation.
+297. Compare IAM roles and federation.
+298. Compare SAML and OIDC.
+299. Explain complete SSO login flow.
+300. Explain complete federation workflow.
+
+---
+
+# Cross-Account Access & Advanced IAM (301–350)
+
+301. What is cross-account access?
+302. Why use cross-account access?
+303. How does cross-account access work?
+304. What is a trusted account?
+305. What is a trusting account?
+306. What is cross-account role assumption?
+307. How do you configure cross-account access?
+308. What policies are required?
+309. What trust relationships are required?
+310. What is external ID in cross-account access?
+311. How does STS support cross-account access?
+312. What is AssumeRole?
+313. What is AssumeRoleWithSAML?
+314. What is AssumeRoleWithWebIdentity?
+315. What is GetFederationToken?
+316. What is GetSessionToken?
+317. Difference between STS APIs?
+318. What are temporary credentials?
+319. How do temporary credentials improve security?
+320. How do you audit cross-account access?
+321. How do you secure cross-account access?
+322. What are cross-account best practices?
+323. What are cross-account risks?
+324. What is privilege escalation?
+325. How do you prevent privilege escalation?
+326. What is IAM Access Analyzer cross-account finding?
+327. How do SCPs affect cross-account access?
+328. What is delegated administration?
+329. What is centralized security account?
+330. What is audit account?
+331. What is logging account?
+332. What is shared services account?
+333. How do enterprises structure IAM across accounts?
+334. What is AWS Organizations integration?
+335. What is AWS Control Tower integration?
+336. How do SCPs support governance?
+337. How do permission boundaries support governance?
+338. What is enterprise IAM architecture?
+339. How do you implement zero-trust IAM?
+340. How do you implement least privilege at scale?
+341. How do you monitor IAM activity?
+342. How do you investigate unauthorized access?
+343. How do you investigate access denied errors?
+344. What are common IAM security incidents?
+345. What are common IAM interview scenarios?
+346. Design IAM for a startup.
+347. Design IAM for a banking application.
+348. Design IAM for a multi-account enterprise.
+349. Design IAM for a DevOps organization.
+350. Design a complete enterprise IAM architecture including users, groups, roles, policies, federation, SSO, Organizations, SCPs, cross-account access, governance, auditing, and least-privilege security.
