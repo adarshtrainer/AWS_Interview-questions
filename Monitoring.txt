@@ -1,0 +1,372 @@
+ CloudWatch Fundamentals (1–70)
+
+1. What is Amazon CloudWatch?
+2. Why use CloudWatch?
+3. What problems does CloudWatch solve?
+4. What is monitoring?
+5. What is observability?
+6. Difference between monitoring and observability?
+7. What AWS services integrate with CloudWatch?
+8. Is CloudWatch regional or global?
+9. What are CloudWatch components?
+10. What is a metric?
+11. What is a namespace?
+12. What is a dimension?
+13. What is a statistic?
+14. What is a datapoint?
+15. What is a metric stream?
+16. What is a dashboard?
+17. What is an alarm?
+18. What is a log group?
+19. What is a log stream?
+20. What is CloudWatch Agent?
+21. What is CloudWatch Events?
+22. What is EventBridge?
+23. Difference between CloudWatch and CloudTrail?
+24. Difference between CloudWatch and AWS Config?
+25. What is operational monitoring?
+26. What is infrastructure monitoring?
+27. What is application monitoring?
+28. What is synthetic monitoring?
+29. What is real-user monitoring?
+30. What is anomaly detection?
+31. What are CloudWatch costs?
+32. What affects CloudWatch pricing?
+33. What are CloudWatch quotas?
+34. What are CloudWatch limits?
+35. What are CloudWatch best practices?
+36. What are common CloudWatch interview questions?
+37. How does CloudWatch collect data?
+38. How often are metrics collected?
+39. What is monitoring resolution?
+40. What is standard resolution?
+41. What is high-resolution monitoring?
+42. What is detailed monitoring?
+43. What is basic monitoring?
+44. Difference between detailed and basic monitoring?
+45. What metrics are automatically available?
+46. What metrics require CloudWatch Agent?
+47. What is custom monitoring?
+48. What is custom metric?
+49. Why create custom metrics?
+50. What is metric retention?
+51. How long are metrics retained?
+52. What is metric aggregation?
+53. What is metric math?
+54. What is service health monitoring?
+55. What is workload monitoring?
+56. What is infrastructure visibility?
+57. What is performance monitoring?
+58. What is capacity monitoring?
+59. What is SLA monitoring?
+60. What is SLO monitoring?
+61. What is error monitoring?
+62. What is resource monitoring?
+63. What is business monitoring?
+64. What is centralized monitoring?
+65. What is enterprise monitoring?
+66. Real-world CloudWatch use cases?
+67. Real-world monitoring architecture?
+68. Design monitoring for AWS workloads.
+69. Design centralized monitoring.
+70. Explain CloudWatch architecture.
+
+---
+
+# Metrics (71–150)
+
+71. What is a CloudWatch metric?
+72. What are AWS service metrics?
+73. What are custom metrics?
+74. Difference between AWS and custom metrics?
+75. What is a namespace?
+76. What are dimensions?
+77. Why are dimensions important?
+78. How many dimensions can a metric have?
+79. What statistics are supported?
+80. What is Average?
+81. What is Sum?
+82. What is Minimum?
+83. What is Maximum?
+84. What is SampleCount?
+85. What is percentile?
+86. What is p95?
+87. What is p99?
+88. Why are percentiles important?
+89. What is metric granularity?
+90. What is metric aggregation?
+91. What is metric retention policy?
+92. How long are metrics retained?
+93. What is high-resolution metric?
+94. When should high-resolution metrics be used?
+95. What is metric math?
+96. How does metric math work?
+97. What are metric expressions?
+98. What is anomaly detection?
+99. How does anomaly detection work?
+100. What are anomaly detection bands?
+101. What is metric stream?
+102. Why use metric streams?
+103. How do metric streams work?
+104. What external tools integrate with CloudWatch?
+105. What metrics does EC2 provide?
+106. What metrics does RDS provide?
+107. What metrics does ELB provide?
+108. What metrics does Lambda provide?
+109. What metrics does DynamoDB provide?
+110. What metrics does ECS provide?
+111. What metrics does EKS provide?
+112. What metrics does S3 provide?
+113. What metrics does CloudFront provide?
+114. What metrics does NAT Gateway provide?
+115. What metrics does Transit Gateway provide?
+116. What is custom application monitoring?
+117. How do applications publish metrics?
+118. What is PutMetricData API?
+119. What are metric filters?
+120. How do metric filters work?
+121. What are metric best practices?
+122. What are metric limitations?
+123. What are common metric interview questions?
+124. Why are metrics missing?
+125. Why are metrics delayed?
+126. Why are metrics inaccurate?
+127. How do you troubleshoot metrics?
+128. What CloudWatch metrics matter for EC2?
+129. What CloudWatch metrics matter for RDS?
+130. What CloudWatch metrics matter for containers?
+131. What CloudWatch metrics matter for databases?
+132. What CloudWatch metrics matter for networking?
+133. What CloudWatch metrics matter for storage?
+134. What CloudWatch metrics matter for serverless?
+135. How do you monitor CPU?
+136. How do you monitor memory?
+137. How do you monitor disk?
+138. How do you monitor network?
+139. How do you monitor latency?
+140. How do you monitor throughput?
+141. How do you monitor availability?
+142. How do you monitor errors?
+143. Real-world metric architecture?
+144. Design metrics for a banking application.
+145. Design metrics for e-commerce.
+146. Design metrics for gaming.
+147. Explain metric collection workflow.
+148. Explain custom metric workflow.
+149. Explain anomaly detection workflow.
+150. Design enterprise metric strategy.
+
+---
+
+# Alarms (151–220)
+
+151. What is a CloudWatch Alarm?
+152. Why use alarms?
+153. How do alarms work?
+154. What alarm states exist?
+155. What is OK state?
+156. What is ALARM state?
+157. What is INSUFFICIENT_DATA state?
+158. What triggers an alarm?
+159. What are thresholds?
+160. What is evaluation period?
+161. What is datapoints to alarm?
+162. What is alarm action?
+163. What actions can alarms trigger?
+164. How do alarms integrate with SNS?
+165. How do alarms integrate with Lambda?
+166. How do alarms integrate with Auto Scaling?
+167. How do alarms integrate with EventBridge?
+168. What is composite alarm?
+169. Why use composite alarms?
+170. What is anomaly detection alarm?
+171. What is static threshold alarm?
+172. What is dynamic threshold alarm?
+173. What is alarm suppression?
+174. What is alarm noise?
+175. How do you reduce alert fatigue?
+176. What are alarm best practices?
+177. What are alarm limitations?
+178. What are alarm costs?
+179. What are common alarm interview questions?
+180. Why is an alarm not triggering?
+181. Why is an alarm always triggering?
+182. Why is alarm state incorrect?
+183. How do you troubleshoot alarms?
+184. How do you monitor EC2 with alarms?
+185. How do you monitor RDS with alarms?
+186. How do you monitor ALB with alarms?
+187. How do you monitor Lambda with alarms?
+188. How do you monitor DynamoDB with alarms?
+189. What alarms are critical for production?
+190. What alarms are critical for security?
+191. What alarms are critical for networking?
+192. What alarms are critical for databases?
+193. What alarms are critical for containers?
+194. What alarms are critical for serverless?
+195. What alarms are critical for storage?
+196. Real-world alarm strategy?
+197. Real-world NOC monitoring?
+198. Real-world incident response workflow?
+199. Design alarms for e-commerce.
+200. Design alarms for banking.
+201. Design alarms for healthcare.
+202. Design alarms for SaaS.
+203. Explain alarm evaluation workflow.
+204. Explain composite alarm workflow.
+205. Explain auto-scaling alarm workflow.
+206. Explain incident response workflow.
+207. What is predictive scaling?
+208. How do alarms support automation?
+209. How do alarms support self-healing?
+210. How do alarms support remediation?
+211. How do alarms support compliance?
+212. How do alarms support security?
+213. How do alarms support DR?
+214. What are enterprise alarm strategies?
+215. What are enterprise escalation strategies?
+216. What is alarm governance?
+217. What is alarm lifecycle?
+218. Compare alarm types.
+219. Compare static vs anomaly alarms.
+220. Design enterprise alarm architecture.
+
+---
+
+# Logs & CloudWatch Logs (221–290)
+
+221. What is CloudWatch Logs?
+222. Why use CloudWatch Logs?
+223. What is a log group?
+224. What is a log stream?
+225. How do logs flow into CloudWatch?
+226. What services send logs?
+227. What is CloudWatch Agent?
+228. How does CloudWatch Agent work?
+229. How do EC2 logs reach CloudWatch?
+230. How do Lambda logs reach CloudWatch?
+231. How do ECS logs reach CloudWatch?
+232. How do EKS logs reach CloudWatch?
+233. What is log retention?
+234. How long are logs retained?
+235. What is log archival?
+236. What is log export?
+237. How do you export logs to S3?
+238. What is log encryption?
+239. How does KMS integrate with logs?
+240. What is Logs Insights?
+241. Why use Logs Insights?
+242. How do Logs Insights queries work?
+243. What is structured logging?
+244. What is unstructured logging?
+245. What are log filters?
+246. What are metric filters?
+247. How do metric filters work?
+248. What are subscription filters?
+249. How do subscription filters work?
+250. What destinations are supported?
+251. How do logs integrate with Lambda?
+252. How do logs integrate with Kinesis?
+253. How do logs integrate with OpenSearch?
+254. What is centralized logging?
+255. Why use centralized logging?
+256. What are logging best practices?
+257. What are logging limitations?
+258. What are logging costs?
+259. What are common logging interview questions?
+260. Why are logs missing?
+261. Why are logs delayed?
+262. Why are logs incomplete?
+263. How do you troubleshoot logging issues?
+264. How do you troubleshoot CloudWatch Agent?
+265. How do you troubleshoot Logs Insights?
+266. How do you search logs efficiently?
+267. How do you analyze application logs?
+268. How do you analyze security logs?
+269. How do you analyze infrastructure logs?
+270. What logs are important for EC2?
+271. What logs are important for RDS?
+272. What logs are important for Lambda?
+273. What logs are important for ALB?
+274. What logs are important for containers?
+275. Real-world centralized logging architecture?
+276. Design logging for banking.
+277. Design logging for healthcare.
+278. Design logging for e-commerce.
+279. Explain log collection workflow.
+280. Explain log query workflow.
+281. Explain metric filter workflow.
+282. Explain centralized logging architecture.
+283. What is log analytics?
+284. What is observability through logs?
+285. What is security monitoring through logs?
+286. What is compliance logging?
+287. What is audit logging?
+288. What is log governance?
+289. What is log lifecycle management?
+290. Design enterprise logging architecture.
+
+---
+
+# Events, Dashboards, Automation & Architecture (291–350)
+
+291. What is CloudWatch Events?
+292. What is EventBridge?
+293. Difference between CloudWatch Events and EventBridge?
+294. What is an event?
+295. What is an event bus?
+296. What is a rule?
+297. What is an event pattern?
+298. What are event targets?
+299. What AWS services generate events?
+300. How does EventBridge work?
+301. What is a custom event?
+302. What is SaaS integration?
+303. What is scheduled event?
+304. What is cron expression?
+305. How do scheduled events work?
+306. How do events integrate with Lambda?
+307. How do events integrate with SNS?
+308. How do events integrate with SQS?
+309. How do events integrate with Step Functions?
+310. What is event-driven architecture?
+311. What are event-driven benefits?
+312. What are event-driven challenges?
+313. What are EventBridge costs?
+314. What are EventBridge best practices?
+315. What are common EventBridge interview questions?
+316. What is a CloudWatch Dashboard?
+317. Why use dashboards?
+318. What widgets are supported?
+319. How do dashboards support operations?
+320. How do dashboards support executives?
+321. What is centralized observability?
+322. What is operational visibility?
+323. What is service health visibility?
+324. What is infrastructure visibility?
+325. How do you design dashboards?
+326. What KPIs should be monitored?
+327. What metrics belong on executive dashboards?
+328. What metrics belong on NOC dashboards?
+329. What metrics belong on DevOps dashboards?
+330. What metrics belong on SRE dashboards?
+331. What are dashboard best practices?
+332. What are dashboard limitations?
+333. Why are events not triggering?
+334. Why are dashboards showing incorrect data?
+335. How do you troubleshoot EventBridge?
+336. How do you troubleshoot dashboards?
+337. Real-world event-driven architecture?
+338. Real-world observability architecture?
+339. Design CloudWatch for e-commerce.
+340. Design CloudWatch for banking.
+341. Design CloudWatch for healthcare.
+342. Design CloudWatch for Kubernetes.
+343. Design CloudWatch for serverless.
+344. Explain event processing workflow.
+345. Explain dashboard workflow.
+346. Explain centralized monitoring architecture.
+347. Explain enterprise observability architecture.
+348. Compare CloudWatch, CloudTrail, and AWS Config.
+349. Compare CloudWatch Logs, Metrics, and Events.
+350. Design a complete enterprise monitoring solution using CloudWatch Metrics, Alarms, Logs, EventBridge, Dashboards, Auto Scaling, SNS, Lambda, centralized logging, observability, and automated incident response.
