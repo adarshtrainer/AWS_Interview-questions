@@ -1,0 +1,322 @@
+API Gateway Fundamentals (1–70)
+
+1. What is Amazon API Gateway?
+2. Why use API Gateway?
+3. What problems does API Gateway solve?
+4. What is an API?
+5. What is API management?
+6. What is API Gateway architecture?
+7. How does API Gateway work?
+8. What are the benefits of API Gateway?
+9. What are API Gateway use cases?
+10. What backend services can API Gateway integrate with?
+11. How does API Gateway integrate with Lambda?
+12. How does API Gateway integrate with ECS?
+13. How does API Gateway integrate with EC2?
+14. How does API Gateway integrate with ALB?
+15. How does API Gateway integrate with Step Functions?
+16. What API types are supported?
+17. What is a REST API?
+18. What is an HTTP API?
+19. What is a WebSocket API?
+20. Difference between REST API and HTTP API?
+21. Difference between HTTP API and WebSocket API?
+22. When should REST APIs be used?
+23. When should HTTP APIs be used?
+24. When should WebSocket APIs be used?
+25. What is a resource?
+26. What is a method?
+27. What is an endpoint?
+28. What is an integration?
+29. What is an API stage?
+30. What is an API deployment?
+31. Why are stages required?
+32. What is stage versioning?
+33. What is API lifecycle?
+34. What is API publishing?
+35. What is API consumption?
+36. What is API documentation?
+37. What is OpenAPI?
+38. What is Swagger?
+39. How does API Gateway support OpenAPI?
+40. What are API Gateway quotas?
+41. What are API Gateway limits?
+42. What are API Gateway costs?
+43. What affects pricing?
+44. How do you optimize API Gateway costs?
+45. What are API Gateway best practices?
+46. What are common API Gateway interview questions?
+47. What is request processing?
+48. What is response processing?
+49. What is request transformation?
+50. What is response transformation?
+51. What is API proxying?
+52. What is serverless API architecture?
+53. What is microservices API architecture?
+54. What is API-first design?
+55. What is RESTful architecture?
+56. What is stateless communication?
+57. What HTTP methods are supported?
+58. What is GET?
+59. What is POST?
+60. What is PUT?
+61. What is PATCH?
+62. What is DELETE?
+63. What is HEAD?
+64. What is OPTIONS?
+65. Real-world API Gateway use cases?
+66. Real-world serverless APIs?
+67. Design an API platform.
+68. Design a microservices API.
+69. Design a serverless API.
+70. Explain API Gateway architecture.
+
+---
+
+# REST APIs & HTTP APIs (71–140)
+
+71. What is a REST API in API Gateway?
+72. What are REST API features?
+73. What is an HTTP API?
+74. Why was HTTP API introduced?
+75. What advantages does HTTP API provide?
+76. What limitations exist in HTTP API?
+77. Difference between REST API and HTTP API pricing?
+78. Difference between REST API and HTTP API features?
+79. What authentication options are available?
+80. What integrations are supported?
+81. What is Lambda Proxy Integration?
+82. What is Lambda Non-Proxy Integration?
+83. Difference between proxy and non-proxy integration?
+84. What is HTTP integration?
+85. What is AWS service integration?
+86. What is mock integration?
+87. What is private integration?
+88. What is VPC Link?
+89. Why use VPC Link?
+90. How does VPC Link work?
+91. What is request mapping?
+92. What is response mapping?
+93. What is mapping template?
+94. What is Velocity Template Language (VTL)?
+95. Why use mapping templates?
+96. What is payload transformation?
+97. What is request validation?
+98. What is schema validation?
+99. What is request model?
+100. What is response model?
+101. What is API versioning?
+102. Why version APIs?
+103. What versioning strategies exist?
+104. What is stage-based versioning?
+105. What is URI-based versioning?
+106. What is header-based versioning?
+107. What is backward compatibility?
+108. What is API deprecation?
+109. What is API documentation?
+110. What is SDK generation?
+111. What are SDKs?
+112. How does API Gateway generate SDKs?
+113. What are common REST API interview questions?
+114. Why is API returning 403?
+115. Why is API returning 404?
+116. Why is API returning 429?
+117. Why is API returning 500?
+118. Why is API returning 502?
+119. Why is API returning 504?
+120. How do you troubleshoot API Gateway?
+121. How do you troubleshoot integrations?
+122. How do you troubleshoot mappings?
+123. How do you monitor APIs?
+124. What metrics are available?
+125. What logs are available?
+126. What alarms should be configured?
+127. Real-world REST API architecture?
+128. Real-world HTTP API architecture?
+129. Design API versioning strategy.
+130. Design API validation strategy.
+131. Explain REST API workflow.
+132. Explain HTTP API workflow.
+133. Explain request transformation workflow.
+134. Explain response transformation workflow.
+135. Compare REST APIs and HTTP APIs.
+136. Compare API Gateway and ALB.
+137. Compare API Gateway and NGINX.
+138. Compare API Gateway and App Runner.
+139. Compare integration types.
+140. Design enterprise API architecture.
+
+---
+
+# WebSocket APIs (141–180)
+
+141. What is a WebSocket API?
+142. Why use WebSockets?
+143. Difference between HTTP and WebSocket?
+144. What is full-duplex communication?
+145. What is persistent connection?
+146. How do WebSockets work?
+147. What is connection lifecycle?
+148. What is a route in WebSocket APIs?
+149. What is $connect route?
+150. What is $disconnect route?
+151. What is $default route?
+152. How are messages routed?
+153. What integrations are supported?
+154. How does Lambda integrate with WebSockets?
+155. What are WebSocket use cases?
+156. What is real-time communication?
+157. What is bidirectional communication?
+158. What is connection management?
+159. How do you send messages to clients?
+160. What is connection ID?
+161. How do you store connection IDs?
+162. What is broadcast messaging?
+163. What is targeted messaging?
+164. What are WebSocket limitations?
+165. What are WebSocket quotas?
+166. What are WebSocket costs?
+167. What are common WebSocket interview questions?
+168. Why are connections dropping?
+169. Why are messages delayed?
+170. How do you troubleshoot WebSockets?
+171. What metrics should be monitored?
+172. What logs are available?
+173. Real-world chat application architecture?
+174. Real-world gaming architecture?
+175. Real-world notification system?
+176. Design a chat application.
+177. Design a real-time dashboard.
+178. Explain WebSocket workflow.
+179. Compare WebSockets and polling.
+180. Design enterprise real-time architecture.
+
+---
+
+# Authentication, Authorization & Security (181–240)
+
+181. What authentication methods are supported?
+182. What is IAM authentication?
+183. How does IAM authentication work?
+184. What is resource-based authorization?
+185. What is Lambda Authorizer?
+186. What is a custom authorizer?
+187. Why use Lambda Authorizers?
+188. What is Cognito Authorizer?
+189. How does Cognito integrate with API Gateway?
+190. What is JWT authentication?
+191. How does JWT validation work?
+192. What is OAuth 2.0?
+193. How does OAuth integrate with APIs?
+194. What is OpenID Connect?
+195. What is API key authentication?
+196. What are API Keys?
+197. Why use API Keys?
+198. What are usage plans?
+199. How do usage plans work?
+200. What is rate limiting?
+201. What is throttling?
+202. Why is throttling important?
+203. What are burst limits?
+204. What are steady-state limits?
+205. What is quota enforcement?
+206. What is API abuse prevention?
+207. What is AWS WAF integration?
+208. How does WAF protect APIs?
+209. What attacks can WAF prevent?
+210. What is DDoS protection?
+211. How does Shield protect APIs?
+212. What is TLS?
+213. How does HTTPS work?
+214. What is mutual TLS?
+215. What is mTLS?
+216. Why use mTLS?
+217. What is a custom domain?
+218. How do custom domains work?
+219. What is ACM integration?
+220. How are certificates managed?
+221. What is encryption in transit?
+222. What are security best practices?
+223. What are authentication best practices?
+224. What are authorization best practices?
+225. What are common security interview questions?
+226. Why is authorization failing?
+227. Why is authentication failing?
+228. Why is JWT validation failing?
+229. Why is Cognito authentication failing?
+230. How do you troubleshoot security issues?
+231. What logs help troubleshoot?
+232. How do you audit API access?
+233. How do you secure internal APIs?
+234. How do you secure public APIs?
+235. Real-world secure API architecture?
+236. Design API authentication architecture.
+237. Design API authorization architecture.
+238. Design zero-trust API architecture.
+239. Explain JWT workflow.
+240. Explain API security architecture.
+
+---
+
+# Caching, Monitoring, Throttling & Architecture (241–300)
+
+241. What is API Gateway caching?
+242. Why use API caching?
+243. How does API caching work?
+244. What cache sizes are supported?
+245. What is cache TTL?
+246. How does cache invalidation work?
+247. What workloads benefit from caching?
+248. What are caching limitations?
+249. What is response caching?
+250. How does caching improve performance?
+251. What is API Gateway throttling?
+252. Why use throttling?
+253. What are rate limits?
+254. What are burst limits?
+255. How do quotas work?
+256. What is request shaping?
+257. How does API Gateway scale?
+258. What is regional API endpoint?
+259. What is edge-optimized API endpoint?
+260. What is private API endpoint?
+261. Difference between regional and edge-optimized APIs?
+262. Difference between public and private APIs?
+263. How do private APIs work?
+264. How do VPC endpoints integrate?
+265. What monitoring features exist?
+266. How does CloudWatch integrate?
+267. What metrics are available?
+268. What is Latency metric?
+269. What is IntegrationLatency metric?
+270. What is 4XXError metric?
+271. What is 5XXError metric?
+272. What is Count metric?
+273. What logs are available?
+274. What is execution logging?
+275. What is access logging?
+276. What is X-Ray tracing?
+277. How does X-Ray integrate?
+278. How do you monitor API health?
+279. What alarms should be configured?
+280. What are API observability best practices?
+281. What are common monitoring interview questions?
+282. Why is latency high?
+283. Why are requests failing?
+284. Why are integrations timing out?
+285. Why are APIs throttling?
+286. How do you troubleshoot performance issues?
+287. How do you troubleshoot integration failures?
+288. How do you troubleshoot latency issues?
+289. Real-world API monitoring architecture?
+290. Real-world API security architecture?
+291. Design API Gateway + Lambda architecture.
+292. Design API Gateway + ECS architecture.
+293. Design API Gateway + ALB architecture.
+294. Design API Gateway + EventBridge architecture.
+295. Compare API Gateway, ALB, and CloudFront.
+296. Compare API Gateway, NGINX, and Kong.
+297. Explain complete API request lifecycle from client request to backend response.
+298. Explain complete API security workflow.
+299. Explain complete API monitoring workflow.
+300. Design a complete enterprise-grade API platform using API Gateway, Lambda, Cognito, WAF, CloudWatch, X-Ray, Route 53, CloudFront, custom domains, caching, throttling, and CI/CD deployment automation.
