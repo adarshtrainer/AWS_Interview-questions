@@ -1,0 +1,272 @@
+ElastiCache Fundamentals (1–60)
+
+1. What is Amazon ElastiCache?
+2. Why use ElastiCache?
+3. What problem does caching solve?
+4. What is caching?
+5. What is an in-memory database?
+6. What is cache hit?
+7. What is cache miss?
+8. What is cache hit ratio?
+9. Why is cache hit ratio important?
+10. How does caching improve performance?
+11. How does caching reduce database load?
+12. What are the benefits of caching?
+13. What are the drawbacks of caching?
+14. What caching engines does ElastiCache support?
+15. Difference between Redis and Memcached?
+16. What is latency?
+17. How does caching reduce latency?
+18. What is throughput?
+19. What workloads benefit from caching?
+20. What workloads do not benefit?
+21. Is ElastiCache managed by AWS?
+22. What administrative tasks does AWS handle?
+23. What are ElastiCache node types?
+24. What is a cache cluster?
+25. What is a cache node?
+26. What is a cache endpoint?
+27. How do applications connect to ElastiCache?
+28. What is a VPC cache deployment?
+29. Why deploy ElastiCache in private subnets?
+30. What are ElastiCache limits?
+31. What are ElastiCache quotas?
+32. What are ElastiCache costs?
+33. What affects pricing?
+34. How do you optimize ElastiCache costs?
+35. What are common ElastiCache use cases?
+36. What is session caching?
+37. What is database query caching?
+38. What is API response caching?
+39. What is leaderboard caching?
+40. What is gaming cache usage?
+41. What is real-time analytics caching?
+42. What is e-commerce caching?
+43. What is CDN caching?
+44. Difference between CloudFront and ElastiCache?
+45. What AWS services integrate with ElastiCache?
+46. What are ElastiCache best practices?
+47. What are common ElastiCache interview questions?
+48. How do you monitor ElastiCache?
+49. What CloudWatch metrics are available?
+50. What are common troubleshooting scenarios?
+51. Why is cache performance poor?
+52. Why are cache misses high?
+53. Why is latency high?
+54. What is cache warm-up?
+55. What is cache cold start?
+56. What is cache invalidation?
+57. What is cache consistency?
+58. What is cache coherence?
+59. Real-world ElastiCache architecture?
+60. Design an application using ElastiCache.
+
+---
+
+# Redis Fundamentals (61–140)
+
+61. What is Redis?
+62. Why use Redis?
+63. What type of database is Redis?
+64. Is Redis NoSQL?
+65. Is Redis in-memory only?
+66. What data structures does Redis support?
+67. What is a Redis String?
+68. What is a Redis List?
+69. What is a Redis Set?
+70. What is a Redis Sorted Set?
+71. What is a Redis Hash?
+72. What is a Redis Stream?
+73. What is a Redis Bitmap?
+74. What is a Redis HyperLogLog?
+75. What is a Redis Geospatial index?
+76. Why are multiple data structures useful?
+77. What is Redis persistence?
+78. What is RDB persistence?
+79. What is AOF persistence?
+80. Difference between RDB and AOF?
+81. What is snapshotting?
+82. What is append-only logging?
+83. What is Redis replication?
+84. How does Redis replication work?
+85. What is a primary node?
+86. What is a replica node?
+87. How many replicas can Redis support?
+88. What is asynchronous replication?
+89. Why does Redis use async replication?
+90. What is replica lag?
+91. What is Redis Cluster Mode?
+92. What is Cluster Mode Disabled?
+93. Difference between Cluster Mode Enabled and Disabled?
+94. What is Redis sharding?
+95. Why is sharding required?
+96. How does Redis partition data?
+97. What are Redis hash slots?
+98. How many hash slots exist?
+99. What is Redis failover?
+100. How does Redis failover work?
+101. What is Redis Multi-AZ?
+102. How does Redis support HA?
+103. What is automatic failover?
+104. What is Redis endpoint?
+105. What is primary endpoint?
+106. What is reader endpoint?
+107. How do applications use reader endpoints?
+108. What is Redis Pub/Sub?
+109. How does Pub/Sub work?
+110. What are Redis Streams?
+111. How do Streams differ from Pub/Sub?
+112. What is Redis transaction?
+113. What is Redis Lua scripting?
+114. What is Redis pipelining?
+115. How does pipelining improve performance?
+116. What is Redis TTL?
+117. Why use TTL?
+118. How does key expiration work?
+119. What is cache eviction?
+120. What eviction policies exist?
+121. What is LRU?
+122. What is LFU?
+123. Difference between LRU and LFU?
+124. What is memory fragmentation?
+125. What causes memory fragmentation?
+126. What is Redis memory optimization?
+127. What is Redis persistence overhead?
+128. What is Redis backup?
+129. How do backups work?
+130. What are Redis best practices?
+131. What are common Redis interview questions?
+132. Why is Redis slow?
+133. Why is replication lag high?
+134. Why is failover not working?
+135. Why is memory full?
+136. Why are keys expiring unexpectedly?
+137. How do you troubleshoot Redis?
+138. Real-world Redis architecture?
+139. Design Redis for a gaming application.
+140. Design Redis for an e-commerce platform.
+
+---
+
+# Redis Advanced Topics (141–190)
+
+141. What is Redis Cluster?
+142. Why use Redis Cluster?
+143. What are Redis shards?
+144. How does cluster scaling work?
+145. What is online scaling?
+146. What is Redis rebalancing?
+147. What happens during resharding?
+148. What is Redis Sentinel?
+149. Difference between Sentinel and Cluster?
+150. Does ElastiCache use Sentinel?
+151. What is Redis security?
+152. How does Redis authentication work?
+153. What is AUTH command?
+154. What is Redis ACL?
+155. What are Redis users?
+156. What is encryption in transit?
+157. What is encryption at rest?
+158. How does KMS integrate with Redis?
+159. What are Redis snapshots?
+160. How are snapshots restored?
+161. What is Redis disaster recovery?
+162. How do you design DR for Redis?
+163. What is cross-region Redis strategy?
+164. Does Redis support Global Datastore?
+165. What is Redis Global Datastore?
+166. How does Global Datastore work?
+167. What is cross-region replication?
+168. What is active-passive architecture?
+169. What is active-active architecture?
+170. What are Redis monitoring metrics?
+171. What is CPU utilization?
+172. What is memory utilization?
+173. What is network throughput?
+174. What is cache hit rate?
+175. What is replication lag metric?
+176. What CloudWatch metrics matter most?
+177. How do you monitor Redis health?
+178. What is Redis cost optimization?
+179. How do you reduce Redis costs?
+180. What are Redis limitations?
+181. What are Redis scaling limitations?
+182. What are Redis HA best practices?
+183. What are Redis security best practices?
+184. What are Redis performance best practices?
+185. Real-world HA architecture?
+186. Real-world DR architecture?
+187. Design a global Redis architecture.
+188. Explain Redis replication workflow.
+189. Explain Redis failover workflow.
+190. Explain Redis cluster workflow.
+
+---
+
+# Memcached Fundamentals (191–230)
+
+191. What is Memcached?
+192. Why use Memcached?
+193. What type of cache is Memcached?
+194. Difference between Redis and Memcached?
+195. What data types does Memcached support?
+196. Why is Memcached simpler than Redis?
+197. What workloads suit Memcached?
+198. What workloads suit Redis better?
+199. Does Memcached support persistence?
+200. Why doesn't Memcached support persistence?
+201. Does Memcached support replication?
+202. Why doesn't Memcached support replication?
+203. Does Memcached support failover?
+204. What is Memcached scaling?
+205. How does Memcached distribute data?
+206. What is consistent hashing?
+207. Why is consistent hashing important?
+208. What happens when nodes are added?
+209. What happens when nodes are removed?
+210. How does Memcached support horizontal scaling?
+211. What are Memcached node types?
+212. How do applications connect to Memcached?
+213. What are Memcached limitations?
+214. What are Memcached strengths?
+215. What are Memcached weaknesses?
+216. What are Memcached monitoring metrics?
+217. What are Memcached costs?
+218. What are Memcached best practices?
+219. What are common Memcached interview questions?
+220. Why is Memcached slow?
+221. Why is cache hit ratio low?
+222. How do you troubleshoot Memcached?
+223. Real-world Memcached architecture?
+224. Design Memcached for a website.
+225. Design Memcached for API caching.
+226. Compare Redis and Memcached.
+227. Compare Memcached and DynamoDB DAX.
+228. Compare Memcached and CloudFront.
+229. Explain Memcached architecture.
+230. Explain Memcached scaling workflow.
+
+---
+
+# Security, Monitoring, Troubleshooting & Architecture (231–250)
+
+231. How do you secure ElastiCache?
+232. Why deploy ElastiCache in private subnets?
+233. How do security groups protect Redis?
+234. How do security groups protect Memcached?
+235. What IAM integrations exist?
+236. How does encryption work?
+237. What are backup strategies?
+238. What are DR strategies?
+239. How do you monitor ElastiCache?
+240. Which CloudWatch metrics are critical?
+241. How do you investigate cache performance issues?
+242. How do you investigate memory issues?
+243. How do you investigate replication lag?
+244. How do you investigate failover problems?
+245. How do you optimize cache hit ratio?
+246. Design a high-performance architecture using RDS + Redis.
+247. Design a gaming leaderboard using Redis.
+248. Design a globally distributed caching architecture using Redis Global Datastore.
+249. Compare Redis, Memcached, DynamoDB DAX, and CloudFront caching strategies.
+250. Design a complete enterprise-grade caching architecture using ElastiCache Redis, Multi-AZ, replication, backups, monitoring, encryption, disaster recovery, and cost optimization.
