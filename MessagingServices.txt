@@ -1,0 +1,370 @@
+## SQS Fundamentals (1–60)
+
+1. What is Amazon SQS?
+2. Why use SQS?
+3. What problems does SQS solve?
+4. What is message queuing?
+5. What is asynchronous communication?
+6. Difference between synchronous and asynchronous communication?
+7. What is decoupling?
+8. Why is decoupling important?
+9. What are producers?
+10. What are consumers?
+11. How does SQS work?
+12. What is a queue?
+13. What is a message?
+14. What is message durability?
+15. What is message retention?
+16. How long can messages be retained?
+17. What is message visibility?
+18. What is visibility timeout?
+19. Why is visibility timeout important?
+20. What happens if visibility timeout expires?
+21. What is long polling?
+22. What is short polling?
+23. Difference between long and short polling?
+24. Why is long polling recommended?
+25. What is message size limit?
+26. What is queue size limit?
+27. Is SQS regional?
+28. How is SQS highly available?
+29. What are SQS quotas?
+30. What are SQS costs?
+31. What affects pricing?
+32. What is at-least-once delivery?
+33. What is exactly-once processing?
+34. Does Standard Queue support exactly-once?
+35. What is eventual consistency?
+36. What is message duplication?
+37. Why can duplicate messages occur?
+38. How do applications handle duplicates?
+39. What are common SQS use cases?
+40. What AWS services integrate with SQS?
+41. How does Lambda integrate with SQS?
+42. How does ECS integrate with SQS?
+43. How does SNS integrate with SQS?
+44. How does EventBridge integrate with SQS?
+45. What are SQS best practices?
+46. What are common SQS interview questions?
+47. What is queue lifecycle?
+48. What is workload buffering?
+49. What is load leveling?
+50. What is traffic smoothing?
+51. What is distributed messaging?
+52. What is queue scalability?
+53. What is queue reliability?
+54. Real-world SQS architecture?
+55. Real-world e-commerce queue?
+56. Real-world order processing queue?
+57. Real-world payment processing queue?
+58. Design a decoupled architecture.
+59. Design a queue-based system.
+60. Explain SQS workflow.
+
+---
+
+## Standard vs FIFO Queues (61–100)
+
+61. What is a Standard Queue?
+62. What are Standard Queue characteristics?
+63. What throughput does Standard Queue support?
+64. What ordering guarantees exist?
+65. What is a FIFO Queue?
+66. What are FIFO Queue characteristics?
+67. What is message ordering?
+68. How does FIFO maintain ordering?
+69. What is Message Group ID?
+70. Why is Message Group ID required?
+71. What is Deduplication ID?
+72. How does deduplication work?
+73. What is content-based deduplication?
+74. Difference between Standard and FIFO?
+75. When should Standard Queue be used?
+76. When should FIFO Queue be used?
+77. What workloads require FIFO?
+78. What workloads suit Standard Queue?
+79. What are FIFO limitations?
+80. What are Standard Queue limitations?
+81. What is exactly-once processing in FIFO?
+82. What is duplicate prevention?
+83. What is ordering guarantee?
+84. How do FIFO queues scale?
+85. What are throughput limits?
+86. What is high-throughput FIFO?
+87. How does high-throughput FIFO work?
+88. What are common FIFO interview questions?
+89. What are common Standard Queue interview questions?
+90. Why are messages out of order?
+91. Why are duplicates occurring?
+92. How do you troubleshoot ordering issues?
+93. How do you troubleshoot deduplication issues?
+94. Real-world FIFO architecture?
+95. Real-world payment workflow?
+96. Real-world banking workflow?
+97. Explain FIFO workflow.
+98. Explain deduplication workflow.
+99. Compare FIFO and Standard Queues.
+100. Design message ordering architecture.
+
+---
+
+## DLQ, Visibility Timeout & Processing (101–150)
+
+101. What is a Dead Letter Queue?
+102. Why use DLQs?
+103. How does a DLQ work?
+104. What is redrive policy?
+105. What is maxReceiveCount?
+106. What messages move to DLQ?
+107. How do you process DLQ messages?
+108. What is redrive-to-source?
+109. What is message failure handling?
+110. What is poison message?
+111. What is retry logic?
+112. What is exponential backoff?
+113. What is idempotency?
+114. Why is idempotency important?
+115. How does visibility timeout work?
+116. What is optimal visibility timeout?
+117. What happens if processing exceeds timeout?
+118. What is ChangeMessageVisibility?
+119. What is message deletion?
+120. Why delete messages after processing?
+121. What happens if a message isn't deleted?
+122. What is duplicate processing?
+123. How do you prevent duplicate processing?
+124. What is consumer scaling?
+125. How do multiple consumers work?
+126. What is competing consumers pattern?
+127. What is queue backlog?
+128. How do you monitor backlog?
+129. What metrics are important?
+130. What is ApproximateNumberOfMessagesVisible?
+131. What is ApproximateAgeOfOldestMessage?
+132. What is queue depth?
+133. What is processing latency?
+134. What is consumer lag?
+135. How do you troubleshoot message processing?
+136. How do you troubleshoot DLQs?
+137. How do you troubleshoot retries?
+138. What are processing best practices?
+139. Real-world retry architecture?
+140. Real-world DLQ architecture?
+141. Design fault-tolerant queue processing.
+142. Design retry architecture.
+143. Design resilient message processing.
+144. Explain DLQ workflow.
+145. Explain retry workflow.
+146. Explain visibility timeout workflow.
+147. Explain message lifecycle.
+148. Compare retry strategies.
+149. Compare DLQ strategies.
+150. Design enterprise queue processing.
+
+---
+
+## Security, Monitoring & Architecture (151–200)
+
+151. How does SQS encryption work?
+152. What is SSE-SQS?
+153. What is SSE-KMS?
+154. How does KMS integrate with SQS?
+155. What IAM permissions are required?
+156. What are resource-based policies?
+157. How do queue policies work?
+158. How do you secure queues?
+159. How do you secure cross-account access?
+160. What are SQS monitoring metrics?
+161. How does CloudWatch monitor SQS?
+162. What alarms should be configured?
+163. What metrics indicate problems?
+164. What are common troubleshooting scenarios?
+165. Why are messages delayed?
+166. Why are consumers slow?
+167. Why is queue depth increasing?
+168. Why are messages stuck in DLQ?
+169. Why is throughput low?
+170. How do you troubleshoot SQS?
+171. What are SQS cost optimization best practices?
+172. What are SQS security best practices?
+173. What are SQS monitoring best practices?
+174. What are SQS scaling best practices?
+175. Real-world microservices architecture?
+176. Real-world event-driven architecture?
+177. Real-world order processing architecture?
+178. Real-world payment architecture?
+179. Design SQS + Lambda architecture.
+180. Design SQS + ECS architecture.
+181. Design SQS + SNS architecture.
+182. Design SQS + EventBridge architecture.
+183. Design high-throughput queue architecture.
+184. Design secure queue architecture.
+185. Design multi-account queue architecture.
+186. Design disaster recovery architecture.
+187. Explain end-to-end SQS processing flow.
+188. Explain queue scaling workflow.
+189. Explain consumer scaling workflow.
+190. Explain queue monitoring workflow.
+191. Compare SQS and Kafka.
+192. Compare SQS and RabbitMQ.
+193. Compare SQS and SNS.
+194. Compare SQS and EventBridge.
+195. Compare FIFO and Kafka ordering.
+196. Compare queue-based and event-based architectures.
+197. Design enterprise messaging architecture.
+198. Design enterprise queue monitoring.
+199. Design enterprise queue governance.
+200. Design a complete production-grade SQS architecture using FIFO queues, DLQs, retries, monitoring, encryption, auto scaling consumers, and disaster recovery.
+
+## SNS Fundamentals (1–80)
+
+1. What is Amazon SNS?
+2. Why use SNS?
+3. What is pub/sub architecture?
+4. How does SNS work?
+5. What is a Topic?
+6. What is a Subscription?
+7. What protocols does SNS support?
+8. What is fan-out architecture?
+9. Why use fan-out?
+10. Difference between SNS and SQS?
+11. Can SNS store messages?
+12. What happens if subscribers are unavailable?
+13. How does SNS integrate with SQS?
+14. How does SNS integrate with Lambda?
+15. How does SNS integrate with email?
+16. How does SNS integrate with SMS?
+17. How does SNS integrate with HTTPS?
+18. What is message filtering?
+19. Why use filter policies?
+20. What are message attributes?
+21. How does filtering improve efficiency?
+22. What is FIFO SNS?
+23. What is Standard SNS?
+24. Difference between FIFO and Standard SNS?
+25. What is message ordering?
+26. What is deduplication?
+27. What is content-based deduplication?
+28. What are SNS quotas?
+29. What are SNS limits?
+30. What are SNS costs?
+31. What affects SNS pricing?
+32. What are common SNS use cases?
+33. What are SNS best practices?
+
+---
+
+## SNS Advanced & Architecture (81–150)
+
+81. What is delivery policy?
+82. What is retry policy?
+83. How does SNS handle failures?
+84. What is DLQ integration?
+85. How does SNS support message durability?
+86. What are SNS access policies?
+87. What is topic policy?
+88. How do you secure SNS?
+89. How does encryption work?
+90. How does KMS integrate with SNS?
+91. What CloudWatch metrics exist?
+92. How do you monitor SNS?
+93. What alarms should be configured?
+94. How do you troubleshoot SNS delivery failures?
+95. Why are emails not delivered?
+96. Why are SMS messages delayed?
+97. Why are subscriptions pending confirmation?
+98. What is cross-account SNS?
+99. How does SNS support event-driven architectures?
+100. How does SNS support microservices?
+
+
+Amazon EventBridge Interview Questions (1–200)
+## EventBridge Fundamentals (1–80)
+
+1. What is EventBridge?
+2. Why use EventBridge?
+3. What is event-driven architecture?
+4. How does EventBridge work?
+5. What is an event?
+6. What is an event bus?
+7. What is a rule?
+8. What is an event pattern?
+9. What is a target?
+10. What AWS services generate events?
+11. What SaaS applications integrate with EventBridge?
+12. Difference between EventBridge and SNS?
+13. Difference between EventBridge and SQS?
+14. Difference between EventBridge and Kafka?
+15. What is a default event bus?
+16. What is a custom event bus?
+17. What is a partner event bus?
+18. How does event routing work?
+19. What is content-based routing?
+20. Why use event filtering?
+21. What is schema registry?
+22. What is event archive?
+23. What is event replay?
+24. Why use replay?
+25. What are EventBridge quotas?
+26. What are EventBridge limits?
+27. What are EventBridge costs?
+28. What affects pricing?
+29. What are EventBridge best practices?
+30. What are common EventBridge interview questions?
+    31-80. Event patterns, filtering, event buses, SaaS integrations, scheduling, event processing, retries, DLQs, monitoring, security, troubleshooting.
+
+---
+
+## EventBridge Advanced & Architecture (81–200)
+
+81. What is EventBridge Scheduler?
+82. How does EventBridge Scheduler work?
+83. Difference between Scheduler and cron jobs?
+84. What is event archive?
+85. What is event replay?
+86. What is DLQ support?
+87. What is retry policy?
+88. How do retries work?
+89. What are supported targets?
+90. How does Lambda integrate with EventBridge?
+91. How does ECS integrate with EventBridge?
+92. How does Step Functions integrate?
+93. How does SNS integrate?
+94. How does SQS integrate?
+95. How does API Destination work?
+96. What is API Destination?
+97. What is connection management?
+98. What are event patterns?
+99. How do complex event filters work?
+100. What is event transformation?
+101. What is input transformer?
+102. What is event enrichment?
+103. How do you secure EventBridge?
+104. What IAM permissions are required?
+105. How does encryption work?
+106. What monitoring metrics exist?
+107. How does CloudWatch monitor EventBridge?
+108. What alarms should be configured?
+109. Why are events not delivered?
+110. Why are rules not triggering?
+111. Why are targets failing?
+112. How do you troubleshoot EventBridge?
+113. What are scaling best practices?
+114. What are cost optimization best practices?
+115. Real-world microservices architecture?
+116. Real-world event-driven architecture?
+117. Real-world SaaS integration architecture?
+118. Real-world audit architecture?
+119. Design EventBridge + Lambda architecture.
+120. Design EventBridge + ECS architecture.
+121. Design EventBridge + Step Functions architecture.
+122. Design enterprise event bus architecture.
+123. Design multi-account event architecture.
+124. Design centralized event routing.
+125. Design DR architecture.
+126. Explain event lifecycle.
+127. Explain event routing workflow.
+128. Explain archive and replay workflow.
+129. Explain scheduler workflow.
+130. Compare EventBridge, SNS, SQS, Kafka.
+     131-200. Additional troubleshooting, compliance, governance, security, scaling, enterprise integration, hybrid cloud events, and complete production-grade architecture scenarios.
