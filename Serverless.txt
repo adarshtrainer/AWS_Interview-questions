@@ -1,0 +1,377 @@
+Serverless Fundamentals (1–60)
+
+1. What is serverless computing?
+2. Why use serverless architecture?
+3. What problems does serverless solve?
+4. What are the benefits of serverless?
+5. What are the drawbacks of serverless?
+6. What is Function as a Service (FaaS)?
+7. What is AWS Lambda?
+8. Why was Lambda introduced?
+9. How does Lambda work?
+10. Is Lambda truly serverless?
+11. Who manages infrastructure in Lambda?
+12. What responsibilities remain with customers?
+13. What programming languages are supported?
+14. What runtimes are supported?
+15. Can custom runtimes be used?
+16. What is a Lambda function?
+17. What is a Lambda execution environment?
+18. What is an invocation?
+19. What is event-driven computing?
+20. What are Lambda triggers?
+21. Which AWS services can invoke Lambda?
+22. Can external applications invoke Lambda?
+23. What is synchronous invocation?
+24. What is asynchronous invocation?
+25. Difference between sync and async invocation?
+26. What is polling invocation?
+27. How does Lambda scale?
+28. What is automatic scaling?
+29. What is pay-per-use pricing?
+30. How is Lambda billed?
+31. What affects Lambda cost?
+32. What is request pricing?
+33. What is duration pricing?
+34. What is GB-second?
+35. What memory sizes are supported?
+36. How does memory affect CPU allocation?
+37. How does memory affect performance?
+38. What is Lambda timeout?
+39. What is maximum timeout?
+40. What is Lambda storage?
+41. What is /tmp storage?
+42. What is ephemeral storage?
+43. What is Lambda lifecycle?
+44. What is initialization phase?
+45. What is invocation phase?
+46. What is shutdown phase?
+47. What are Lambda quotas?
+48. What are Lambda limits?
+49. What are Lambda best practices?
+50. What are common Lambda interview questions?
+51. What workloads suit Lambda?
+52. What workloads don't suit Lambda?
+53. What is event-driven architecture?
+54. What is serverless architecture?
+55. What is stateless computing?
+56. Why should Lambda remain stateless?
+57. What is Lambda execution context?
+58. Real-world Lambda use cases?
+59. Real-world serverless architecture?
+60. Design a serverless application.
+
+---
+
+# Lambda Functions & Execution Model (61–130)
+
+61. What is a Lambda handler?
+62. What is an event object?
+63. What is a context object?
+64. How does Lambda receive events?
+65. What is execution environment reuse?
+66. What is execution context reuse?
+67. Why reuse execution environments?
+68. What variables persist between invocations?
+69. What should not be stored in memory?
+70. How do environment variables work?
+71. What is Lambda versioning?
+72. Why use versions?
+73. What is $LATEST?
+74. What is an alias?
+75. Why use aliases?
+76. What is blue-green deployment?
+77. How does Lambda support blue-green deployment?
+78. What is canary deployment?
+79. How does Lambda support canary deployment?
+80. What is weighted routing?
+81. What is Lambda packaging?
+82. What is ZIP deployment?
+83. What is container image deployment?
+84. Difference between ZIP and container deployment?
+85. What is Lambda code storage?
+86. What is deployment package size limit?
+87. What is container image size limit?
+88. What is Lambda runtime update?
+89. What is runtime management?
+90. What is Lambda extension?
+91. Why use extensions?
+92. What is Lambda bootstrap process?
+93. How do function updates work?
+94. What is rollback?
+95. What is deployment automation?
+96. How does CI/CD integrate with Lambda?
+97. What are Lambda deployment best practices?
+98. What are Lambda coding best practices?
+99. What are Lambda architecture best practices?
+100. What are common function interview questions?
+101. Why is Lambda timing out?
+102. Why is Lambda slow?
+103. Why is Lambda failing?
+104. Why is Lambda retrying?
+105. Why is Lambda throttling?
+106. How do you troubleshoot Lambda?
+107. What logs are available?
+108. How does CloudWatch integrate?
+109. What metrics are available?
+110. What alarms should be configured?
+111. What is Lambda monitoring?
+112. What is Lambda observability?
+113. What is distributed tracing?
+114. What is AWS X-Ray?
+115. How does X-Ray integrate with Lambda?
+116. What is end-to-end tracing?
+117. How do you debug Lambda?
+118. How do you test Lambda?
+119. How do you secure Lambda code?
+120. How do you optimize Lambda performance?
+121. Real-world Lambda deployment architecture?
+122. Real-world CI/CD architecture?
+123. Design Lambda deployment workflow.
+124. Design Lambda monitoring architecture.
+125. Explain Lambda execution lifecycle.
+126. Explain Lambda invocation lifecycle.
+127. Explain deployment workflow.
+128. Compare ZIP vs container deployment.
+129. Compare runtime options.
+130. Design enterprise Lambda strategy.
+
+---
+
+# Lambda Layers (131–180)
+
+131. What is a Lambda Layer?
+132. Why use Layers?
+133. What problems do Layers solve?
+134. How do Layers work?
+135. What can be stored in Layers?
+136. Can libraries be stored in Layers?
+137. Can custom code be stored in Layers?
+138. Can binaries be stored in Layers?
+139. How many Layers can a function use?
+140. What are Layer size limits?
+141. What is Layer versioning?
+142. Why use Layer versioning?
+143. How are Layer versions managed?
+144. Can Layers be shared across accounts?
+145. Can Layers be public?
+146. What permissions control Layer access?
+147. How do functions consume Layers?
+148. How are Layers mounted?
+149. What is Layer reuse?
+150. What is dependency management?
+151. Why separate dependencies into Layers?
+152. How do Layers reduce deployment size?
+153. How do Layers improve maintainability?
+154. What are Layer best practices?
+155. What are Layer limitations?
+156. What are common Layer interview questions?
+157. Why is Layer not loading?
+158. Why are dependencies missing?
+159. Why is Layer version incorrect?
+160. How do you troubleshoot Layers?
+161. What is enterprise Layer management?
+162. How do organizations share Layers?
+163. What is centralized dependency management?
+164. What is common utility Layer?
+165. What is monitoring Layer?
+166. What is security Layer?
+167. What is logging Layer?
+168. What is observability Layer?
+169. How do Layers affect cold starts?
+170. How do Layers affect performance?
+171. How do Layers affect costs?
+172. Real-world Layer architecture?
+173. Design shared dependency architecture.
+174. Design enterprise Layer strategy.
+175. Explain Layer lifecycle.
+176. Explain Layer loading workflow.
+177. Compare Layers vs container images.
+178. Compare Layers vs libraries.
+179. Compare public and private Layers.
+180. Design a reusable Layer architecture.
+
+---
+
+# Cold Starts (181–230)
+
+181. What is a cold start?
+182. Why do cold starts occur?
+183. What happens during a cold start?
+184. What is initialization time?
+185. What factors affect cold starts?
+186. How does runtime affect cold starts?
+187. How does package size affect cold starts?
+188. How do Layers affect cold starts?
+189. How does VPC configuration affect cold starts?
+190. Why do VPC Lambdas historically have higher cold starts?
+191. What improvements were made to VPC networking?
+192. What is warm start?
+193. Difference between cold start and warm start?
+194. How do execution environments stay warm?
+195. How long do environments stay warm?
+196. What workloads are sensitive to cold starts?
+197. What workloads are not sensitive?
+198. How do you measure cold starts?
+199. What CloudWatch metrics help?
+200. What is Init Duration?
+201. What is startup latency?
+202. How do you reduce cold starts?
+203. How does Provisioned Concurrency help?
+204. How does memory allocation affect startup?
+205. How do runtimes compare?
+206. Why are Java cold starts slower?
+207. Why are Node.js cold starts faster?
+208. Why are Python cold starts faster?
+209. How do container images affect startup?
+210. What are cold start best practices?
+211. What are common cold start interview questions?
+212. Why is startup latency high?
+213. Why is first request slow?
+214. How do you troubleshoot cold starts?
+215. What monitoring tools help?
+216. How do you benchmark cold starts?
+217. Real-world API latency scenario?
+218. Real-world web application scenario?
+219. Real-world serverless architecture?
+220. Design low-latency Lambda architecture.
+221. Design latency-sensitive APIs.
+222. Design financial transaction processing.
+223. Explain cold start workflow.
+224. Explain warm start workflow.
+225. Explain execution environment reuse.
+226. Compare runtime startup performance.
+227. Compare VPC vs non-VPC startup.
+228. Compare ZIP vs container startup.
+229. Compare cold start mitigation strategies.
+230. Design enterprise low-latency architecture.
+
+---
+
+# Concurrency, Scaling & Performance (231–300)
+
+231. What is concurrency in Lambda?
+232. Why is concurrency important?
+233. How does Lambda scale?
+234. What is concurrent execution?
+235. What is account concurrency limit?
+236. What is reserved concurrency?
+237. Why use reserved concurrency?
+238. How does reserved concurrency work?
+239. What is provisioned concurrency?
+240. Why use provisioned concurrency?
+241. Difference between reserved and provisioned concurrency?
+242. How does provisioned concurrency work?
+243. What is burst concurrency?
+244. How does Lambda burst scaling work?
+245. What is throttling?
+246. Why does throttling occur?
+247. How do you prevent throttling?
+248. What happens when concurrency limits are reached?
+249. How do synchronous invocations behave during throttling?
+250. How do asynchronous invocations behave?
+251. What is event source mapping?
+252. How does SQS scaling work?
+253. How does Kinesis scaling work?
+254. How does DynamoDB Streams scaling work?
+255. What is batch processing?
+256. How does batch size affect performance?
+257. What is parallel processing?
+258. How does memory affect concurrency?
+259. How does CPU allocation affect performance?
+260. What is Lambda Power Tuning?
+261. How do you optimize memory?
+262. How do you optimize cost?
+263. How do you optimize execution time?
+264. What is throughput optimization?
+265. What is latency optimization?
+266. What are scaling best practices?
+267. What are concurrency best practices?
+268. What are common concurrency interview questions?
+269. Why is Lambda throttling?
+270. Why is concurrency exhausted?
+271. Why is throughput low?
+272. How do you troubleshoot concurrency issues?
+273. How do you monitor concurrency?
+274. What CloudWatch metrics matter?
+275. What alarms should be configured?
+276. Real-world scaling architecture?
+277. Real-world API scaling scenario?
+278. Real-world event processing scenario?
+279. Design high-concurrency architecture.
+280. Design high-throughput processing.
+281. Design real-time event processing.
+282. Explain concurrency workflow.
+283. Explain scaling workflow.
+284. Explain throttling workflow.
+285. Explain provisioned concurrency workflow.
+286. Compare scaling strategies.
+287. Compare concurrency controls.
+288. Compare reserved and provisioned concurrency.
+289. Compare Lambda and ECS scaling.
+290. Compare Lambda and EC2 scaling.
+291. Design enterprise scaling strategy.
+292. Design enterprise concurrency strategy.
+293. Design enterprise performance strategy.
+294. Design enterprise cost optimization strategy.
+295. Design enterprise monitoring strategy.
+296. Design enterprise serverless architecture.
+297. Explain end-to-end scaling lifecycle.
+298. Explain performance optimization lifecycle.
+299. Explain concurrency management lifecycle.
+300. Design a complete high-performance Lambda architecture.
+
+---
+
+# Security, Integrations, Monitoring & Architecture (301–350)
+
+301. How does Lambda integrate with IAM?
+302. What is Lambda execution role?
+303. Why use least privilege permissions?
+304. How does Lambda access Secrets Manager?
+305. How does Lambda access Parameter Store?
+306. How does Lambda access S3?
+307. How does Lambda access DynamoDB?
+308. How does Lambda access RDS?
+309. What is VPC integration?
+310. Why place Lambda in a VPC?
+311. What are VPC drawbacks?
+312. How do Security Groups affect Lambda?
+313. How do Subnets affect Lambda?
+314. What is Lambda encryption?
+315. How does KMS integrate with Lambda?
+316. How are environment variables encrypted?
+317. What are Lambda security best practices?
+318. What is Lambda monitoring?
+319. How does CloudWatch integrate?
+320. How does X-Ray integrate?
+321. How do Logs Insights help?
+322. What metrics should be monitored?
+323. What alarms should be configured?
+324. What is error monitoring?
+325. What is performance monitoring?
+326. What is business monitoring?
+327. How does API Gateway integrate with Lambda?
+328. How does SQS integrate with Lambda?
+329. How does SNS integrate with Lambda?
+330. How does EventBridge integrate with Lambda?
+331. How does DynamoDB Streams integrate with Lambda?
+332. How does Kinesis integrate with Lambda?
+333. What are common integration interview questions?
+334. Why is Lambda not triggering?
+335. Why are events being retried?
+336. Why are messages going to DLQ?
+337. How do you troubleshoot integrations?
+338. Real-world serverless architecture?
+339. Real-world event-driven architecture?
+340. Real-world microservices architecture?
+341. Design API Gateway + Lambda architecture.
+342. Design EventBridge + Lambda architecture.
+343. Design SQS + Lambda architecture.
+344. Design DynamoDB Streams + Lambda architecture.
+345. Design secure Lambda architecture.
+346. Design highly available Lambda architecture.
+347. Design enterprise serverless platform.
+348. Compare Lambda, ECS, and EC2.
+349. Explain complete Lambda request lifecycle from trigger to execution and logging.
+350. Design a complete enterprise-grade serverless architecture using Lambda, Layers, Provisioned Concurrency, API Gateway, SQS, SNS, EventBridge, DynamoDB, CloudWatch, X-Ray, IAM, KMS, and automated CI/CD pipelines.
