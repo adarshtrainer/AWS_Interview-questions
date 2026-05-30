@@ -1,1 +1,451 @@
+Security Fundamentals (1–50)
 
+1. What is cloud security?
+2. What is the AWS Shared Responsibility Model?
+3. What security responsibilities belong to AWS?
+4. What security responsibilities belong to customers?
+5. What is defense in depth?
+6. What is least privilege?
+7. What is zero trust?
+8. What is encryption?
+9. What is hashing?
+10. Difference between encryption and hashing?
+11. What is symmetric encryption?
+12. What is asymmetric encryption?
+13. What is key management?
+14. Why is key management important?
+15. What is data at rest?
+16. What is data in transit?
+17. What is data in use?
+18. What is compliance?
+19. What is governance?
+20. What is risk management?
+21. What is vulnerability management?
+22. What is threat detection?
+23. What is incident response?
+24. What is DDoS?
+25. What is brute force attack?
+26. What is SQL injection?
+27. What is XSS?
+28. What is CSRF?
+29. What is malware?
+30. What is ransomware?
+31. What is privilege escalation?
+32. What is lateral movement?
+33. What is security posture?
+34. What is a security baseline?
+35. What is a security control?
+36. What is preventive control?
+37. What is detective control?
+38. What is corrective control?
+39. What AWS services support security?
+40. What AWS services support compliance?
+41. What are common AWS security interview questions?
+42. What are common AWS security best practices?
+43. What AWS certifications focus on security?
+44. How do you secure an AWS account?
+45. How do you secure root users?
+46. How do you secure IAM users?
+47. How do you secure workloads?
+48. How do you secure storage?
+49. How do you secure networking?
+50. Design a secure AWS environment.
+
+---
+
+# AWS KMS (51–130)
+
+51. What is AWS KMS?
+52. Why use KMS?
+53. What problems does KMS solve?
+54. What is a KMS key?
+55. Difference between key and encryption?
+56. What is a CMK?
+57. What is a customer managed key?
+58. What is an AWS managed key?
+59. What is an AWS owned key?
+60. Difference between AWS managed and customer managed keys?
+61. What is symmetric key?
+62. What is asymmetric key?
+63. What is envelope encryption?
+64. How does envelope encryption work?
+65. What is a data key?
+66. What is a master key?
+67. What is DEK?
+68. What is KEK?
+69. What is GenerateDataKey API?
+70. What is Encrypt API?
+71. What is Decrypt API?
+72. What is ReEncrypt API?
+73. What is key rotation?
+74. Why rotate keys?
+75. How does automatic key rotation work?
+76. Can AWS managed keys rotate?
+77. Can customer managed keys rotate?
+78. What is manual key rotation?
+79. What is key policy?
+80. Difference between IAM policy and key policy?
+81. What is grants in KMS?
+82. What are KMS aliases?
+83. Why use aliases?
+84. What is imported key material?
+85. Why import key material?
+86. What happens if imported keys expire?
+87. What is multi-region key?
+88. Why use multi-region keys?
+89. What is HSM?
+90. What is CloudHSM?
+91. Difference between KMS and CloudHSM?
+92. What services integrate with KMS?
+93. How does S3 use KMS?
+94. How does EBS use KMS?
+95. How does RDS use KMS?
+96. How does Secrets Manager use KMS?
+97. How does Lambda use KMS?
+98. What are KMS quotas?
+99. What are KMS costs?
+100. How do you optimize KMS costs?
+101. What happens if a KMS key is disabled?
+102. What happens if a KMS key is deleted?
+103. What is key deletion waiting period?
+104. How do you recover deleted keys?
+105. What is KMS audit logging?
+106. How does CloudTrail integrate with KMS?
+107. How do you monitor key usage?
+108. What are KMS best practices?
+109. What are KMS security risks?
+110. What are common KMS interview questions?
+111. Why is encryption failing?
+112. Why is decryption failing?
+113. Why is AccessDenied occurring?
+114. Why is KMS key unavailable?
+115. How do you troubleshoot KMS?
+116. Real-world KMS architecture?
+117. Real-world encryption architecture?
+118. Real-world compliance architecture?
+119. Design enterprise key management.
+120. Design encryption for banking workloads.
+121. Design encryption for healthcare workloads.
+122. Design multi-account KMS architecture.
+123. Design cross-region encryption strategy.
+124. Design secure backup encryption.
+125. Design secure database encryption.
+126. Design secure storage encryption.
+127. Design secure secrets encryption.
+128. Explain KMS request flow.
+129. Explain envelope encryption flow.
+130. Explain KMS integration architecture.
+
+---
+
+# AWS Secrets Manager (131–180)
+
+131. What is Secrets Manager?
+132. Why use Secrets Manager?
+133. What is a secret?
+134. What types of secrets are stored?
+135. Why not store passwords in code?
+136. Difference between Secrets Manager and Parameter Store?
+137. What is secret rotation?
+138. Why rotate secrets?
+139. How does automatic rotation work?
+140. What services support rotation?
+141. How does Lambda support rotation?
+142. What is rotation schedule?
+143. What is secret versioning?
+144. What is AWSCURRENT?
+145. What is AWSPENDING?
+146. What is AWSPREVIOUS?
+147. What is secret lifecycle?
+148. How are secrets encrypted?
+149. How does KMS integrate with Secrets Manager?
+150. What permissions are required?
+151. How do applications retrieve secrets?
+152. What SDKs support Secrets Manager?
+153. How do containers use secrets?
+154. How do Lambda functions use secrets?
+155. How do EC2 instances use secrets?
+156. How do EKS workloads use secrets?
+157. What are Secrets Manager costs?
+158. How do you reduce costs?
+159. What are Secrets Manager quotas?
+160. What are best practices?
+161. What are security risks?
+162. What are common interview questions?
+163. Why is secret retrieval failing?
+164. Why is rotation failing?
+165. Why is access denied occurring?
+166. How do you troubleshoot Secrets Manager?
+167. How do you audit secret access?
+168. How do you secure database credentials?
+169. How do you secure API keys?
+170. How do you secure third-party tokens?
+171. Real-world secrets architecture?
+172. Real-world database rotation strategy?
+173. Design secrets management for DevOps.
+174. Design secrets management for microservices.
+175. Design secrets management for Kubernetes.
+176. Design secrets management for enterprises.
+177. Explain secret retrieval flow.
+178. Explain secret rotation flow.
+179. Explain Secrets Manager architecture.
+180. Compare Secrets Manager and Parameter Store.
+
+---
+
+# AWS WAF (181–220)
+
+181. What is AWS WAF?
+182. Why use WAF?
+183. What attacks does WAF prevent?
+184. What is SQL Injection?
+185. How does WAF block SQL Injection?
+186. What is XSS?
+187. How does WAF block XSS?
+188. What is IP filtering?
+189. What is rate limiting?
+190. Why use rate limiting?
+191. What is a Web ACL?
+192. What are WAF rules?
+193. What are rule groups?
+194. What are managed rule groups?
+195. What are custom rules?
+196. What is rule priority?
+197. What is allow action?
+198. What is block action?
+199. What is count action?
+200. What is CAPTCHA action?
+201. What is challenge action?
+202. What AWS services integrate with WAF?
+203. How does WAF work with ALB?
+204. How does WAF work with CloudFront?
+205. How does WAF work with API Gateway?
+206. What are WAF logs?
+207. How do you monitor WAF?
+208. What are WAF costs?
+209. What are WAF best practices?
+210. What are common WAF interview questions?
+211. How do you troubleshoot WAF?
+212. Why are requests being blocked?
+213. Why are malicious requests passing through?
+214. How do you tune WAF rules?
+215. Real-world WAF architecture?
+216. Design WAF for e-commerce.
+217. Design WAF for banking.
+218. Design WAF for APIs.
+219. Explain request evaluation flow.
+220. Explain WAF architecture.
+
+---
+
+# AWS Shield (221–250)
+
+221. What is AWS Shield?
+222. Why use Shield?
+223. What is DDoS?
+224. What is volumetric attack?
+225. What is protocol attack?
+226. What is application-layer attack?
+227. What is Shield Standard?
+228. What is Shield Advanced?
+229. Difference between Shield Standard and Advanced?
+230. What protections are automatic?
+231. What protections require Advanced?
+232. What is DDoS Response Team?
+233. What is cost protection?
+234. What AWS services are protected?
+235. How does Shield work with CloudFront?
+236. How does Shield work with Route 53?
+237. How does Shield work with ALB?
+238. How does Shield work with Global Accelerator?
+239. What are Shield metrics?
+240. How do you monitor attacks?
+241. What are Shield costs?
+242. What are Shield best practices?
+243. What are common Shield interview questions?
+244. How do you troubleshoot DDoS attacks?
+245. Real-world DDoS mitigation architecture?
+246. Design DDoS protection for banking.
+247. Design DDoS protection for e-commerce.
+248. Explain attack mitigation workflow.
+249. Explain Shield architecture.
+250. Compare Shield and WAF.
+
+---
+
+# AWS Inspector (251–280)
+
+251. What is AWS Inspector?
+252. Why use Inspector?
+253. What problems does Inspector solve?
+254. What is vulnerability scanning?
+255. How does Inspector work?
+256. What resources can Inspector scan?
+257. How does Inspector scan EC2?
+258. How does Inspector scan ECR?
+259. How does Inspector scan Lambda?
+260. What is CVE?
+261. What is CVSS?
+262. How are findings prioritized?
+263. What severity levels exist?
+264. What are Inspector findings?
+265. How do you review findings?
+266. How do you remediate findings?
+267. How does Inspector integrate with Security Hub?
+268. How does Inspector integrate with EventBridge?
+269. What are Inspector costs?
+270. What are Inspector best practices?
+271. What are common Inspector interview questions?
+272. Why are findings not appearing?
+273. Why is scanning not working?
+274. How do you troubleshoot Inspector?
+275. Real-world vulnerability management workflow?
+276. Design vulnerability management architecture.
+277. Explain Inspector scanning workflow.
+278. Explain Inspector findings workflow.
+279. Explain Inspector architecture.
+280. Compare Inspector and GuardDuty.
+
+---
+
+# AWS GuardDuty & Security Hub (281–350)
+
+281. What is GuardDuty?
+
+282. Why use GuardDuty?
+
+283. How does GuardDuty work?
+
+284. What data sources does GuardDuty use?
+
+285. How does GuardDuty analyze CloudTrail?
+
+286. How does GuardDuty analyze VPC Flow Logs?
+
+287. How does GuardDuty analyze DNS logs?
+
+288. What are GuardDuty findings?
+
+289. What threat types can GuardDuty detect?
+
+290. What is cryptocurrency mining detection?
+
+291. What is anomalous behavior detection?
+
+292. What is compromised credential detection?
+
+293. How does GuardDuty integrate with Security Hub?
+
+294. How does GuardDuty integrate with EventBridge?
+
+295. What are GuardDuty costs?
+
+296. What are GuardDuty best practices?
+
+297. What are common GuardDuty interview questions?
+
+298. Why are findings not appearing?
+
+299. How do you troubleshoot GuardDuty?
+
+300. Explain GuardDuty workflow.
+
+301. What is Security Hub?
+
+302. Why use Security Hub?
+
+303. What problem does Security Hub solve?
+
+304. How does Security Hub work?
+
+305. What is a security finding?
+
+306. What is ASFF?
+
+307. What standards does Security Hub support?
+
+308. What is CIS Benchmark?
+
+309. What is PCI DSS?
+
+310. What is AWS Foundational Security Best Practices?
+
+311. What is Security Score?
+
+312. How are findings aggregated?
+
+313. How does Security Hub integrate with GuardDuty?
+
+314. How does Security Hub integrate with Inspector?
+
+315. How does Security Hub integrate with IAM?
+
+316. How does Security Hub integrate with Config?
+
+317. How does Security Hub integrate with Organizations?
+
+318. What is delegated administrator?
+
+319. What is centralized security management?
+
+320. What are Security Hub costs?
+
+321. What are Security Hub best practices?
+
+322. What are common Security Hub interview questions?
+
+323. How do you troubleshoot Security Hub?
+
+324. Why are findings missing?
+
+325. How do you remediate findings?
+
+326. How do you automate remediation?
+
+327. How do you prioritize findings?
+
+328. Real-world SOC workflow?
+
+329. Real-world cloud security workflow?
+
+330. Design centralized security operations.
+
+331. Design multi-account security monitoring.
+
+332. Design enterprise threat detection.
+
+333. Design compliance monitoring architecture.
+
+334. Explain Security Hub workflow.
+
+335. Explain GuardDuty workflow.
+
+336. Explain Security Hub architecture.
+
+337. Explain centralized security architecture.
+
+338. Compare GuardDuty and Inspector.
+
+339. Compare Security Hub and GuardDuty.
+
+340. Compare Security Hub and AWS Config.
+
+341. Compare WAF and Shield.
+
+342. Compare Secrets Manager and Parameter Store.
+
+343. Compare KMS and CloudHSM.
+
+344. Explain complete AWS security monitoring flow.
+
+345. Explain complete incident response workflow.
+
+346. Explain complete threat detection workflow.
+
+347. Design a banking-grade security architecture.
+
+348. Design a healthcare-grade compliance architecture.
+
+349. Design a multi-account security architecture.
+
+350. Design a complete enterprise AWS security architecture using KMS, Secrets Manager, WAF, Shield, Inspector, GuardDuty, Security Hub, IAM, CloudTrail, Config, Organizations, and automated incident response.
