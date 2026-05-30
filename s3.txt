@@ -1,0 +1,342 @@
+# S3 Fundamentals (1–50)
+
+1. What is Amazon S3?
+2. Why is S3 called object storage?
+3. What are the benefits of S3?
+4. What are the main use cases of S3?
+5. What is an S3 bucket?
+6. What is an S3 object?
+7. What are object metadata?
+8. What is an object key?
+9. What is bucket naming convention?
+10. Are bucket names globally unique?
+11. Why must bucket names be unique?
+12. What is the maximum object size in S3?
+13. What is the maximum bucket size?
+14. Is there a storage limit for S3?
+15. How does S3 achieve scalability?
+16. What is S3 durability?
+17. What does 11 nines durability mean?
+18. Difference between durability and availability?
+19. What is S3 availability SLA?
+20. Is S3 regional or global?
+21. Where is data physically stored?
+22. How does S3 replicate data across AZs?
+23. What is eventual consistency?
+24. Does S3 still use eventual consistency?
+25. What consistency model does S3 use now?
+26. How do you create a bucket?
+27. How do you upload files to S3?
+28. What upload methods are available?
+29. What is multipart upload?
+30. When should multipart upload be used?
+31. What is multipart copy?
+32. What is object ownership?
+33. What is bucket owner enforced?
+34. What is ACL?
+35. What is bucket policy?
+36. Difference between ACL and Bucket Policy?
+37. What is IAM policy?
+38. How does S3 authorization work?
+39. What is a pre-signed URL?
+40. Why use pre-signed URLs?
+41. How long can pre-signed URLs remain valid?
+42. What is object tagging?
+43. Why use object tags?
+44. What is object metadata?
+45. Difference between metadata and tags?
+46. What are user-defined metadata?
+47. What is server-side metadata?
+48. What is S3 inventory?
+49. What is S3 batch operations?
+50. What AWS services commonly integrate with S3?
+
+---
+
+# Bucket Management (51–90)
+
+51. What is bucket policy?
+52. How do bucket policies work?
+53. What are bucket policy conditions?
+54. What is bucket-level permission?
+55. What is object-level permission?
+56. How do you restrict bucket access?
+57. What is public access block?
+58. Why should public access block be enabled?
+59. What is bucket ownership?
+60. What is object ownership?
+61. What is requester pays?
+62. When would you use requester pays?
+63. What is bucket quota?
+64. What is bucket naming best practice?
+65. Can bucket names be changed?
+66. Can buckets be renamed?
+67. How do you move data between buckets?
+68. How do you delete a bucket?
+69. Why might bucket deletion fail?
+70. What happens if versioning is enabled?
+71. What is bucket notification?
+72. What events can trigger notifications?
+73. How do SNS notifications work with S3?
+74. How do SQS notifications work with S3?
+75. How do Lambda triggers work with S3?
+76. What is event-driven architecture using S3?
+77. What is bucket logging?
+78. What is server access logging?
+79. Where should access logs be stored?
+80. What is S3 Inventory Report?
+81. What is Storage Lens?
+82. What is S3 Analytics?
+83. What is bucket tagging?
+84. Why use bucket tags?
+85. What is bucket encryption?
+86. Can encryption be enforced?
+87. What is bucket versioning status?
+88. What bucket metrics are available?
+89. What is bucket replication configuration?
+90. What are bucket best practices?
+
+---
+
+# Versioning (91–120)
+
+91. What is S3 Versioning?
+92. Why use versioning?
+93. How do you enable versioning?
+94. Can versioning be disabled?
+95. What happens when versioning is suspended?
+96. What is a version ID?
+97. How does S3 store multiple versions?
+98. What happens when a file is overwritten?
+99. What happens when a file is deleted?
+100. What is a delete marker?
+101. How do delete markers work?
+102. How can deleted objects be restored?
+103. How do you permanently delete objects?
+104. What are versioning costs?
+105. What are versioning benefits?
+106. What are versioning drawbacks?
+107. How does versioning help ransomware recovery?
+108. How does versioning help disaster recovery?
+109. How do lifecycle rules interact with versions?
+110. What is non-current version?
+111. What is non-current version expiration?
+112. How do you retrieve old versions?
+113. How does replication work with versions?
+114. Is versioning required for replication?
+115. What happens if versioning is disabled after replication?
+116. Can individual versions be restored?
+117. Can version IDs be changed?
+118. How do version conflicts work?
+119. What is MFA delete?
+120. Why use MFA delete?
+
+---
+
+# Lifecycle Policies (121–160)
+
+121. What is an S3 Lifecycle Policy?
+122. Why use lifecycle policies?
+123. How do lifecycle rules work?
+124. What actions can lifecycle policies perform?
+125. What is object transition?
+126. What is object expiration?
+127. How do you archive old data?
+128. What is non-current version transition?
+129. What is non-current version expiration?
+130. What is lifecycle filtering?
+131. How do prefix filters work?
+132. How do tag filters work?
+133. What are lifecycle rule priorities?
+134. Can multiple lifecycle rules exist?
+135. How do lifecycle conflicts get resolved?
+136. What happens if lifecycle rule fails?
+137. How long before lifecycle actions occur?
+138. Can lifecycle move objects to Glacier?
+139. Can lifecycle delete objects?
+140. Can lifecycle delete versions?
+141. What is retention management?
+142. What are lifecycle best practices?
+143. How do lifecycle rules reduce cost?
+144. How do lifecycle rules affect compliance?
+145. Can lifecycle restore archived data?
+146. What happens if object lock exists?
+147. Can lifecycle bypass retention?
+148. What are common lifecycle interview scenarios?
+149. How do lifecycle policies support backup strategies?
+150. How do lifecycle policies support DR?
+151. How would you archive logs older than 90 days?
+152. How would you delete logs after 7 years?
+153. How would you retain backups for compliance?
+154. How do you test lifecycle policies?
+155. How do you monitor lifecycle actions?
+156. What is lifecycle cost optimization?
+157. What are lifecycle limitations?
+158. Can lifecycle operate across buckets?
+159. Can lifecycle restore Glacier data automatically?
+160. Real-world lifecycle implementation example?
+
+---
+
+# Storage Classes (161–210)
+
+161. What are S3 storage classes?
+162. Why are storage classes needed?
+163. What is S3 Standard?
+164. When should S3 Standard be used?
+165. What is S3 Intelligent-Tiering?
+166. How does Intelligent-Tiering work?
+167. What is S3 Standard-IA?
+168. What is One Zone-IA?
+169. Difference between Standard-IA and One Zone-IA?
+170. What is Glacier Instant Retrieval?
+171. What is Glacier Flexible Retrieval?
+172. What is Glacier Deep Archive?
+173. What is Reduced Redundancy Storage?
+174. Is RRS still recommended?
+175. What storage class is cheapest?
+176. Which class provides fastest retrieval?
+177. Which class is best for backups?
+178. Which class is best for logs?
+179. Which class is best for compliance archives?
+180. Which class is best for frequently accessed files?
+181. What is retrieval cost?
+182. What is storage cost?
+183. What is minimum storage duration charge?
+184. What happens if data is deleted early?
+185. How does Intelligent Tiering save money?
+186. What monitoring fees exist?
+187. How do lifecycle policies use storage classes?
+188. How do you select the right storage class?
+189. How do storage classes affect performance?
+190. Do storage classes affect durability?
+191. Do storage classes affect availability?
+192. How do storage classes affect retrieval speed?
+193. How do you migrate between storage classes?
+194. What is automatic tiering?
+195. What are archive tiers?
+196. What is archive retrieval?
+197. How long does Glacier retrieval take?
+198. How long does Deep Archive retrieval take?
+199. How do you restore archived objects?
+200. What are storage class best practices?
+201. Production scenario: media storage?
+202. Production scenario: backup storage?
+203. Production scenario: audit logs?
+204. Production scenario: financial records?
+205. Production scenario: CCTV archives?
+206. Production scenario: static website assets?
+207. Production scenario: machine learning datasets?
+208. Production scenario: application logs?
+209. Production scenario: DR backups?
+210. Storage class cost optimization scenario?
+
+---
+
+# Replication (211–240)
+
+211. What is S3 Replication?
+212. Why use replication?
+213. What is CRR?
+214. What is SRR?
+215. Difference between CRR and SRR?
+216. Why is versioning required?
+217. What is replication rule?
+218. How does replication work?
+219. What metadata gets replicated?
+220. What does not get replicated?
+221. Can delete markers replicate?
+222. Can existing objects replicate?
+223. What is Batch Replication?
+224. How does replication support DR?
+225. How does replication support compliance?
+226. How does replication support low latency?
+227. What is replication time control (RTC)?
+228. What SLA does RTC provide?
+229. How do you monitor replication?
+230. What causes replication failures?
+231. How do you troubleshoot replication issues?
+232. Can encrypted objects replicate?
+233. Can KMS encrypted objects replicate?
+234. What IAM permissions are required?
+235. What are replication costs?
+236. What are replication best practices?
+237. How would you replicate data to another region?
+238. How would you replicate only specific objects?
+239. How would you replicate based on tags?
+240. Real-world replication architecture?
+
+---
+
+# Object Lock & Compliance (241–260)
+
+241. What is S3 Object Lock?
+242. Why use Object Lock?
+243. What is WORM storage?
+244. What is Governance Mode?
+245. What is Compliance Mode?
+246. Difference between Governance and Compliance?
+247. Can Object Lock be disabled?
+248. Can locked objects be deleted?
+249. Can locked objects be modified?
+250. What is retention period?
+251. What is legal hold?
+252. Difference between retention and legal hold?
+253. How do legal holds work?
+254. What compliance standards require Object Lock?
+255. How does Object Lock prevent ransomware?
+256. What are Object Lock limitations?
+257. What are Object Lock best practices?
+258. How would you implement SEC compliance?
+259. How would you implement audit retention?
+260. Real-world Object Lock use case?
+
+---
+
+# Transfer Acceleration & Static Website Hosting (261–280)
+
+261. What is S3 Transfer Acceleration?
+262. Why use Transfer Acceleration?
+263. How does Transfer Acceleration work?
+264. How does CloudFront help Transfer Acceleration?
+265. When should Transfer Acceleration be used?
+266. What are Transfer Acceleration costs?
+267. How do you test acceleration performance?
+268. What are limitations of Transfer Acceleration?
+269. What is S3 Static Website Hosting?
+270. How do you host a static website on S3?
+271. What files are required?
+272. What is index.html?
+273. What is error.html?
+274. Difference between website endpoint and REST endpoint?
+275. Why does Access Denied occur?
+276. How do bucket policies enable hosting?
+277. How do you secure static websites?
+278. Why use CloudFront with S3 website?
+279. How do you use Route53 with S3?
+280. Production architecture for static websites?
+
+---
+
+# Security, Troubleshooting & Architecture (281–300)
+
+281. What encryption options exist in S3?
+282. Difference between SSE-S3, SSE-KMS, and SSE-C?
+283. What is client-side encryption?
+284. How do you enforce encryption?
+285. What is KMS integration?
+286. What is bucket key?
+287. Why is Access Denied occurring?
+288. Why is upload failing?
+289. Why is download failing?
+290. Why is replication not working?
+291. Why is lifecycle not working?
+292. Why is version restoration failing?
+293. Why is website hosting failing?
+294. How do you investigate S3 access?
+295. How do you audit bucket permissions?
+296. How do you design a secure S3 architecture?
+297. How do you design a backup architecture using S3?
+298. How do you design a multi-region disaster recovery architecture using S3?
+299. What are the most common S3 interview questions for 5-year AWS Engineers?
+300. Design a complete enterprise-grade S3 solution covering security, compliance, lifecycle, replication, backup, monitoring, and cost optimization.
