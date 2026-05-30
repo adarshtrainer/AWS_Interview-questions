@@ -1,0 +1,468 @@
+ Migration Fundamentals (1–50)
+
+1. What is cloud migration?
+2. Why do organizations migrate to AWS?
+3. What are the common migration strategies?
+4. What are the 7 Rs of migration?
+5. What is Rehost?
+6. What is Replatform?
+7. What is Refactor?
+8. What is Repurchase?
+9. What is Relocate?
+10. What is Retain?
+11. What is Retire?
+12. What is lift and shift migration?
+13. What is application modernization?
+14. What are migration waves?
+15. What is migration planning?
+16. What is migration assessment?
+17. What is migration readiness?
+18. What is application dependency mapping?
+19. What is migration discovery?
+20. What is migration portfolio assessment?
+21. What is cutover?
+22. What is rollback plan?
+23. What is migration testing?
+24. What is migration validation?
+25. What is pilot migration?
+26. What is production migration?
+27. What is downtime?
+28. What is near-zero downtime migration?
+29. What is business continuity during migration?
+30. What is migration risk assessment?
+31. What is migration governance?
+32. What is migration runbook?
+33. What is migration automation?
+34. What AWS services support migration?
+35. What is AWS Migration Hub?
+36. What is AWS Application Discovery Service?
+37. What is AWS DataSync?
+38. What is AWS Transfer Family?
+39. What is AWS Snowball?
+40. What is AWS Snowmobile?
+41. What are migration best practices?
+42. What are common migration interview questions?
+43. What migration challenges exist?
+44. How do you reduce migration risk?
+45. How do you estimate migration effort?
+46. What are migration KPIs?
+47. What is migration success criteria?
+48. Real-world migration use cases?
+49. Design a migration strategy.
+50. Explain migration lifecycle.
+
+---
+
+# AWS Database Migration Service (DMS) Fundamentals (51–130)
+
+51. What is AWS DMS?
+
+52. Why use DMS?
+
+53. What problems does DMS solve?
+
+54. How does DMS work?
+
+55. What are DMS components?
+
+56. What is a replication instance?
+
+57. What is a source endpoint?
+
+58. What is a target endpoint?
+
+59. What is a replication task?
+
+60. What databases are supported by DMS?
+
+61. Can DMS migrate homogeneous databases?
+
+62. Can DMS migrate heterogeneous databases?
+
+63. What is homogeneous migration?
+
+64. What is heterogeneous migration?
+
+65. Difference between homogeneous and heterogeneous migration?
+
+66. What source databases are supported?
+
+67. What target databases are supported?
+
+68. Does DMS support Oracle?
+
+69. Does DMS support SQL Server?
+
+70. Does DMS support MySQL?
+
+71. Does DMS support PostgreSQL?
+
+72. Does DMS support MongoDB?
+
+73. Does DMS support DynamoDB?
+
+74. Does DMS support Redshift?
+
+75. Does DMS support S3?
+
+76. What migration methods does DMS support?
+
+77. What is Full Load migration?
+
+78. What is CDC?
+
+79. What is Change Data Capture?
+
+80. How does CDC work?
+
+81. Why use CDC?
+
+82. What is Full Load + CDC?
+
+83. What are DMS migration types?
+
+84. Which migration type minimizes downtime?
+
+85. What is transaction log replication?
+
+86. How does DMS read source changes?
+
+87. What is replication latency?
+
+88. What is source latency?
+
+89. What is target latency?
+
+90. How do you monitor migration progress?
+
+91. What are DMS replication instance classes?
+
+92. How do you size replication instances?
+
+93. What storage types are supported?
+
+94. What are DMS limits?
+
+95. What are DMS quotas?
+
+96. What are DMS costs?
+
+97. What affects DMS pricing?
+
+98. What are DMS best practices?
+
+99. What are common DMS interview questions?
+
+100. Real-world DMS architecture?
+
+101. What is AWS SCT?
+
+102. What is AWS Schema Conversion Tool?
+
+103. Why use SCT with DMS?
+
+104. What can SCT convert?
+
+105. What cannot be converted automatically?
+
+106. How does SCT work?
+
+107. Difference between DMS and SCT?
+
+108. When is SCT required?
+
+109. What is schema migration?
+
+110. What is data migration?
+
+111. What is code conversion?
+
+112. What is stored procedure conversion?
+
+113. What is function conversion?
+
+114. What is trigger conversion?
+
+115. What is assessment report?
+
+116. How does SCT generate reports?
+
+117. What migration complexity reports exist?
+
+118. What is manual remediation?
+
+119. What are schema conversion challenges?
+
+120. Real-world Oracle to PostgreSQL migration?
+
+121. Explain DMS architecture.
+
+122. Explain DMS replication workflow.
+
+123. Explain CDC workflow.
+
+124. Explain Full Load workflow.
+
+125. Explain Full Load + CDC workflow.
+
+126. Design a database migration strategy.
+
+127. Design a near-zero downtime database migration.
+
+128. Compare DMS and native database replication.
+
+129. Compare DMS and backup-restore migration.
+
+130. Design enterprise database migration architecture.
+
+---
+
+# AWS DMS Advanced & Troubleshooting (131–180)
+
+131. Why is DMS replication slow?
+
+132. Why is CDC lagging?
+
+133. Why is migration failing?
+
+134. Why is schema conversion failing?
+
+135. Why are records missing?
+
+136. Why is replication latency increasing?
+
+137. How do you troubleshoot DMS?
+
+138. What CloudWatch metrics should be monitored?
+
+139. What DMS logs should be checked?
+
+140. What are common migration errors?
+
+141. How do you secure DMS?
+
+142. How does IAM integrate with DMS?
+
+143. How does KMS integrate with DMS?
+
+144. How does SSL/TLS work with DMS?
+
+145. How do you secure migration traffic?
+
+146. What are DMS security best practices?
+
+147. How does DMS support compliance?
+
+148. What is encrypted migration?
+
+149. What is endpoint authentication?
+
+150. How do Security Groups affect DMS?
+
+151. What is Multi-AZ replication instance?
+
+152. How does DMS support HA?
+
+153. What is DMS failover?
+
+154. What is migration rollback?
+
+155. How do you test migrations?
+
+156. How do you validate migrated data?
+
+157. What is row count validation?
+
+158. What is checksum validation?
+
+159. What is application testing after migration?
+
+160. What is cutover planning?
+
+161. Real-world banking migration?
+
+162. Real-world healthcare migration?
+
+163. Real-world e-commerce migration?
+
+164. Design Oracle to Aurora migration.
+
+165. Design SQL Server to PostgreSQL migration.
+
+166. Design MongoDB to DynamoDB migration.
+
+167. Design multi-terabyte migration.
+
+168. Design cross-region migration.
+
+169. Explain migration cutover workflow.
+
+170. Explain rollback workflow.
+
+171. Compare DMS and DataSync.
+
+172. Compare DMS and Snowball.
+
+173. Compare DMS and native replication.
+
+174. Compare Full Load and CDC.
+
+175. Compare DMS and logical replication.
+
+176. Compare DMS and backup restore.
+
+177. Design migration governance architecture.
+
+178. Design migration monitoring architecture.
+
+179. Design migration security architecture.
+
+180. Design complete enterprise database migration solution.
+
+---
+
+# AWS Application Migration Service (MGN) Fundamentals (181–230)
+
+181. What is AWS Application Migration Service (MGN)?
+
+182. Why use MGN?
+
+183. What problems does MGN solve?
+
+184. What is lift-and-shift migration?
+
+185. How does MGN work?
+
+186. What are MGN components?
+
+187. What is a source server?
+
+188. What is a replication agent?
+
+189. What is a staging area subnet?
+
+190. What is a replication server?
+
+191. What operating systems are supported?
+
+192. Does MGN support Linux?
+
+193. Does MGN support Windows?
+
+194. What workloads can be migrated?
+
+195. What workloads cannot be migrated?
+
+196. How does continuous replication work?
+
+197. What is block-level replication?
+
+198. Why use continuous replication?
+
+199. What is replication lag?
+
+200. What is migration cutover?
+
+201. How does MGN minimize downtime?
+
+202. What is test migration?
+
+203. What is cutover migration?
+
+204. Difference between test and cutover?
+
+205. What is launch configuration?
+
+206. What is post-launch action?
+
+207. What is right-sizing?
+
+208. How does MGN support right-sizing?
+
+209. What is automated conversion?
+
+210. What AWS resources are created?
+
+211. What are MGN quotas?
+
+212. What are MGN limits?
+
+213. What are MGN costs?
+
+214. What affects pricing?
+
+215. What are MGN best practices?
+
+216. What are common MGN interview questions?
+
+217. What are migration prerequisites?
+
+218. How do you prepare source servers?
+
+219. How do you validate migrations?
+
+220. How do you plan migration waves?
+
+221. Explain MGN architecture.
+
+222. Explain replication workflow.
+
+223. Explain test migration workflow.
+
+224. Explain cutover workflow.
+
+225. Design application migration strategy.
+
+226. Design large-scale server migration.
+
+227. Design migration wave planning.
+
+228. Design multi-region migration.
+
+229. Compare MGN and VM Import/Export.
+
+230. Design enterprise application migration architecture.
+
+---
+
+# MGN Advanced, DR & Enterprise Migration Architecture (231–250)
+
+231. Why is replication failing?
+
+232. Why is migration failing?
+
+233. Why are launch tests failing?
+
+234. Why is replication lag high?
+
+235. How do you troubleshoot MGN?
+
+236. What logs should be checked?
+
+237. What metrics should be monitored?
+
+238. How do Security Groups affect migration?
+
+239. How do IAM permissions affect migration?
+
+240. What are MGN security best practices?
+
+241. How does MGN support disaster recovery?
+
+242. What is pilot-light DR architecture?
+
+243. What is warm standby DR architecture?
+
+244. What is active-passive architecture?
+
+245. What is active-active architecture?
+
+246. Compare AWS DMS and AWS MGN.
+
+247. Compare Rehost, Replatform, and Refactor migration approaches.
+
+248. Explain complete application migration lifecycle from discovery to cutover.
+
+249. Explain complete database migration lifecycle from assessment to validation.
+
+250. Design a complete enterprise migration architecture using AWS DMS, AWS SCT, AWS MGN, Migration Hub, Application Discovery Service, DataSync, CloudWatch, IAM, KMS, and automated migration wave planning for thousands of servers and databases.
