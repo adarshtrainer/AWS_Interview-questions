@@ -1,0 +1,282 @@
+# Subnets (1–40)
+
+1. How do you design subnet strategy for a production VPC?
+2. How many subnets should exist in a 3-tier architecture?
+3. Why create multiple private subnets?
+4. Why create multiple public subnets?
+5. How do subnets affect high availability?
+6. What happens when subnet IPs are exhausted?
+7. How do Auto Scaling Groups behave when a subnet runs out of IPs?
+8. How do EKS clusters consume subnet IPs?
+9. How do Load Balancers consume subnet IPs?
+10. What is subnet fragmentation?
+11. What is subnet sizing strategy?
+12. How do you plan IP allocation for 1000 servers?
+13. How do you migrate workloads to a larger subnet?
+14. What is subnet CIDR reservation?
+15. Can two subnets overlap?
+16. Why can't overlapping subnets communicate?
+17. What is dual-stack subnetting?
+18. What is IPv6-only subnet?
+19. What is public subnet routing flow?
+20. What is private subnet routing flow?
+21. What is isolated subnet?
+22. What workloads belong in isolated subnets?
+23. What is database subnet design?
+24. Why should databases remain private?
+25. What is application subnet design?
+26. What is DMZ subnet design?
+27. How do you secure public subnets?
+28. How do you secure private subnets?
+29. What are subnet route dependencies?
+30. How do you monitor subnet utilization?
+31. What is AWS IPAM subnet management?
+32. What subnet challenges exist in enterprises?
+33. What is subnet expansion strategy?
+34. What is subnet migration strategy?
+35. What are common subnet interview scenarios?
+36. How do you troubleshoot subnet communication?
+37. How do you troubleshoot subnet routing?
+38. What are subnet best practices?
+39. What are subnet anti-patterns?
+40. Design a subnet strategy for a multi-tier application.
+
+---
+
+## Route Tables (41–80)
+
+41. Explain packet flow through route tables.
+42. What is route precedence?
+43. What is longest prefix matching?
+44. Why is longest prefix matching important?
+45. What is route propagation?
+46. What is dynamic route propagation?
+47. How do propagated routes differ from static routes?
+48. What causes blackhole routes?
+49. How do you detect blackhole routes?
+50. What happens if target resource is deleted?
+51. Can multiple route tables be associated to one subnet?
+52. How do route tables affect internet access?
+53. How do route tables affect peering?
+54. How do route tables affect Transit Gateway?
+55. How do route tables affect VPC Endpoints?
+56. How do route tables affect VPN?
+57. How do route tables affect Direct Connect?
+58. What is route asymmetry?
+59. What is route convergence?
+60. What is route failover?
+61. How do you troubleshoot route failures?
+62. How do you troubleshoot internet access?
+63. How do you troubleshoot TGW routing?
+64. How do you troubleshoot peering routes?
+65. How do you troubleshoot endpoint routes?
+66. How do route conflicts occur?
+67. How do route priorities work?
+68. How does AWS choose a route?
+69. What are route table best practices?
+70. What are route table limitations?
+71. What is centralized routing?
+72. What is distributed routing?
+73. What is route summarization?
+74. Why is route summarization useful?
+75. How does route scaling work?
+76. What is route optimization?
+77. What are common route interview scenarios?
+78. What are route anti-patterns?
+79. How would you audit route tables?
+80. Design routing for a multi-region architecture.
+
+---
+
+## Security Groups (81–120)
+
+81. Why are Security Groups stateful?
+82. Explain SG packet flow.
+83. Can Security Groups block traffic?
+84. Why don't Security Groups support deny rules?
+85. How are SGs evaluated?
+86. What is SG referencing?
+87. Why reference Security Groups instead of IPs?
+88. Can SGs be attached to multiple resources?
+89. What are default SG rules?
+90. Why is default SG risky?
+91. How do SGs affect ALB?
+92. How do SGs affect EC2?
+93. How do SGs affect EFS?
+94. How do SGs affect RDS?
+95. How do SGs affect Lambda in VPC?
+96. How do SGs affect EKS?
+97. What is least privilege SG design?
+98. What are common SG mistakes?
+99. How do you audit Security Groups?
+100. How do you identify open ports?
+101. How do you identify risky rules?
+102. What is SG sprawl?
+103. How do you prevent SG sprawl?
+104. What is transitive trust risk?
+105. How do SG references affect security?
+106. What is east-west security?
+107. What is north-south security?
+108. How do SGs work with NACLs?
+109. What happens if SG allows and NACL denies?
+110. How do you troubleshoot SG issues?
+111. What are common SG interview scenarios?
+112. How do you secure SSH?
+113. How do you secure RDP?
+114. How do you secure databases?
+115. How do you secure APIs?
+116. What are SG best practices?
+117. What are SG limitations?
+118. How would you design enterprise SG architecture?
+119. How would you audit SG compliance?
+120. Design SGs for a production e-commerce platform.
+
+---
+
+## Network ACLs (121–150)
+
+121. Why are NACLs stateless?
+122. How are NACL rules evaluated?
+123. What is rule order?
+124. What happens if no rule matches?
+125. Difference between SG and NACL?
+126. Why use NACLs when SGs exist?
+127. What is subnet-level security?
+128. What is network-level security?
+129. How do NACLs affect return traffic?
+130. What are ephemeral ports?
+131. Why are ephemeral ports important in NACLs?
+132. How do NACLs affect ALB?
+133. How do NACLs affect EC2?
+134. How do NACLs affect NAT Gateway?
+135. How do NACLs affect VPC Endpoints?
+136. What are common NACL mistakes?
+137. How do you audit NACLs?
+138. How do you troubleshoot NACL issues?
+139. How do you block malicious IPs?
+140. How do you implement subnet isolation?
+141. What is deny-based security?
+142. What is allow-based security?
+143. What are NACL best practices?
+144. What are NACL limitations?
+145. What is NACL rule conflict?
+146. What is NACL scaling?
+147. What are NACL interview scenarios?
+148. How do you secure public subnets?
+149. How do you secure private subnets?
+150. Design NACL strategy for banking workloads.
+
+---
+
+## Internet Gateway & NAT Gateway (151–190)
+
+151. Explain Internet Gateway packet flow.
+152. How does IGW provide internet access?
+153. Why is IGW highly available?
+154. Can IGW fail?
+155. What happens if IGW is detached?
+156. What is NAT Gateway?
+157. Why is NAT Gateway needed?
+158. How does NAT Gateway work?
+159. What traffic passes through NAT?
+160. Why can't inbound internet reach NAT clients?
+161. What is source NAT?
+162. How does NAT translation occur?
+163. What is NAT Gateway throughput?
+164. What are NAT Gateway limits?
+165. Is NAT Gateway AZ-specific?
+166. Why deploy NAT per AZ?
+167. What is centralized NAT architecture?
+168. What are NAT Gateway costs?
+169. How do you reduce NAT costs?
+170. What causes NAT bottlenecks?
+171. How do you troubleshoot NAT failures?
+172. How do you monitor NAT traffic?
+173. What is egress architecture?
+174. What is secure egress architecture?
+175. What is internet breakout?
+176. What is outbound-only architecture?
+177. What is egress filtering?
+178. What is NAT Instance?
+179. Difference between NAT Instance and NAT Gateway?
+180. When should NAT Instance be used?
+181. How do NACLs affect NAT?
+182. How do SGs affect NAT?
+183. What are common NAT interview scenarios?
+184. Why is internet access failing from private subnet?
+185. Why is software update failing from private subnet?
+186. Why is yum update failing?
+187. Why is apt update failing?
+188. Why is Docker pull failing?
+189. Design internet access for private workloads.
+190. Design highly available NAT architecture.
+
+---
+
+## VPC Endpoints (191–220)
+
+191. What is a VPC Endpoint?
+192. Why use VPC Endpoints?
+193. Difference between Gateway and Interface Endpoint?
+194. What services support Gateway Endpoints?
+195. What services support Interface Endpoints?
+196. How do Interface Endpoints work?
+197. What is PrivateLink?
+198. Difference between PrivateLink and Endpoint?
+199. How do endpoints reduce NAT costs?
+200. How do endpoints improve security?
+201. What is endpoint policy?
+202. How does endpoint routing work?
+203. How do DNS entries work with endpoints?
+204. What is private DNS?
+205. What is endpoint ENI?
+206. How do endpoints affect traffic flow?
+207. How do endpoints affect S3 access?
+208. How do endpoints affect DynamoDB access?
+209. How do endpoints affect Lambda access?
+210. How do endpoints affect CloudWatch access?
+211. What are endpoint costs?
+212. What are endpoint limitations?
+213. How do you troubleshoot endpoint issues?
+214. Why is endpoint DNS failing?
+215. Why is endpoint access denied?
+216. How do you audit endpoints?
+217. What are endpoint best practices?
+218. Design secure S3 access using endpoints.
+219. Design private AWS service access.
+220. Design endpoint architecture for enterprises.
+
+---
+
+## VPC Peering & Transit Gateway (221–250)
+
+221. What is VPC Peering?
+222. How does VPC Peering work?
+223. What are peering limitations?
+224. Why is peering non-transitive?
+225. What is overlapping CIDR problem?
+226. How do you troubleshoot peering?
+227. What is Transit Gateway?
+228. Why use Transit Gateway?
+229. Difference between TGW and Peering?
+230. What is hub-and-spoke architecture?
+231. What is TGW route table?
+232. What is TGW attachment?
+233. How does TGW scale?
+234. How many VPCs can connect to TGW?
+235. What is centralized networking?
+236. What is centralized security inspection?
+237. What is inspection VPC?
+238. How do TGWs support hybrid networking?
+239. How do TGWs support VPN?
+240. How do TGWs support Direct Connect?
+241. What is route propagation in TGW?
+242. What is route association in TGW?
+243. How do you troubleshoot TGW?
+244. What causes TGW routing failures?
+245. What are TGW best practices?
+246. What are TGW limitations?
+247. What are common TGW interview scenarios?
+248. Design networking for 100 VPCs.
+249. Design hybrid cloud networking using TGW.
+250. Design a complete enterprise AWS networking architecture using VPCs, Subnets, Route Tables, Security Groups, NACLs, NAT Gateways, Internet Gateways, VPC Endpoints, Transit Gateway, VPN, and Direct Connect.
