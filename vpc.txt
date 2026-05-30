@@ -1,0 +1,332 @@
+## VPC Fundamentals (1–50)
+
+1. What is Amazon VPC?
+2. Why do we need a VPC?
+3. What are the benefits of VPC?
+4. What is the default VPC?
+5. What components make up a VPC?
+6. What is a CIDR block?
+7. What is IPv4 CIDR notation?
+8. What is IPv6 CIDR notation?
+9. What is the smallest CIDR block AWS allows?
+10. What is the largest CIDR block AWS allows?
+11. How many IPs are available in a /24 subnet?
+12. How many IPs are reserved by AWS in every subnet?
+13. What are the AWS reserved IP addresses?
+14. What is a subnet?
+15. Difference between VPC and subnet?
+16. What is a public subnet?
+17. What is a private subnet?
+18. How do you identify whether a subnet is public or private?
+19. Can a VPC span multiple AZs?
+20. Can a subnet span multiple AZs?
+21. What is regional scope in VPC?
+22. What is Availability Zone scope?
+23. How do you create a VPC?
+24. What happens when a VPC is created?
+25. What is the default route table?
+26. What is the default security group?
+27. Can a VPC exist without subnets?
+28. Can a subnet exist without a VPC?
+29. What is VPC tenancy?
+30. Difference between default and dedicated tenancy?
+31. What is a network boundary?
+32. Why is VPC logically isolated?
+33. What is a custom VPC?
+34. What are best practices for VPC design?
+35. Why should CIDR planning be done carefully?
+36. What happens if CIDR ranges overlap?
+37. How many VPCs can be created per region?
+38. Can CIDR be modified after VPC creation?
+39. What is secondary CIDR?
+40. Why use secondary CIDR?
+41. Can multiple CIDRs be attached?
+42. What is BYOIP?
+43. What is private networking?
+44. What is east-west traffic?
+45. What is north-south traffic?
+46. What are VPC limits?
+47. What are soft limits?
+48. What are hard limits?
+49. How do you request limit increases?
+50. What AWS services are commonly deployed inside VPC?
+
+---
+
+## Subnets & IP Addressing (51–100)
+
+51. What is subnetting?
+52. Why subnet a VPC?
+53. Difference between subnet and CIDR?
+54. How do you calculate subnet sizes?
+55. How many IPs exist in /28?
+56. How many IPs exist in /27?
+57. How many IPs exist in /26?
+58. How many IPs exist in /25?
+59. How many IPs exist in /24?
+60. How many usable IPs remain after AWS reservation?
+61. What is subnet exhaustion?
+62. How do you avoid IP exhaustion?
+63. What happens if a subnet runs out of IPs?
+64. How do Auto Scaling Groups get affected?
+65. Can subnet CIDR be changed?
+66. Can a subnet be resized?
+67. How do you migrate to a larger subnet?
+68. What is IPv6 addressing?
+69. Difference between IPv4 and IPv6?
+70. Why use IPv6?
+71. Can EC2 have both IPv4 and IPv6?
+72. What is dual-stack networking?
+73. What is public IPv4 assignment?
+74. What is private IPv4 assignment?
+75. What is Elastic IP?
+76. Difference between Elastic IP and private IP?
+77. Can Elastic IP move between instances?
+78. What is IP fragmentation?
+79. What is MTU?
+80. What is Jumbo Frame?
+81. What is AWS supported MTU?
+82. How to troubleshoot IP conflicts?
+83. What is DHCP?
+84. What DHCP options set?
+85. How does DNS work inside VPC?
+86. What is AmazonProvidedDNS?
+87. What is internal hostname?
+88. What is external hostname?
+89. What is reverse DNS?
+90. How are EC2 private IPs assigned?
+91. How are public IPs assigned?
+92. Can private IPs be manually assigned?
+93. Can secondary private IPs be assigned?
+94. Why use secondary private IPs?
+95. What is IPAM?
+96. Why use AWS IPAM?
+97. What are IPAM pools?
+98. What are IPAM scopes?
+99. How do enterprises manage thousands of VPC CIDRs?
+100. What are CIDR overlap challenges?
+
+---
+
+## Route Tables & Routing (101–140)
+
+101. What is a route table?
+102. Why is route table required?
+103. What is local route?
+104. Can local route be deleted?
+105. What is route propagation?
+106. What is route priority?
+107. How does AWS choose routes?
+108. What is longest prefix match?
+109. What is default route?
+110. What is 0.0.0.0/0?
+111. What is ::/0?
+112. How do routes work in public subnet?
+113. How do routes work in private subnet?
+114. What is custom route table?
+115. Can one route table serve multiple subnets?
+116. Can one subnet use multiple route tables?
+117. How do route table associations work?
+118. What is subnet association?
+119. What happens if no route exists?
+120. What causes blackhole routes?
+121. How do you identify blackhole routes?
+122. What is route target?
+123. What route targets can AWS use?
+124. Can routes point to IGW?
+125. Can routes point to NAT Gateway?
+126. Can routes point to TGW?
+127. Can routes point to VGW?
+128. Can routes point to VPC Endpoint?
+129. Can routes point to ENI?
+130. What is route convergence?
+131. What is asymmetric routing?
+132. What is packet routing?
+133. How to troubleshoot route issues?
+134. What is traffic flow?
+135. What causes routing loops?
+136. Can AWS route tables create loops?
+137. What is dynamic routing?
+138. What is static routing?
+139. Difference between dynamic and static routes?
+140. Best practices for route table design?
+
+---
+
+## Internet Connectivity (141–180)
+
+141. What is Internet Gateway?
+142. Why do we need Internet Gateway?
+143. How does IGW work?
+144. Can one IGW attach to multiple VPCs?
+145. Can a VPC have multiple IGWs?
+146. What is NAT Gateway?
+147. Why use NAT Gateway?
+148. Difference between NAT Gateway and Internet Gateway?
+149. What is NAT Instance?
+150. Difference between NAT Gateway and NAT Instance?
+151. What is managed NAT?
+152. Can private instances access internet?
+153. How do private subnets access internet?
+154. What is egress-only internet gateway?
+155. Why is egress-only gateway needed?
+156. How does IPv6 internet access work?
+157. What is outbound-only access?
+158. Can internet directly reach private subnet?
+159. What is public accessibility?
+160. What is private accessibility?
+161. What are internet routing requirements?
+162. What happens if IGW is detached?
+163. How to troubleshoot internet access failure?
+164. Why is instance unable to reach internet?
+165. Why can internet not reach instance?
+166. What is source NAT?
+167. What is destination NAT?
+168. How does NAT Gateway scale?
+169. What are NAT Gateway limits?
+170. Is NAT Gateway AZ-specific?
+171. What is high availability NAT design?
+172. What happens if NAT Gateway fails?
+173. How to make NAT highly available?
+174. How much does NAT Gateway cost?
+175. What are NAT Gateway cost optimization techniques?
+176. When should NAT Instance be used?
+177. What are NAT security considerations?
+178. What is internet breakout?
+179. What is centralized internet access?
+180. What is secure internet egress architecture?
+
+---
+
+## Security (181–220)
+
+181. What is Security Group?
+182. Why is Security Group stateful?
+183. What is Network ACL?
+184. Why is NACL stateless?
+185. Difference between SG and NACL?
+186. Which is evaluated first?
+187. Can Security Group deny traffic?
+188. Can NACL deny traffic?
+189. What are inbound rules?
+190. What are outbound rules?
+191. What is ephemeral port?
+192. Why are ephemeral ports important?
+193. What happens if return traffic is blocked?
+194. What is least privilege networking?
+195. What are SG best practices?
+196. What are NACL best practices?
+197. What is Security Group referencing?
+198. Can one SG reference another SG?
+199. What is VPC Flow Log?
+200. Why use Flow Logs?
+201. Where can Flow Logs be stored?
+202. Difference between Flow Logs and CloudTrail?
+203. What traffic is captured in Flow Logs?
+204. What traffic is not captured?
+205. What is packet-level visibility?
+206. How do you troubleshoot blocked traffic?
+207. What causes connection timeout?
+208. What causes connection refused?
+209. What causes intermittent connectivity?
+210. How do you investigate suspicious traffic?
+211. What is AWS Network Firewall?
+212. What is AWS WAF?
+213. Difference between Network Firewall and WAF?
+214. What is IDS?
+215. What is IPS?
+216. How does GuardDuty help VPC security?
+217. How does Security Hub integrate with VPC?
+218. How would you secure a production VPC?
+219. What is micro-segmentation?
+220. What is zero-trust networking?
+
+---
+
+## VPC Connectivity (221–260)
+
+221. What is VPC Peering?
+222. Why use VPC Peering?
+223. What are peering limitations?
+224. Can transitive routing occur in peering?
+225. What is overlapping CIDR issue?
+226. How do you troubleshoot VPC peering?
+227. What is Transit Gateway?
+228. Why use Transit Gateway?
+229. Difference between TGW and Peering?
+230. What is hub-and-spoke architecture?
+231. What is AWS Cloud WAN?
+232. What is Virtual Private Gateway?
+233. What is Customer Gateway?
+234. What is Site-to-Site VPN?
+235. How does VPN work?
+236. What is IPSec VPN?
+237. What is Direct Connect?
+238. Difference between VPN and Direct Connect?
+239. What is DX Gateway?
+240. What is private VIF?
+241. What is public VIF?
+242. What is transit VIF?
+243. What is hybrid cloud networking?
+244. What is multi-cloud networking?
+245. What is TGW route table?
+246. What is TGW attachment?
+247. What is centralized networking?
+248. What is shared services VPC?
+249. What is AWS RAM?
+250. How do you share subnets across accounts?
+251. What is cross-account VPC access?
+252. What is centralized security VPC?
+253. What is inspection VPC?
+254. What is service insertion?
+255. What is east-west inspection?
+256. What is north-south inspection?
+257. How do enterprises connect hundreds of VPCs?
+258. What are TGW scaling limits?
+259. What are peering scaling limits?
+260. What architecture is recommended for large enterprises?
+
+---
+
+## Advanced Architecture & Troubleshooting (261–300)
+
+261. Design a highly available VPC architecture.
+262. Design a VPC for a 3-tier application.
+263. Design a VPC for an e-commerce platform.
+264. Design a VPC for banking workloads.
+265. Design a VPC for healthcare workloads.
+266. Design a multi-region VPC architecture.
+267. Design a hybrid cloud architecture.
+268. Design centralized internet egress.
+269. Design centralized logging architecture.
+270. Design centralized security architecture.
+271. Design VPC architecture for Kubernetes.
+272. Design VPC architecture for EKS.
+273. Design VPC architecture for ECS.
+274. Design a shared services VPC.
+275. How do you isolate environments (Dev/Test/Prod)?
+276. How do you avoid CIDR overlap across accounts?
+277. How do you scale networking for 500 VPCs?
+278. Instance cannot access internet. Troubleshoot.
+279. Internet cannot access instance. Troubleshoot.
+280. SSH not working. Troubleshoot.
+281. RDP not working. Troubleshoot.
+282. VPC Peering not working. Troubleshoot.
+283. TGW routing issue. Troubleshoot.
+284. VPN tunnel down. Troubleshoot.
+285. Direct Connect latency issue. Troubleshoot.
+286. Flow Logs show REJECT. What next?
+287. Security Group looks correct but traffic fails. Why?
+288. Route table looks correct but traffic fails. Why?
+289. NAT Gateway working intermittently. Troubleshoot.
+290. DNS resolution failing inside VPC. Troubleshoot.
+291. Application works internally but not externally. Troubleshoot.
+292. How do you perform network packet analysis in AWS?
+293. How do you perform root-cause analysis of network outages?
+294. How do you audit VPC security posture?
+295. How do you optimize VPC costs?
+296. What are the most common VPC interview mistakes candidates make?
+297. What VPC topics are most frequently asked in 3-year DevOps interviews?
+298. What VPC topics are most frequently asked in 5-year AWS Architect interviews?
+299. What real-world VPC challenges have you solved?
+300. Explain a complete production VPC architecture from internet request to application response, including routing, security, monitoring, and hybrid connectivity.
