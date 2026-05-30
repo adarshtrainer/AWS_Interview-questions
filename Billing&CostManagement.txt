@@ -1,0 +1,560 @@
+AWS Billing Fundamentals (1–70)
+
+1. What is AWS Billing?
+2. How does AWS billing work?
+3. What is pay-as-you-go pricing?
+4. What are AWS pricing models?
+5. What is on-demand pricing?
+6. What is reserved pricing?
+7. What is spot pricing?
+8. What is Savings Plan pricing?
+9. What is AWS Free Tier?
+10. What Free Tier options exist?
+11. Difference between Free Tier and paid usage?
+12. What is AWS consolidated billing?
+13. What is AWS Organizations billing?
+14. What is a payer account?
+15. What is a member account?
+16. What are linked accounts?
+17. Why use consolidated billing?
+18. What are billing benefits of Organizations?
+19. What is cost allocation?
+20. What are cost allocation tags?
+21. Why use cost allocation tags?
+22. What are user-defined tags?
+23. What are AWS-generated tags?
+24. What is cost visibility?
+25. What is cost governance?
+26. What is FinOps?
+27. Why is FinOps important?
+28. What is cloud financial management?
+29. What are AWS billing reports?
+30. What is Cost and Usage Report (CUR)?
+31. Why use CUR?
+32. What information does CUR provide?
+33. What is AWS billing dashboard?
+34. What is invoice generation?
+35. What are AWS credits?
+36. How are credits applied?
+37. What is tax handling in AWS?
+38. What are billing alerts?
+39. What are AWS quotas?
+40. What are service quotas?
+41. What is resource optimization?
+42. What is cost optimization?
+43. What are cost optimization pillars?
+44. What is right-sizing?
+45. What is idle resource detection?
+46. What is resource utilization analysis?
+47. What is forecasting?
+48. What is budget planning?
+49. What are common AWS billing interview questions?
+50. What are AWS cost management best practices?
+51. What causes high AWS bills?
+52. How do you investigate unexpected charges?
+53. How do you identify cost spikes?
+54. How do you reduce AWS costs?
+55. What are common cost optimization techniques?
+56. What is cloud waste?
+57. How do you eliminate cloud waste?
+58. What is resource lifecycle management?
+59. What is cost accountability?
+60. What is chargeback?
+61. What is showback?
+62. Real-world cost optimization scenarios?
+63. Real-world FinOps use cases?
+64. Design cost governance strategy.
+65. Design cost allocation strategy.
+66. Design enterprise billing architecture.
+67. Explain AWS billing lifecycle.
+68. Explain cost management lifecycle.
+69. Explain cost optimization lifecycle.
+70. Design enterprise FinOps framework.
+
+---
+
+# AWS Cost Explorer (71–130)
+
+71. What is AWS Cost Explorer?
+
+72. Why use Cost Explorer?
+
+73. What problems does Cost Explorer solve?
+
+74. How does Cost Explorer work?
+
+75. What data sources does Cost Explorer use?
+
+76. How often is Cost Explorer updated?
+
+77. What historical data is available?
+
+78. What forecasting capabilities exist?
+
+79. How does forecasting work?
+
+80. What dimensions can be analyzed?
+
+81. What filters are available?
+
+82. How do you filter by service?
+
+83. How do you filter by account?
+
+84. How do you filter by region?
+
+85. How do you filter by tags?
+
+86. How do you filter by usage type?
+
+87. What grouping options exist?
+
+88. What is daily cost analysis?
+
+89. What is monthly cost analysis?
+
+90. What is service-based cost analysis?
+
+91. How do you identify top-spending services?
+
+92. How do you identify unused resources?
+
+93. How do you identify cost spikes?
+
+94. How do you analyze trends?
+
+95. How do you compare time periods?
+
+96. What is amortized cost?
+
+97. What is unblended cost?
+
+98. What is blended cost?
+
+99. Difference between blended and unblended cost?
+
+100. Difference between actual and amortized cost?
+
+101. What are Cost Explorer recommendations?
+
+102. What is RI recommendation?
+
+103. What is Savings Plan recommendation?
+
+104. How accurate are recommendations?
+
+105. What are Cost Explorer limitations?
+
+106. What are Cost Explorer costs?
+
+107. What are Cost Explorer best practices?
+
+108. What are common Cost Explorer interview questions?
+
+109. Why are costs increasing?
+
+110. How do you troubleshoot unexpected billing?
+
+111. Real-world cost analysis workflow?
+
+112. Real-world optimization workflow?
+
+113. Design cost visibility strategy.
+
+114. Design multi-account cost reporting.
+
+115. Explain Cost Explorer architecture.
+
+116. Explain forecasting workflow.
+
+117. Explain recommendation workflow.
+
+118. Compare Cost Explorer and CUR.
+
+119. Compare Cost Explorer and Budgets.
+
+120. Design enterprise cost analytics platform.
+
+121-130. Advanced forecasting, anomaly detection, trend analysis, enterprise reporting, executive dashboards, chargeback, showback, and FinOps governance questions.
+
+---
+
+# AWS Budgets (131–180)
+
+131. What is AWS Budgets?
+
+132. Why use AWS Budgets?
+
+133. What problems do Budgets solve?
+
+134. How does AWS Budgets work?
+
+135. What budget types exist?
+
+136. What is a cost budget?
+
+137. What is a usage budget?
+
+138. What is a reservation budget?
+
+139. What is a Savings Plan budget?
+
+140. Difference between budget types?
+
+141. How do budget alerts work?
+
+142. What thresholds can be configured?
+
+143. How do notifications work?
+
+144. What notification channels are supported?
+
+145. How does SNS integrate with Budgets?
+
+146. What is budget forecasting?
+
+147. How does forecasting work?
+
+148. What is actual spend tracking?
+
+149. What is projected spend tracking?
+
+150. What are budget actions?
+
+151. What automated actions are supported?
+
+152. Can Budgets stop resources?
+
+153. Can Budgets apply IAM policies?
+
+154. Can Budgets restrict spending?
+
+155. How do budget actions work?
+
+156. What are Budgets best practices?
+
+157. What are Budgets limitations?
+
+158. What are Budgets costs?
+
+159. What are common Budgets interview questions?
+
+160. How do you prevent overspending?
+
+161. Why did a budget alert not trigger?
+
+162. Why is budget forecasting inaccurate?
+
+163. How do you troubleshoot Budgets?
+
+164. Real-world budget governance?
+
+165. Real-world cost control architecture?
+
+166. Design budget strategy.
+
+167. Design automated cost control.
+
+168. Design department-level budgets.
+
+169. Explain budget lifecycle.
+
+170. Explain budget action workflow.
+
+171-180. Advanced governance, automated remediation, enterprise budget controls, multi-account budgeting, and executive reporting questions.
+
+---
+
+# AWS Trusted Advisor (181–230)
+
+181. What is AWS Trusted Advisor?
+
+182. Why use Trusted Advisor?
+
+183. What problems does Trusted Advisor solve?
+
+184. How does Trusted Advisor work?
+
+185. What categories does Trusted Advisor cover?
+
+186. What is cost optimization category?
+
+187. What is security category?
+
+188. What is performance category?
+
+189. What is fault tolerance category?
+
+190. What is service limits category?
+
+191. What checks are available?
+
+192. What cost optimization recommendations exist?
+
+193. How does Trusted Advisor identify idle resources?
+
+194. How does Trusted Advisor identify underutilized EC2 instances?
+
+195. How does Trusted Advisor identify unattached EBS volumes?
+
+196. How does Trusted Advisor identify idle load balancers?
+
+197. How does Trusted Advisor identify RI opportunities?
+
+198. What security checks exist?
+
+199. What fault tolerance checks exist?
+
+200. What performance checks exist?
+
+201. What are Trusted Advisor limitations?
+
+202. What support plans are required?
+
+203. What are Trusted Advisor best practices?
+
+204. What are common Trusted Advisor interview questions?
+
+205. How do you use Trusted Advisor for optimization?
+
+206. How do you prioritize recommendations?
+
+207. What is recommendation lifecycle?
+
+208. How do you implement recommendations?
+
+209. What is operational excellence through Trusted Advisor?
+
+210. How does Trusted Advisor integrate with Organizations?
+
+211. Real-world optimization scenario?
+
+212. Real-world governance scenario?
+
+213. Design cost optimization workflow.
+
+214. Design governance strategy.
+
+215. Explain Trusted Advisor architecture.
+
+216. Explain recommendation workflow.
+
+217. Compare Trusted Advisor and Cost Explorer.
+
+218. Compare Trusted Advisor and Compute Optimizer.
+
+219. Compare Trusted Advisor and Security Hub.
+
+220. Design enterprise optimization platform.
+
+221-230. Advanced governance, recommendation management, enterprise operations, compliance integration, and optimization frameworks.
+
+---
+
+# Savings Plans (231–290)
+
+231. What is a Savings Plan?
+
+232. Why use Savings Plans?
+
+233. What problems do Savings Plans solve?
+
+234. How do Savings Plans work?
+
+235. What commitment is required?
+
+236. What term options exist?
+
+237. What payment options exist?
+
+238. What discount levels are available?
+
+239. What workloads suit Savings Plans?
+
+240. What workloads do not suit Savings Plans?
+
+241. What types of Savings Plans exist?
+
+242. What is Compute Savings Plan?
+
+243. What is EC2 Instance Savings Plan?
+
+244. Difference between Compute and EC2 Instance Savings Plans?
+
+245. Which provides greater flexibility?
+
+246. Which provides greater savings?
+
+247. What services are covered?
+
+248. Does Compute Savings Plan cover Lambda?
+
+249. Does Compute Savings Plan cover Fargate?
+
+250. Does Compute Savings Plan cover EC2?
+
+251. How are Savings Plans applied?
+
+252. What is commitment utilization?
+
+253. What is commitment coverage?
+
+254. How do you monitor Savings Plans?
+
+255. What are Savings Plan recommendations?
+
+256. How are recommendations generated?
+
+257. What are Savings Plan costs?
+
+258. What are Savings Plan best practices?
+
+259. What are Savings Plan limitations?
+
+260. What are common Savings Plan interview questions?
+
+261. When should Savings Plans be purchased?
+
+262. How do you size commitments?
+
+263. How do you avoid overcommitting?
+
+264. How do you avoid underutilization?
+
+265. How do you optimize Savings Plans?
+
+266. Real-world Savings Plan strategy?
+
+267. Design Savings Plan optimization.
+
+268. Design cost reduction strategy.
+
+269. Explain Savings Plan lifecycle.
+
+270. Explain recommendation workflow.
+
+271-290. Advanced utilization analysis, enterprise purchasing strategies, forecasting, governance, FinOps operations, and optimization scenarios.
+
+---
+
+# Reserved Instances (291–350)
+
+291. What is a Reserved Instance (RI)?
+
+292. Why use Reserved Instances?
+
+293. What problems do RIs solve?
+
+294. How do RIs work?
+
+295. What commitment is required?
+
+296. What RI terms are available?
+
+297. What payment options exist?
+
+298. What discounts are available?
+
+299. What workloads suit RIs?
+
+300. What workloads do not suit RIs?
+
+301. What RI types exist?
+
+302. What is Standard RI?
+
+303. What is Convertible RI?
+
+304. Difference between Standard and Convertible RI?
+
+305. Which provides more flexibility?
+
+306. Which provides more savings?
+
+307. What is regional RI?
+
+308. What is zonal RI?
+
+309. Difference between regional and zonal RI?
+
+310. What capacity reservation benefits exist?
+
+311. How are RIs applied?
+
+312. What is RI coverage?
+
+313. What is RI utilization?
+
+314. How do you monitor RI usage?
+
+315. What RI recommendations exist?
+
+316. How are RI recommendations generated?
+
+317. What are RI best practices?
+
+318. What are RI limitations?
+
+319. What are RI costs?
+
+320. What are common RI interview questions?
+
+321. When should RIs be used instead of Savings Plans?
+
+322. When should Savings Plans be used instead of RIs?
+
+323. How do you choose between Standard and Convertible RI?
+
+324. How do you optimize RI utilization?
+
+325. What is RI modification?
+
+326. What is RI exchange?
+
+327. How do Convertible RI exchanges work?
+
+328. What is RI marketplace?
+
+329. Can RIs be sold?
+
+330. What are RI risks?
+
+331. Real-world RI optimization strategy?
+
+332. Design RI purchasing strategy.
+
+333. Design long-term cost optimization.
+
+334. Explain RI lifecycle.
+
+335. Explain RI recommendation workflow.
+
+336. Compare Savings Plans and Reserved Instances.
+
+337. Compare Standard and Convertible RI.
+
+338. Compare Compute Savings Plans and EC2 Instance Savings Plans.
+
+339. Explain complete AWS cost optimization workflow.
+
+340. Design complete FinOps governance architecture.
+
+341. How would you reduce a 40% AWS bill increase?
+
+342. How would you identify unused AWS resources?
+
+343. How would you optimize EC2 costs?
+
+344. How would you optimize RDS costs?
+
+345. How would you optimize S3 costs?
+
+346. How would you optimize Lambda costs?
+
+347. How would you optimize EKS costs?
+
+348. How would you design enterprise chargeback and showback?
+
+349. How would you implement organization-wide cost governance?
+
+350. Design a complete enterprise cost management solution using Cost Explorer, Budgets, Trusted Advisor, Savings Plans, Reserved Instances, CUR, Organizations, tagging strategy, automated reporting, anomaly detection, and FinOps governance.
