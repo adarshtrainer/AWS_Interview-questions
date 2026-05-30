@@ -1,0 +1,409 @@
+ ECS Basics
+
+1. What is Amazon ECS?
+2. Why use ECS?
+3. What problems does ECS solve?
+4. What is container orchestration?
+5. How does ECS work?
+6. What are ECS components?
+7. What is an ECS cluster?
+8. What is a container instance?
+9. What is a task?
+10. What is a task definition?
+11. What is a service?
+12. What is a launch type?
+13. What launch types does ECS support?
+14. Difference between ECS and Docker?
+15. Difference between ECS and Kubernetes?
+16. Difference between ECS and EKS?
+17. What is ECS Anywhere?
+18. What workloads suit ECS?
+19. What workloads do not suit ECS?
+20. What are ECS benefits?
+
+### Task Definitions
+
+21. What is a task definition?
+22. Why are task definitions required?
+23. What is a container definition?
+24. What parameters exist in task definitions?
+25. What is CPU allocation?
+26. What is memory allocation?
+27. What are port mappings?
+28. What are environment variables?
+29. What are secrets?
+30. What are log drivers?
+31. What are IAM task roles?
+32. What is task execution role?
+33. Difference between task role and execution role?
+34. What are task definition revisions?
+35. How does versioning work?
+
+### ECS Services
+
+36. What is an ECS service?
+37. Why use ECS services?
+38. How does service scheduling work?
+39. What is desired count?
+40. What is running count?
+41. What is deployment configuration?
+42. What is minimum healthy percent?
+43. What is maximum percent?
+44. What is rolling deployment?
+45. How does ECS perform deployments?
+46. What is blue-green deployment?
+47. How does ECS integrate with CodeDeploy?
+48. What is deployment circuit breaker?
+49. How does ECS recover failed deployments?
+
+### ECS Scheduling
+
+50. What is ECS scheduler?
+51. What scheduling strategies exist?
+52. What is Replica scheduling?
+53. What is Daemon scheduling?
+54. When should Replica scheduling be used?
+55. When should Daemon scheduling be used?
+56. How does task placement work?
+57. What are placement constraints?
+58. What are placement strategies?
+59. What is binpack strategy?
+60. What is spread strategy?
+
+### ECS Networking
+
+61. What networking modes exist?
+62. What is bridge mode?
+63. What is host mode?
+64. What is awsvpc mode?
+65. Difference between networking modes?
+66. Why is awsvpc recommended?
+67. How does ECS integrate with VPC?
+68. How do Security Groups work?
+69. How do Load Balancers integrate?
+70. How does Service Discovery work?
+
+### ECS Monitoring & Security
+
+71. How does CloudWatch integrate?
+72. What metrics are available?
+73. What logs are available?
+74. How does ECS integrate with X-Ray?
+75. What are ECS security best practices?
+76. What IAM permissions are required?
+77. How do task roles work?
+78. How do secrets work?
+79. How does ECS integrate with Secrets Manager?
+80. How does ECS integrate with Parameter Store?
+
+### ECS Troubleshooting
+
+81. Why is a task not starting?
+82. Why is a service unstable?
+83. Why are tasks restarting?
+84. Why is ECS failing deployments?
+85. Why is Load Balancer health check failing?
+86. Why is ECS scaling not working?
+87. Why is service discovery failing?
+88. How do you troubleshoot ECS?
+89. What logs should be checked?
+90. What metrics should be monitored?
+
+### ECS Architecture & Scenarios
+
+91. Design ECS architecture for microservices.
+92. Design ECS architecture for APIs.
+93. Design ECS architecture for batch jobs.
+94. Design ECS architecture for e-commerce.
+95. Compare ECS and EC2.
+96. Compare ECS and Lambda.
+97. Compare ECS and Kubernetes.
+98. Explain ECS deployment workflow.
+99. Explain ECS scaling workflow.
+100. Explain ECS networking workflow.
+
+
+---
+
+# AWS Fargate (121–220)
+
+121. What is AWS Fargate?
+
+122. Why use Fargate?
+
+123. What problems does Fargate solve?
+
+124. Difference between ECS EC2 and Fargate?
+
+125. Difference between EKS EC2 and Fargate?
+
+126. Is Fargate serverless?
+
+127. What infrastructure does AWS manage?
+
+128. What responsibilities remain with users?
+
+129. How does Fargate work?
+
+130. What workloads suit Fargate?
+
+131. What are Fargate task sizes?
+
+132. What CPU options exist?
+
+133. What memory options exist?
+
+134. How are resources billed?
+
+135. What affects Fargate pricing?
+
+136. What are Fargate limits?
+
+137. What are Fargate quotas?
+
+138. What networking model does Fargate use?
+
+139. Why does Fargate require awsvpc?
+
+140. How do ENIs work?
+
+141. How does Fargate scale?
+
+142. How does Auto Scaling work?
+
+143. How do Load Balancers integrate?
+
+144. How does Service Discovery work?
+
+145. How do Security Groups work?
+
+146. How do IAM roles work?
+
+147. How does logging work?
+
+148. How does monitoring work?
+
+149. How do secrets work?
+
+150. How do volumes work?
+
+151. What are Fargate security best practices?
+
+152. What are Fargate performance best practices?
+
+153. What are Fargate cost optimization best practices?
+
+154. What are common Fargate interview questions?
+
+155. Why are Fargate tasks failing?
+
+156. Why is networking failing?
+
+157. Why is image pulling failing?
+
+158. Why is task startup slow?
+
+159. How do you troubleshoot Fargate?
+
+160. What metrics should be monitored?
+
+# Amazon EKS (221–420)
+
+### EKS Fundamentals
+
+221. What is Amazon EKS?
+
+222. Why use EKS?
+
+223. What problems does EKS solve?
+
+224. What is Kubernetes?
+
+225. Why was Kubernetes created?
+
+226. What is container orchestration?
+
+227. Difference between ECS and EKS?
+
+228. Difference between EKS and self-managed Kubernetes?
+
+229. What components does EKS manage?
+
+230. What is control plane?
+
+231. What is kube-apiserver?
+
+232. What is etcd?
+
+233. What is scheduler?
+
+234. What is controller manager?
+
+235. How does EKS manage control plane?
+
+236. Is control plane highly available?
+
+237. How does EKS provide HA?
+
+### Worker Nodes
+
+238. What are worker nodes?
+239. What is a node group?
+240. What is managed node group?
+241. What is self-managed node group?
+242. Difference between managed and self-managed?
+243. What is a pod?
+244. What is a deployment?
+245. What is a replica set?
+246. What is a daemonset?
+247. What is a statefulset?
+248. What is a job?
+249. What is a cronjob?
+250. What is a namespace?
+
+### Networking
+
+251. How does EKS networking work?
+252. What is the AWS VPC CNI?
+253. How do pods get IP addresses?
+254. What is pod networking?
+255. What is service networking?
+256. What is ClusterIP?
+257. What is NodePort?
+258. What is LoadBalancer service?
+259. What is Ingress?
+260. What is AWS Load Balancer Controller?
+
+### Storage
+
+261. How does storage work in EKS?
+262. What is Persistent Volume?
+263. What is Persistent Volume Claim?
+264. What is Storage Class?
+265. How does EBS integrate?
+266. How does EFS integrate?
+267. What is CSI driver?
+
+### Security
+
+268. What is RBAC?
+269. How does RBAC work?
+270. What is service account?
+271. What is IAM Roles for Service Accounts (IRSA)?
+272. Why use IRSA?
+273. How does IRSA work?
+274. What is pod security?
+275. What is network policy?
+
+### Scaling
+
+276. What is Horizontal Pod Autoscaler?
+277. What is Vertical Pod Autoscaler?
+278. What is Cluster Autoscaler?
+279. How does Cluster Autoscaler work?
+280. How does HPA work?
+
+### Monitoring
+
+281. How does CloudWatch integrate?
+282. How does Prometheus integrate?
+283. How does Grafana integrate?
+284. What metrics should be monitored?
+285. What logs should be monitored?
+
+### Troubleshooting
+
+286. Why is a pod pending?
+287. Why is a pod crashing?
+288. Why is ImagePullBackOff occurring?
+289. Why is CrashLoopBackOff occurring?
+290. Why is service discovery failing?
+291. Why is ingress not working?
+292. How do you troubleshoot EKS?
+293. How do you troubleshoot networking?
+294. How do you troubleshoot storage?
+295. How do you troubleshoot RBAC?
+
+### Advanced EKS
+---
+
+# Amazon ECR (421–500)
+
+### ECR Fundamentals
+
+421. What is Amazon ECR?
+422. Why use ECR?
+423. What problems does ECR solve?
+424. What is a container registry?
+425. Difference between ECR and Docker Hub?
+426. Difference between ECR and Harbor?
+427. How does ECR work?
+428. What is a repository?
+429. What is an image?
+430. What is an image tag?
+
+### Image Management
+
+431. How do you push images?
+432. How do you pull images?
+433. What is image versioning?
+434. What is image tagging strategy?
+435. What is latest tag?
+436. Why avoid latest tag?
+437. What is immutable tagging?
+438. Why use immutable tags?
+439. What are lifecycle policies?
+440. Why use lifecycle policies?
+
+### Security
+
+441. How does authentication work?
+442. How does IAM integrate with ECR?
+443. What permissions are required?
+444. What is image scanning?
+445. How does vulnerability scanning work?
+446. What is enhanced scanning?
+447. What is basic scanning?
+448. What is Inspector integration?
+449. How does encryption work?
+450. How does KMS integrate?
+
+### Replication & Governance
+
+451. What is cross-region replication?
+452. Why use replication?
+453. What is cross-account replication?
+454. What are repository policies?
+455. What is pull-through cache?
+456. Why use pull-through cache?
+457. What are repository lifecycle policies?
+458. How do you clean old images?
+459. How do you manage image retention?
+460. How do you manage compliance?
+
+### Monitoring & Troubleshooting
+
+461. How do you monitor ECR?
+462. What CloudWatch metrics exist?
+463. Why is image push failing?
+464. Why is image pull failing?
+465. Why is authentication failing?
+466. Why is scanning not working?
+467. How do you troubleshoot ECR?
+468. What logs should be checked?
+469. What metrics should be monitored?
+
+### Architecture & Scenarios
+
+470. Design ECR for ECS.
+471. Design ECR for EKS.
+472. Design ECR for multi-account environments.
+473. Design ECR for CI/CD pipelines.
+474. Design secure image management.
+475. Design enterprise image governance.
+476. Compare ECR and Docker Hub.
+477. Compare ECR and Artifact Registry.
+478. Explain image lifecycle.
+479. Explain image scanning workflow.
+480. Explain image replication workflow.
+
