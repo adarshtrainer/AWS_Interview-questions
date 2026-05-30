@@ -1,0 +1,327 @@
+ DynamoDB Fundamentals (1–70)
+
+1. What is DynamoDB?
+2. Why use DynamoDB?
+3. What is NoSQL?
+4. Difference between SQL and NoSQL?
+5. What problems does DynamoDB solve?
+6. What are the benefits of DynamoDB?
+7. What type of database is DynamoDB?
+8. Is DynamoDB serverless?
+9. How does DynamoDB scale?
+10. What is a table in DynamoDB?
+11. What is an item?
+12. What is an attribute?
+13. What is a primary key?
+14. What is a partition key?
+15. What is a sort key?
+16. What is a composite key?
+17. What is a simple primary key?
+18. What is a table schema?
+19. Is DynamoDB schema-less?
+20. What data types does DynamoDB support?
+21. What is eventual consistency?
+22. What is strong consistency?
+23. Difference between eventual and strong consistency?
+24. Which operations support strong consistency?
+25. Does DynamoDB support joins?
+26. Why doesn't DynamoDB support joins?
+27. Does DynamoDB support transactions?
+28. What are DynamoDB transactions?
+29. What is ACID in DynamoDB?
+30. What is single-digit millisecond latency?
+31. Why is DynamoDB fast?
+32. What workloads suit DynamoDB?
+33. What workloads don't suit DynamoDB?
+34. What are DynamoDB limits?
+35. What are DynamoDB quotas?
+36. Is DynamoDB regional?
+37. How is data stored internally?
+38. What is horizontal partitioning?
+39. How does DynamoDB distribute data?
+40. What is hashing in DynamoDB?
+41. What is data distribution?
+42. What is throughput?
+43. What is request unit?
+44. What is WCU?
+45. What is RCU?
+46. How are RCUs calculated?
+47. How are WCUs calculated?
+48. What is item size limit?
+49. What is table size limit?
+50. What are DynamoDB pricing components?
+51. How do you optimize DynamoDB costs?
+52. What are DynamoDB best practices?
+53. What are common DynamoDB interview questions?
+54. What are common DynamoDB use cases?
+55. What is a key-value database?
+56. What is a document database?
+57. Can DynamoDB act as both?
+58. What are DynamoDB APIs?
+59. What SDKs support DynamoDB?
+60. What is the AWS CLI support?
+61. What are DynamoDB metrics?
+62. How do you monitor DynamoDB?
+63. What CloudWatch metrics matter?
+64. What is table lifecycle?
+65. What is item lifecycle?
+66. What is DynamoDB governance?
+67. What is DynamoDB compliance?
+68. Real-world DynamoDB architecture?
+69. Real-world use case?
+70. Design an application using DynamoDB.
+
+---
+
+# Partition Keys & Data Modeling (71–140)
+
+71. What is a partition key?
+72. Why is partition key important?
+73. How does DynamoDB use partition keys?
+74. What is a hash function?
+75. How are partition keys hashed?
+76. What is physical partition?
+77. What is logical partition?
+78. How many partitions can a table have?
+79. What causes partition creation?
+80. What is partition splitting?
+81. What is partition throughput?
+82. What is a hot partition?
+83. Why do hot partitions occur?
+84. How do you identify hot partitions?
+85. How do you avoid hot partitions?
+86. What is partition key cardinality?
+87. Why is high cardinality important?
+88. What is low cardinality?
+89. What problems does low cardinality cause?
+90. What is key distribution?
+91. What is skewed traffic?
+92. What is write sharding?
+93. What is random suffix sharding?
+94. What is calculated sharding?
+95. What is sort key?
+96. Why use sort keys?
+97. How does composite key work?
+98. What is hierarchical data modeling?
+99. How do you model one-to-many relationships?
+100. How do you model many-to-many relationships?
+101. What is single-table design?
+102. Why use single-table design?
+103. What is access pattern design?
+104. Why start with access patterns?
+105. What is denormalization?
+106. Why is denormalization common in DynamoDB?
+107. How do you model user data?
+108. How do you model orders?
+109. How do you model e-commerce workloads?
+110. How do you model chat applications?
+111. How do you model IoT workloads?
+112. What is adjacency list pattern?
+113. What is inverted index pattern?
+114. What is materialized aggregation?
+115. What are sparse indexes?
+116. What is a GSI?
+117. What is an LSI?
+118. Difference between GSI and LSI?
+119. What are GSI limits?
+120. What are LSI limits?
+121. Why use GSIs?
+122. Why use LSIs?
+123. How do indexes affect performance?
+124. How do indexes affect costs?
+125. What are indexing best practices?
+126. What are common partition key interview questions?
+127. Why is throughput throttling happening?
+128. Why are writes slow?
+129. Why are reads slow?
+130. Why is a partition overloaded?
+131. How do you troubleshoot hot partitions?
+132. How do you monitor partition performance?
+133. How do CloudWatch metrics help?
+134. Real-world e-commerce data model?
+135. Real-world social media data model?
+136. Real-world IoT data model?
+137. Design scalable partition keys.
+138. Design DynamoDB schema for chat application.
+139. Design DynamoDB schema for e-commerce.
+140. Design DynamoDB schema for banking.
+
+---
+
+# Capacity Modes, Performance & Scaling (141–200)
+
+141. What is provisioned capacity mode?
+142. What is on-demand capacity mode?
+143. Difference between provisioned and on-demand?
+144. When should provisioned mode be used?
+145. When should on-demand mode be used?
+146. What is auto scaling?
+147. How does DynamoDB auto scaling work?
+148. What is burst capacity?
+149. What is adaptive capacity?
+150. How does adaptive capacity work?
+151. What is throttling?
+152. Why does throttling occur?
+153. How do you prevent throttling?
+154. What is throughput exceeded error?
+155. What is conditional write?
+156. What is optimistic locking?
+157. What is version control?
+158. What is item collection?
+159. What is item size impact?
+160. What is query operation?
+161. What is scan operation?
+162. Difference between query and scan?
+163. Why should scans be avoided?
+164. What is parallel scan?
+165. What is batch write?
+166. What is batch get?
+167. What is transactional write?
+168. What is transactional read?
+169. What is PartiQL?
+170. What is DynamoDB Streams?
+171. Why use Streams?
+172. How do Streams work?
+173. What retention period exists?
+174. How does Lambda integrate with Streams?
+175. How do Streams support event-driven architectures?
+176. What is TTL?
+177. Why use TTL?
+178. How does TTL work?
+179. What are DynamoDB performance best practices?
+180. What are scaling best practices?
+181. What are common performance interview questions?
+182. Why is DynamoDB slow?
+183. Why are writes failing?
+184. Why are reads failing?
+185. Why are transactions failing?
+186. Why is auto scaling not working?
+187. Why is throttling happening?
+188. How do you troubleshoot capacity issues?
+189. How do you troubleshoot Streams?
+190. How do you monitor performance?
+191. What CloudWatch metrics matter?
+192. What is consumed capacity?
+193. What is provisioned capacity?
+194. What is utilization percentage?
+195. Real-world scaling architecture?
+196. Design high-throughput application.
+197. Design event-driven application.
+198. Explain scaling workflow.
+199. Explain throttling workflow.
+200. Explain adaptive capacity workflow.
+
+---
+
+# Global Tables (201–240)
+
+201. What are Global Tables?
+202. Why use Global Tables?
+203. What problem do Global Tables solve?
+204. How do Global Tables work?
+205. How many regions can participate?
+206. What replication method is used?
+207. Is replication synchronous or asynchronous?
+208. What is multi-region replication?
+209. What is active-active architecture?
+210. Why are Global Tables active-active?
+211. What is conflict resolution?
+212. How does conflict resolution work?
+213. What is last writer wins?
+214. What are replication delays?
+215. How do you monitor replication?
+216. What is global availability?
+217. What is disaster recovery?
+218. How do Global Tables support DR?
+219. How do Global Tables support low latency?
+220. How do applications connect?
+221. What are Global Table endpoints?
+222. What happens during regional failure?
+223. What happens during replication failure?
+224. What are Global Table costs?
+225. What affects pricing?
+226. What are Global Table limits?
+227. What are Global Table best practices?
+228. What are common interview questions?
+229. Why is replication lagging?
+230. Why is data inconsistent?
+231. Why are writes conflicting?
+232. How do you troubleshoot replication?
+233. How do you troubleshoot conflicts?
+234. What CloudWatch metrics help?
+235. Real-world global application architecture?
+236. Real-world DR architecture?
+237. Design global e-commerce architecture.
+238. Design multi-region SaaS architecture.
+239. Explain Global Tables workflow.
+240. Explain replication workflow.
+
+---
+
+# DAX (DynamoDB Accelerator) (241–270)
+
+241. What is DAX?
+242. Why use DAX?
+243. What problem does DAX solve?
+244. How does DAX work?
+245. Is DAX managed by AWS?
+246. What type of cache is DAX?
+247. What latency improvements does DAX provide?
+248. What workloads benefit from DAX?
+249. What workloads do not benefit?
+250. How does DAX integrate with DynamoDB?
+251. What is cache hit?
+252. What is cache miss?
+253. What is cache invalidation?
+254. How does DAX maintain consistency?
+255. Is DAX strongly consistent?
+256. Is DAX eventually consistent?
+257. What are DAX clusters?
+258. What are DAX nodes?
+259. How does DAX scale?
+260. What are DAX costs?
+261. What are DAX limitations?
+262. What are DAX best practices?
+263. What are common DAX interview questions?
+264. Why is DAX not improving performance?
+265. Why is cache hit ratio low?
+266. How do you troubleshoot DAX?
+267. Real-world caching architecture?
+268. Design low-latency application.
+269. Explain DAX workflow.
+270. Compare DAX and Redis.
+
+---
+
+# Security, Backup, Monitoring & Architecture (271–300)
+
+271. How does DynamoDB encryption work?
+272. What is encryption at rest?
+273. What is encryption in transit?
+274. How does KMS integrate with DynamoDB?
+275. What IAM permissions are required?
+276. How do you secure DynamoDB tables?
+277. What are resource-based policies?
+278. What are DynamoDB backups?
+279. What is on-demand backup?
+280. What is point-in-time recovery (PITR)?
+281. How does PITR work?
+282. What is backup retention?
+283. How do you restore a table?
+284. Can backups be copied across regions?
+285. How do backups support DR?
+286. What are backup costs?
+287. How do you monitor DynamoDB?
+288. What CloudWatch metrics are most important?
+289. How do you audit DynamoDB access?
+290. What are DynamoDB security best practices?
+291. What are DynamoDB cost optimization best practices?
+292. Real-world DynamoDB architecture for banking?
+293. Real-world architecture for gaming?
+294. Real-world architecture for IoT?
+295. Compare DynamoDB and RDS.
+296. Compare DynamoDB and MongoDB.
+297. Compare DynamoDB and Cassandra.
+298. Design a globally distributed application using DynamoDB Global Tables.
+299. Design a high-performance application using DynamoDB + DAX.
+300. Design a complete enterprise-grade DynamoDB architecture with partition key strategy, GSIs, Global Tables, DAX, Streams, backups, encryption, monitoring, disaster recovery, and cost optimization.
