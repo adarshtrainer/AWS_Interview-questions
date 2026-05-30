@@ -1,0 +1,1079 @@
+ Architecture Fundamentals (1–50)
+
+1. What is a Solutions Architect?
+
+2. What are the responsibilities of an AWS Solutions Architect?
+
+3. What are AWS Well-Architected Framework pillars?
+
+4. Explain Operational Excellence pillar.
+
+5. Explain Security pillar.
+
+6. Explain Reliability pillar.
+
+7. Explain Performance Efficiency pillar.
+
+8. Explain Cost Optimization pillar.
+
+9. Explain Sustainability pillar.
+
+10. What is a reference architecture?
+
+11. What is a cloud-native architecture?
+
+12. What is a monolithic architecture?
+
+13. What is a microservices architecture?
+
+14. Difference between monolith and microservices?
+
+15. What is event-driven architecture?
+
+16. What is serverless architecture?
+
+17. What is loosely coupled architecture?
+
+18. What is tightly coupled architecture?
+
+19. What is stateless architecture?
+
+20. What is stateful architecture?
+
+21. What is scalability?
+
+22. What is elasticity?
+
+23. Difference between scalability and elasticity?
+
+24. What is high availability?
+
+25. What is fault tolerance?
+
+26. What is resiliency?
+
+27. What is redundancy?
+
+28. What is performance optimization?
+
+29. What is security by design?
+
+30. What is cost optimization?
+
+31. How do you choose AWS services?
+
+32. How do you design secure architectures?
+
+33. How do you design scalable architectures?
+
+34. How do you design cost-effective architectures?
+
+35. How do you design resilient architectures?
+
+36. What are common architecture mistakes?
+
+37. What are common architect interview questions?
+
+38. How do you gather requirements?
+
+39. How do you estimate traffic?
+
+40. How do you estimate storage?
+
+41. What metrics should be considered in design?
+
+42. How do you identify bottlenecks?
+
+43. How do you choose databases?
+
+44. How do you choose networking services?
+
+45. How do you choose compute services?
+
+46. Real-world architecture considerations?
+
+47. Design process for AWS workloads?
+
+48. Explain architecture review process.
+
+49. Explain solution design lifecycle.
+
+50. Design an AWS architecture from scratch.
+
+---
+
+# Web Application Design Scenarios (51–100)
+
+51. Design a highly available web application.
+
+52. Design a 3-tier architecture in AWS.
+
+53. Design an e-commerce website.
+
+54. Design an online learning platform like Udemy.
+
+55. Design a food delivery application.
+
+56. Design a travel booking application.
+
+57. Design an OTT streaming platform.
+
+58. Design a blogging platform.
+
+59. Design a social media platform.
+
+60. Design a news portal.
+
+61. Design a URL shortening service.
+
+62. Design a photo-sharing application.
+
+63. Design a messaging application.
+
+64. Design a video conferencing platform.
+
+65. Design a SaaS platform.
+
+66. Design a customer support portal.
+
+67. Design a healthcare application.
+
+68. Design a banking application.
+
+69. Design an insurance application.
+
+70. Design an HR management system.
+
+71. Which AWS services would you choose?
+
+72. How would you ensure HA?
+
+73. How would you ensure scalability?
+
+74. How would you ensure security?
+
+75. How would you ensure cost optimization?
+
+76. How would you ensure monitoring?
+
+77. How would you ensure backup?
+
+78. How would you ensure DR?
+
+79. How would you ensure compliance?
+
+80. How would you ensure low latency?
+
+81. What database would you choose?
+
+82. Why use RDS instead of DynamoDB?
+
+83. Why use DynamoDB instead of RDS?
+
+84. Why use ElastiCache?
+
+85. Why use CloudFront?
+
+86. Why use Route 53?
+
+87. Why use ALB?
+
+88. Why use API Gateway?
+
+89. Why use Lambda?
+
+90. Why use ECS/EKS?
+
+91. Design for 1 million users.
+
+92. Design for 10 million users.
+
+93. Design for 100 million users.
+
+94. Design global web architecture.
+
+95. Design low-latency architecture.
+
+96. Design high-throughput architecture.
+
+97. Design enterprise web platform.
+
+98. Design secure web platform.
+
+99. Explain complete architecture workflow.
+
+100. Present architecture to stakeholders.
+
+---
+
+# Cost Optimization Scenarios (101–150)
+
+101. AWS bill increased by 50%. What will you do?
+
+102. AWS bill increased by 300%. How will you investigate?
+
+103. How do you reduce EC2 costs?
+
+104. How do you reduce RDS costs?
+
+105. How do you reduce EKS costs?
+
+106. How do you reduce ECS costs?
+
+107. How do you reduce S3 costs?
+
+108. How do you reduce Lambda costs?
+
+109. How do you reduce CloudFront costs?
+
+110. How do you reduce NAT Gateway costs?
+
+111. How do you identify idle resources?
+
+112. How do you identify overprovisioned resources?
+
+113. How do you right-size EC2 instances?
+
+114. How do you right-size RDS instances?
+
+115. How do you optimize storage costs?
+
+116. How do you optimize networking costs?
+
+117. How do you optimize data transfer costs?
+
+118. When should Savings Plans be used?
+
+119. When should Reserved Instances be used?
+
+120. When should Spot Instances be used?
+
+121. Design cost-optimized architecture.
+
+122. Design startup architecture with minimum cost.
+
+123. Design architecture under $100/month.
+
+124. Design architecture under $500/month.
+
+125. Design architecture under $1000/month.
+
+126. Design low-cost disaster recovery.
+
+127. Design low-cost backup strategy.
+
+128. Design low-cost monitoring strategy.
+
+129. Design low-cost database architecture.
+
+130. Design low-cost Kubernetes architecture.
+
+131. What services commonly generate unexpected bills?
+
+132. How do you monitor costs proactively?
+
+133. How do you enforce budgets?
+
+134. How do you implement chargeback?
+
+135. How do you implement showback?
+
+136. Real-world cost optimization scenario.
+
+137. Real-world startup optimization scenario.
+
+138. Real-world enterprise optimization scenario.
+
+139. Explain FinOps process.
+
+140. Explain cost governance.
+
+141. Compare RI and Savings Plans.
+
+142. Compare Spot and On-Demand.
+
+143. Compare ECS and EKS costs.
+
+144. Compare RDS and DynamoDB costs.
+
+145. Compare CloudFront and direct S3 access.
+
+146. Compare NAT Gateway and NAT Instance.
+
+147. Compare Lambda and EC2 costs.
+
+148. Design enterprise cost governance.
+
+149. Explain optimization workflow.
+
+150. Design complete FinOps architecture.
+
+---
+
+# Scalability & Performance Scenarios (151–220)
+
+151. Design for sudden traffic spikes.
+
+152. Design Black Friday architecture.
+
+153. Design flash-sale architecture.
+
+154. Design architecture for 1000 TPS.
+
+155. Design architecture for 10,000 TPS.
+
+156. Design architecture for 100,000 TPS.
+
+157. Design architecture for millions of requests per second.
+
+158. How do you scale EC2 workloads?
+
+159. How do you scale ECS workloads?
+
+160. How do you scale EKS workloads?
+
+161. How do you scale databases?
+
+162. How do you scale RDS?
+
+163. How do you scale DynamoDB?
+
+164. How do you scale Redis?
+
+165. How do you scale APIs?
+
+166. How do you scale web applications?
+
+167. How do you scale Lambda?
+
+168. How do you scale event-driven systems?
+
+169. How do you scale messaging systems?
+
+170. How do you scale globally?
+
+171. How do you reduce latency?
+
+172. How do you optimize database performance?
+
+173. How do you optimize cache performance?
+
+174. How do you optimize API performance?
+
+175. How do you optimize storage performance?
+
+176. How do you optimize networking performance?
+
+177. How do you optimize container performance?
+
+178. What bottlenecks commonly occur?
+
+179. How do you identify bottlenecks?
+
+180. How do you monitor bottlenecks?
+
+181. Real-world scalability scenario.
+
+182. Real-world performance issue.
+
+183. Real-world Black Friday preparation.
+
+184. Real-world gaming platform design.
+
+185. Real-world streaming platform design.
+
+186. Real-world fintech architecture.
+
+187. Real-world social media platform design.
+
+188. Design horizontally scalable architecture.
+
+189. Design globally scalable architecture.
+
+190. Design event-driven scalable architecture.
+
+191. Explain scaling workflow.
+
+192. Explain Auto Scaling workflow.
+
+193. Explain caching workflow.
+
+194. Explain load balancing workflow.
+
+195. Compare vertical and horizontal scaling.
+
+196. Compare ECS and Lambda scaling.
+
+197. Compare DynamoDB and RDS scaling.
+
+198. Compare Redis and DynamoDB DAX.
+
+199. Design enterprise scalability strategy.
+
+200. Design enterprise performance strategy.
+
+
+---
+
+# Security Architecture Scenarios (221–290)
+
+221. Design secure AWS architecture.
+
+222. Design zero-trust architecture.
+
+223. Design PCI-DSS compliant architecture.
+
+224. Design HIPAA-compliant architecture.
+
+225. Design SOC2-compliant architecture.
+
+226. Design banking security architecture.
+
+227. Design healthcare security architecture.
+
+228. Design government workload architecture.
+
+229. Design multi-account security architecture.
+
+230. Design enterprise IAM architecture.
+
+231. How do you secure VPCs?
+
+232. How do you secure EC2 instances?
+
+233. How do you secure containers?
+
+234. How do you secure EKS clusters?
+
+235. How do you secure APIs?
+
+236. How do you secure Lambda functions?
+
+237. How do you secure S3 buckets?
+
+238. How do you secure RDS databases?
+
+239. How do you secure DynamoDB?
+
+240. How do you secure secrets?
+
+241. How do you implement least privilege?
+
+242. How do you implement IAM governance?
+
+243. How do you implement encryption?
+
+244. How do you implement KMS?
+
+245. How do you implement WAF?
+
+246. How do you implement Shield?
+
+247. How do you implement GuardDuty?
+
+248. How do you implement Security Hub?
+
+249. How do you implement CloudTrail?
+
+250. How do you implement Config?
+
+251. How do you detect security incidents?
+
+252. How do you respond to security incidents?
+
+253. How do you prevent data exfiltration?
+
+254. How do you secure cross-account access?
+
+255. How do you secure hybrid environments?
+
+256. How do you secure CI/CD pipelines?
+
+257. How do you secure Kubernetes workloads?
+
+258. How do you secure microservices?
+
+259. How do you secure event-driven systems?
+
+260. How do you secure multi-region workloads?
+
+261. Real-world ransomware response.
+
+262. Real-world account compromise response.
+
+263. Real-world DDoS response.
+
+264. Real-world insider threat response.
+
+265. Real-world compliance audit.
+
+266. Design enterprise security operations.
+
+267. Design enterprise governance.
+
+268. Design security monitoring architecture.
+
+269. Explain security incident workflow.
+
+270. Explain compliance workflow.
+
+
+---
+
+# Multi-Region & Enterprise Architecture Scenarios (291–350)
+
+291. Design multi-region web application.
+
+292. Design multi-region database architecture.
+
+293. Design global SaaS platform.
+
+294. Design global e-commerce platform.
+
+295. Design global banking application.
+
+296. Design global healthcare platform.
+
+297. Design active-active architecture.
+
+298. Design active-passive architecture.
+
+299. Design pilot-light DR architecture.
+
+300. Design warm standby architecture.
+
+301. How do you choose DR strategies?
+
+302. How do you choose RPO?
+
+303. How do you choose RTO?
+
+304. How do you design Route 53 failover?
+
+305. How do you design global DNS?
+
+306. How do you design global databases?
+
+307. How do you design global caching?
+
+308. How do you design global API delivery?
+
+309. How do you design global monitoring?
+
+310. How do you design global logging?
+
+311. How do you handle regional outages?
+
+312. How do you handle AZ failures?
+
+313. How do you handle database failures?
+
+314. How do you handle application failures?
+
+315. How do you handle networking failures?
+
+316. How do you handle DNS failures?
+
+317. How do you test DR plans?
+
+318. How do you test failover?
+
+319. How do you automate recovery?
+
+320. How do you automate failback?
+
+321. Real-world multi-region architecture.
+
+322. Real-world global SaaS design.
+
+323. Real-world fintech architecture.
+
+324. Real-world media streaming architecture.
+
+325. Real-world enterprise platform architecture.
+
+326. Design global Kubernetes platform.
+
+327. Design global event-driven architecture.
+
+328. Design global data platform.
+
+329. Design enterprise governance model.
+
+330. Design enterprise landing zone.
+
+331. Explain active-active workflow.
+
+332. Explain active-passive workflow.
+
+333. Explain DR recovery workflow.
+
+334. Explain global routing workflow.
+
+335. Explain global replication workflow.
+
+336. Compare active-active vs active-passive.
+
+337. Compare pilot-light vs warm standby.
+
+338. Compare multi-AZ vs multi-region.
+
+339. Compare global database options.
+
+340. Compare DR strategies.
+
+341. Design architecture for 99.9% availability.
+
+342. Design architecture for 99.99% availability.
+
+343. Design architecture for 99.999% availability.
+
+344. Design architecture for 1 billion monthly users.
+
+345. Design architecture for global enterprise workloads.
+
+346. Design architecture for regulated industries.
+
+347. Design architecture for mission-critical workloads.
+
+348. Explain complete enterprise architecture review process.
+
+349. Explain complete AWS solution design process.
+
+350. Design a complete enterprise-grade AWS platform with multi-account governance, security, multi-region deployment, global traffic management, DR, monitoring, automation, CI/CD, compliance, and cost optimization.
+
+351. What is an AWS Landing Zone?
+
+352. Why use a Landing Zone?
+
+353. Design a multi-account AWS architecture.
+
+354. How would you separate Dev, QA, UAT, and Prod accounts?
+
+355. How would you design centralized logging?
+
+356. How would you design centralized security?
+
+357. How would you design centralized networking?
+
+358. What accounts would you create in AWS Organizations?
+
+359. How would you implement SCPs?
+
+360. How would you restrict root account usage?
+
+361. How would you implement IAM Identity Center?
+
+362. How would you manage permissions across 100 AWS accounts?
+
+363. How would you design enterprise governance?
+
+364. How would you implement compliance monitoring?
+
+365. How would you centralize CloudTrail logs?
+
+366. How would you centralize Config rules?
+
+367. How would you centralize Security Hub?
+
+368. How would you centralize GuardDuty?
+
+369. How would you centralize backup management?
+
+370. How would you implement account vending?
+
+371. How would you onboard a new business unit?
+
+372. How would you isolate workloads?
+
+373. How would you implement cost allocation?
+
+374. How would you implement chargeback?
+
+375. How would you implement showback?
+
+376. How would you secure cross-account access?
+
+377. How would you implement break-glass access?
+
+378. How would you implement MFA enforcement?
+
+379. How would you implement tagging governance?
+
+380. How would you automate account creation?
+
+381. Real-world enterprise landing zone architecture?
+
+382. Design AWS for a multinational company.
+
+383. Design AWS for a government organization.
+
+384. Design AWS for a banking organization.
+
+385. Design AWS for healthcare.
+
+386. Design AWS for education.
+
+387. Design AWS for SaaS companies.
+
+388. Explain account hierarchy design.
+
+389. Explain governance workflow.
+
+390. Explain account provisioning workflow.
+---
+
+# Microservices Architecture (401–450)
+
+401. Design a microservices architecture in AWS.
+
+402. Why choose microservices?
+
+403. When should you avoid microservices?
+
+404. How would you split services?
+
+405. How would services communicate?
+
+406. REST vs Event-driven communication?
+
+407. SNS vs SQS vs EventBridge?
+
+408. API Gateway vs ALB?
+
+409. ECS vs EKS?
+
+410. Lambda vs ECS?
+
+411. How would you secure service-to-service communication?
+
+412. How would you manage secrets?
+
+413. How would you monitor microservices?
+
+414. How would you trace requests?
+
+415. How would you implement distributed tracing?
+
+416. How would you implement service discovery?
+
+417. How would you implement circuit breakers?
+
+418. How would you implement retries?
+
+419. How would you implement DLQs?
+
+420. How would you implement rate limiting?
+
+421. How would you deploy microservices?
+
+422. How would you implement blue-green deployment?
+
+423. How would you implement canary deployment?
+
+424. How would you handle versioning?
+
+425. How would you scale microservices?
+
+426. How would you handle failures?
+
+427. How would you ensure HA?
+
+428. How would you ensure DR?
+
+429. How would you manage databases?
+
+430. Database per service vs shared database?
+---
+
+# Data Engineering & Analytics Architecture (451–500)
+
+451. Design a data lake on AWS.
+
+452. Design a modern analytics platform.
+
+453. Design a real-time streaming platform.
+
+454. Design an ETL architecture.
+
+455. Design a batch processing architecture.
+
+456. S3 vs Redshift?
+
+457. Redshift vs Athena?
+
+458. Athena vs EMR?
+
+459. Glue vs EMR?
+
+460. Kinesis vs Kafka?
+
+461. How would you process millions of events?
+
+462. How would you store petabytes of data?
+
+463. How would you partition data?
+
+464. How would you optimize query performance?
+
+465. How would you optimize storage costs?
+
+466. How would you secure a data lake?
+
+467. How would you implement data governance?
+
+468. How would you implement cataloging?
+
+469. How would you implement data quality?
+
+470. How would you implement lineage?
+
+471. Real-time fraud detection architecture?
+
+472. Real-time IoT analytics architecture?
+
+473. Real-time clickstream architecture?
+
+474. Financial reporting architecture?
+
+475. Business intelligence architecture?
+
+476. Data warehouse architecture?
+
+477. Data lake architecture?
+
+478. Lakehouse architecture?
+
+479. Explain analytics workflow.
+
+480. Explain streaming workflow.
+---
+
+# Kubernetes / Container Architecture (501–550)
+
+501. Design production EKS architecture.
+
+502. Design multi-region EKS architecture.
+
+503. Design highly available EKS architecture.
+
+504. Design secure EKS architecture.
+
+505. Design cost-optimized EKS architecture.
+
+506. EKS vs ECS?
+
+507. EKS vs OpenShift?
+
+508. ECS vs Fargate?
+
+509. EKS vs Lambda?
+
+510. When should Kubernetes be avoided?
+
+511. How would you secure EKS?
+
+512. How would you implement IRSA?
+
+513. How would you implement network policies?
+
+514. How would you implement ingress?
+
+515. How would you implement service mesh?
+
+516. Istio vs App Mesh?
+
+517. How would you monitor EKS?
+
+518. Prometheus vs CloudWatch?
+
+519. Grafana vs CloudWatch dashboards?
+
+520. How would you implement logging?
+
+521. How would you handle node failures?
+
+522. How would you handle pod failures?
+
+523. How would you handle cluster failures?
+
+524. How would you perform upgrades?
+
+525. How would you perform DR?
+
+526. How would you implement GitOps?
+
+527. How would you implement ArgoCD?
+
+528. How would you implement Helm?
+
+529. How would you implement autoscaling?
+
+530. HPA vs Cluster Autoscaler?
+---
+
+# Security Architecture Deep-Dive (551–600)
+
+551. Design enterprise security architecture.
+
+552. Design zero-trust architecture.
+
+553. Design multi-account security architecture.
+
+554. Design PCI-DSS architecture.
+
+555. Design HIPAA architecture.
+
+556. Design SOC2 architecture.
+
+557. Design GDPR architecture.
+
+558. Design banking security architecture.
+
+559. Design healthcare security architecture.
+
+560. Design government cloud architecture.
+
+561. How would you secure APIs?
+
+562. How would you secure containers?
+
+563. How would you secure Kubernetes?
+
+564. How would you secure Lambda?
+
+565. How would you secure S3?
+
+566. How would you secure RDS?
+
+567. How would you secure DynamoDB?
+
+568. How would you secure CloudFront?
+
+569. How would you secure Route 53?
+
+570. How would you secure IAM?
+
+571. How would you detect attacks?
+
+572. How would you respond to attacks?
+
+573. How would you implement SIEM?
+
+574. How would you implement SOC operations?
+
+575. How would you investigate incidents?
+
+576. How would you perform threat modeling?
+
+577. How would you manage encryption keys?
+
+578. KMS vs CloudHSM?
+
+579. How would you implement data classification?
+
+580. How would you implement DLP?
+
+---
+
+# Principal Architect / Enterprise Scenarios (601–650)
+
+601. Design AWS architecture for 1 billion users.
+
+602. Design architecture for Netflix-scale streaming.
+
+603. Design architecture for Amazon-scale e-commerce.
+
+604. Design architecture for Uber-like platform.
+
+605. Design architecture for WhatsApp-like messaging.
+
+606. Design architecture for YouTube-like video platform.
+
+607. Design architecture for Spotify-like music streaming.
+
+608. Design architecture for LinkedIn-like social network.
+
+609. Design architecture for Instagram-like platform.
+
+610. Design architecture for online gaming platform.
+
+611. Design architecture for stock trading platform.
+
+612. Design architecture for fintech payments.
+
+613. Design architecture for healthcare systems.
+
+614. Design architecture for IoT platform.
+
+615. Design architecture for smart city platform.
+
+616. Design architecture for airline reservation system.
+
+617. Design architecture for ERP platform.
+
+618. Design architecture for LMS platform.
+
+619. Design architecture for global SaaS product.
+
+620. Design architecture for AI platform.
+
+621. How would you architect for 99.999% availability?
+
+622. How would you architect for global latency under 50ms?
+
+623. How would you architect for zero downtime deployments?
+
+624. How would you architect for disaster recovery under 15 minutes?
+
+625. How would you architect for compliance?
+
+626. How would you architect for cost efficiency?
+
+627. How would you architect for security?
+
+628. How would you architect for scalability?
+
+629. How would you architect for maintainability?
+
+630. How would you architect for observability?
+
+631. What questions would you ask stakeholders?
+
+632. How would you estimate infrastructure cost?
+
+633. How would you choose AWS services?
+
+634. How would you evaluate trade-offs?
+
+635. How would you perform architecture reviews?
+
+636. How would you present architecture to leadership?
+
+637. How would you justify cloud migration?
+
+638. How would you perform TCO analysis?
+
+639. How would you evaluate cloud risks?
+
+640. How would you build architecture governance?
+
+641. Real-world architecture review scenario.
+
+642. Real-world migration scenario.
+
+643. Real-world outage scenario.
+
+644. Real-world security breach scenario.
+
+645. Real-world DR scenario.
+
+646. Real-world scaling scenario.
+
+647. Real-world compliance scenario.
+
+648. Real-world cost optimization scenario.
+
+649. Explain complete enterprise architecture lifecycle.
+
+650. Design a complete Fortune-500 AWS architecture covering networking, security, compute, storage, databases, containers, serverless, observability, automation, governance, compliance, cost optimization, multi-region HA/DR, CI/CD, and operations.
