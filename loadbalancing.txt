@@ -1,0 +1,277 @@
+ELB Fundamentals (1–50)
+
+1. What is Elastic Load Balancing?
+2. Why do we need load balancing?
+3. What problems does ELB solve?
+4. How does ELB improve availability?
+5. How does ELB improve scalability?
+6. What is horizontal scaling?
+7. What is vertical scaling?
+8. How does ELB distribute traffic?
+9. What are the benefits of ELB?
+10. What are the types of AWS Load Balancers?
+11. What is Application Load Balancer?
+12. What is Network Load Balancer?
+13. What is Gateway Load Balancer?
+14. What is Classic Load Balancer?
+15. Which load balancer is recommended today?
+16. Which load balancer is considered legacy?
+17. What AWS services commonly integrate with ELB?
+18. Is ELB regional or global?
+19. Is ELB highly available?
+20. How does ELB provide fault tolerance?
+21. What are Availability Zone mappings?
+22. How does ELB work across AZs?
+23. What is cross-zone load balancing?
+24. Why is cross-zone load balancing useful?
+25. Is ELB managed by AWS?
+26. Can ELB be patched by users?
+27. What is listener?
+28. What is listener rule?
+29. What is target group?
+30. What is backend target?
+31. What target types are supported?
+32. Can IP addresses be targets?
+33. Can Lambda functions be targets?
+34. Can containers be targets?
+35. Can EC2 instances be targets?
+36. What protocols are supported?
+37. What ports are supported?
+38. What is health checking?
+39. Why are health checks required?
+40. What happens when a target becomes unhealthy?
+41. How frequently do health checks run?
+42. What is deregistration?
+43. What is deregistration delay?
+44. What is sticky session?
+45. How does session persistence work?
+46. What is connection draining?
+47. What metrics are available in CloudWatch?
+48. How do you monitor ELB?
+49. What ELB logs are available?
+50. What are ELB best practices?
+
+---
+
+# Application Load Balancer (ALB) (51–110)
+
+51. What is an Application Load Balancer?
+52. Which OSI layer does ALB operate on?
+53. Why is ALB called Layer 7 load balancer?
+54. What protocols does ALB support?
+55. Does ALB support HTTP?
+56. Does ALB support HTTPS?
+57. Does ALB support WebSockets?
+58. Does ALB support HTTP/2?
+59. What is host-based routing?
+60. What is path-based routing?
+61. How does host-based routing work?
+62. How does path-based routing work?
+63. What are ALB listener rules?
+64. What is rule priority?
+65. How does ALB evaluate rules?
+66. What is default action?
+67. What actions can listener rules perform?
+68. What is redirect action?
+69. What is fixed response action?
+70. What is forward action?
+71. What is weighted routing?
+72. How can ALB support blue-green deployment?
+73. How can ALB support canary deployment?
+74. How does ALB integrate with ECS?
+75. How does ALB integrate with EKS?
+76. How does ALB integrate with Lambda?
+77. Can ALB invoke Lambda directly?
+78. What is ALB authentication?
+79. How does ALB integrate with Cognito?
+80. How does ALB integrate with OIDC?
+81. What is SSL termination?
+82. Why perform SSL termination at ALB?
+83. What is ACM integration?
+84. How do SSL certificates work with ALB?
+85. What is SNI?
+86. Can ALB host multiple domains?
+87. What is virtual hosting?
+88. How does ALB support microservices?
+89. What are ALB target groups?
+90. Can one ALB use multiple target groups?
+91. How does ALB support containerized workloads?
+92. What is dynamic port mapping?
+93. What ALB logs are available?
+94. What is access logging?
+95. How do you troubleshoot 404 errors?
+96. How do you troubleshoot 502 errors?
+97. How do you troubleshoot 503 errors?
+98. How do you troubleshoot 504 errors?
+99. Why does ALB show unhealthy targets?
+100. Why do health checks fail?
+101. How do you tune ALB health checks?
+102. What are ALB limitations?
+103. What are ALB quotas?
+104. How does ALB scale automatically?
+105. What are ALB costs?
+106. How do you optimize ALB costs?
+107. What are ALB best practices?
+108. Real-world ALB architecture?
+109. Real-world microservices architecture using ALB?
+110. Design ALB for a large e-commerce platform.
+
+---
+
+# Network Load Balancer (NLB) (111–160)
+
+111. What is Network Load Balancer?
+112. Which OSI layer does NLB operate on?
+113. Why is NLB called Layer 4 load balancer?
+114. What protocols does NLB support?
+115. Does NLB support TCP?
+116. Does NLB support UDP?
+117. Does NLB support TLS?
+118. Does NLB support HTTP?
+119. Difference between ALB and NLB?
+120. When should NLB be used?
+121. What workloads require NLB?
+122. How does NLB preserve source IP?
+123. Why is source IP preservation important?
+124. What is static IP support?
+125. Why does NLB provide static IPs?
+126. Can Elastic IP be attached to NLB?
+127. How does NLB handle millions of requests?
+128. How does NLB achieve low latency?
+129. What is TLS termination in NLB?
+130. What is TLS passthrough?
+131. Difference between TLS passthrough and termination?
+132. How do health checks work in NLB?
+133. What protocols are used for health checks?
+134. What is fail-open behavior?
+135. How does NLB integrate with ECS?
+136. How does NLB integrate with EKS?
+137. How does NLB support databases?
+138. How does NLB support gaming workloads?
+139. How does NLB support VoIP?
+140. What is connection tracking?
+141. What are NLB target groups?
+142. Can NLB use IP targets?
+143. Can NLB use on-prem servers?
+144. How does NLB support hybrid cloud?
+145. What are NLB logs?
+146. What metrics are available?
+147. What are NLB costs?
+148. How do you optimize NLB costs?
+149. What are NLB limitations?
+150. What are NLB quotas?
+151. How do you troubleshoot NLB health checks?
+152. How do you troubleshoot connectivity issues?
+153. How do you troubleshoot latency issues?
+154. Why is NLB preferred for high throughput?
+155. What are NLB best practices?
+156. Real-world NLB architecture?
+157. Real-world hybrid cloud architecture?
+158. Real-world database architecture using NLB?
+159. Design NLB for a financial application.
+160. Design NLB for a gaming platform.
+
+---
+
+# Gateway Load Balancer (GWLB) (161–200)
+
+161. What is Gateway Load Balancer?
+162. Why was GWLB introduced?
+163. Which OSI layer does GWLB operate on?
+164. What problem does GWLB solve?
+165. What is service insertion?
+166. What is network appliance scaling?
+167. What are common GWLB use cases?
+168. How does GWLB work?
+169. What is GENEVE protocol?
+170. Why does GWLB use GENEVE?
+171. What is appliance chaining?
+172. What is traffic inspection?
+173. What is east-west inspection?
+174. What is north-south inspection?
+175. How does GWLB support firewalls?
+176. How does GWLB support IDS?
+177. How does GWLB support IPS?
+178. What third-party appliances integrate with GWLB?
+179. What is centralized security architecture?
+180. What is inspection VPC?
+181. How does GWLB support multi-account architecture?
+182. What is appliance fleet scaling?
+183. How do GWLB target groups work?
+184. What health checks are supported?
+185. How does GWLB maintain session affinity?
+186. What are GWLB endpoints?
+187. What is Gateway Load Balancer Endpoint?
+188. How does GWLB integrate with Transit Gateway?
+189. How does GWLB integrate with VPC Peering?
+190. What are GWLB limitations?
+191. What are GWLB quotas?
+192. What are GWLB costs?
+193. How do you optimize GWLB costs?
+194. How do you troubleshoot GWLB issues?
+195. What are GWLB best practices?
+196. Real-world firewall architecture?
+197. Real-world inspection VPC architecture?
+198. Real-world enterprise security architecture?
+199. Design centralized security inspection architecture.
+200. Design a multi-account security solution using GWLB.
+
+---
+
+# Classic Load Balancer (CLB) (201–225)
+
+201. What is Classic Load Balancer?
+202. Why was CLB created?
+203. Why is CLB considered legacy?
+204. Which OSI layers does CLB operate on?
+205. What protocols does CLB support?
+206. Difference between CLB and ALB?
+207. Difference between CLB and NLB?
+208. What are CLB listeners?
+209. How do health checks work in CLB?
+210. What is connection draining in CLB?
+211. What is cross-zone load balancing in CLB?
+212. Does CLB support host-based routing?
+213. Does CLB support path-based routing?
+214. Does CLB support WebSockets?
+215. Does CLB support HTTP/2?
+216. What are CLB limitations?
+217. Why migrate from CLB to ALB?
+218. Why migrate from CLB to NLB?
+219. What are CLB costs?
+220. How do you troubleshoot CLB issues?
+221. What workloads still use CLB?
+222. What are CLB best practices?
+223. Real-world CLB migration scenario?
+224. How do you replace CLB in production?
+225. What are common CLB interview questions?
+
+---
+
+# Troubleshooting, Architecture & Scenarios (226–250)
+
+226. ALB returns 502 Bad Gateway. Troubleshoot.
+227. ALB returns 503 Service Unavailable. Troubleshoot.
+228. ALB returns 504 Gateway Timeout. Troubleshoot.
+229. Targets show unhealthy. Troubleshoot.
+230. Health checks fail despite application working. Why?
+231. NLB works intermittently. Troubleshoot.
+232. Traffic is not distributed evenly. Troubleshoot.
+233. Sticky sessions causing imbalance. Troubleshoot.
+234. SSL certificate errors on ALB. Troubleshoot.
+235. HTTPS redirect not working. Troubleshoot.
+236. WebSocket connections dropping. Troubleshoot.
+237. High latency through load balancer. Troubleshoot.
+238. Sudden increase in ELB costs. Investigate.
+239. Load balancer cannot reach backend instances. Troubleshoot.
+240. Backend instances can reach internet but users cannot access application. Troubleshoot.
+241. Design highly available ALB architecture across 3 AZs.
+242. Design highly available NLB architecture across 3 AZs.
+243. Design ALB + Auto Scaling architecture.
+244. Design NLB + ECS architecture.
+245. Design ALB + EKS architecture.
+246. Design secure internet-facing architecture using ALB, WAF, and Auto Scaling.
+247. Design hybrid cloud architecture using NLB.
+248. Design enterprise inspection architecture using GWLB.
+249. Compare ALB, NLB, GWLB, and CLB with real-world examples.
+250. Design a complete production-grade architecture using ELB, Auto Scaling, Route 53, CloudFront, WAF, Security Groups, and Multi-AZ deployment capable of handling millions of users.
