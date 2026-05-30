@@ -1,0 +1,322 @@
+Route 53 Fundamentals (1–60)
+
+1. What is Route 53?
+2. Why is it called Route 53?
+3. What is DNS?
+4. Why is DNS required?
+5. How does DNS work?
+6. What is name resolution?
+7. What is recursive DNS lookup?
+8. What is iterative DNS lookup?
+9. What is a DNS resolver?
+10. What is a DNS record?
+11. What is an A record?
+12. What is an AAAA record?
+13. What is a CNAME record?
+14. What is an MX record?
+15. What is a TXT record?
+16. What is an NS record?
+17. What is an SOA record?
+18. What is a PTR record?
+19. What is an Alias record?
+20. Difference between Alias and CNAME?
+21. What AWS resources support Alias records?
+22. What is TTL?
+23. Why is TTL important?
+24. What happens when TTL expires?
+25. What is DNS caching?
+26. How does DNS propagation work?
+27. How long does DNS propagation take?
+28. What affects propagation time?
+29. What is authoritative DNS?
+30. What is recursive DNS?
+31. What is root DNS?
+32. What is TLD DNS?
+33. What is domain registration?
+34. Can Route 53 register domains?
+35. What domain extensions are supported?
+36. How does Route 53 integrate with AWS services?
+37. Is Route 53 global or regional?
+38. How does Route 53 achieve high availability?
+39. What is Route 53 SLA?
+40. What are Route 53 pricing components?
+41. What are DNS best practices?
+42. What are DNS limitations?
+43. What are common DNS interview questions?
+44. What are common DNS troubleshooting steps?
+45. How do you test DNS resolution?
+46. What is nslookup?
+47. What is dig?
+48. What is whois?
+49. How do you verify DNS records?
+50. What causes DNS failures?
+51. What causes DNS latency?
+52. What causes DNS misconfiguration?
+53. What is DNS hierarchy?
+54. What is split-horizon DNS?
+55. What is private DNS?
+56. What is public DNS?
+57. What is hybrid DNS?
+58. What is DNS delegation?
+59. What is subdomain delegation?
+60. Real-world Route 53 use cases?
+
+---
+
+# Hosted Zones (61–110)
+
+61. What is a hosted zone?
+62. Why do we need hosted zones?
+63. What are the types of hosted zones?
+64. What is a public hosted zone?
+65. What is a private hosted zone?
+66. Difference between public and private hosted zones?
+67. How do private hosted zones work?
+68. How do public hosted zones work?
+69. How are hosted zones associated with VPCs?
+70. Can a private hosted zone be linked to multiple VPCs?
+71. Can hosted zones span regions?
+72. What records exist inside hosted zones?
+73. How do NS records work?
+74. How do SOA records work?
+75. What happens if NS records are wrong?
+76. What happens if SOA records are wrong?
+77. How do you create a hosted zone?
+78. How do you delete a hosted zone?
+79. Why might hosted zone deletion fail?
+80. How do you migrate DNS to Route 53?
+81. How do you migrate from GoDaddy to Route 53?
+82. How do you migrate from Namecheap to Route 53?
+83. What is zone delegation?
+84. What is subdomain delegation?
+85. How do child hosted zones work?
+86. What is cross-account DNS delegation?
+87. How do private hosted zones support microservices?
+88. How do private hosted zones support EKS?
+89. How do private hosted zones support hybrid cloud?
+90. What is split DNS architecture?
+91. What is centralized DNS architecture?
+92. What is decentralized DNS architecture?
+93. How do you audit hosted zones?
+94. How do you secure hosted zones?
+95. What are hosted zone quotas?
+96. What are hosted zone costs?
+97. How do you optimize hosted zone costs?
+98. What are hosted zone best practices?
+99. What are common hosted zone interview scenarios?
+100. Why is DNS resolution failing?
+101. Why is internal DNS failing?
+102. Why is external DNS failing?
+103. Why is VPC DNS failing?
+104. How do you troubleshoot hosted zones?
+105. How do you verify delegation?
+106. How do you test internal DNS?
+107. How do you test external DNS?
+108. Real-world enterprise DNS architecture?
+109. Real-world hybrid DNS architecture?
+110. Design DNS for a large organization.
+
+---
+
+# Routing Policies (111–180)
+
+111. What are Route 53 routing policies?
+112. Why do routing policies exist?
+113. What is Simple Routing?
+114. When should Simple Routing be used?
+115. What is Weighted Routing?
+116. Why use Weighted Routing?
+117. How does Weighted Routing work?
+118. What is weighted traffic distribution?
+119. How can weighted routing support blue-green deployments?
+120. How can weighted routing support canary deployments?
+121. What is Latency-Based Routing?
+122. How does Latency-Based Routing work?
+123. When should Latency-Based Routing be used?
+124. What is Geolocation Routing?
+125. How does Geolocation Routing work?
+126. What is Geoproximity Routing?
+127. Difference between Geolocation and Geoproximity?
+128. What is Traffic Flow?
+129. What is Multi-Value Routing?
+130. How does Multi-Value Routing work?
+131. What is Failover Routing?
+132. How does Failover Routing work?
+133. What is Active-Passive routing?
+134. What is Active-Active routing?
+135. What is health-check-based routing?
+136. What are Route 53 health checks?
+137. How do health checks work?
+138. What protocols support health checks?
+139. What health check intervals are available?
+140. What is calculated health check?
+141. What is CloudWatch alarm health check?
+142. What is endpoint health check?
+143. How do health checks support failover?
+144. What happens when health checks fail?
+145. How do health checks support DR?
+146. What are routing policy priorities?
+147. Can multiple routing policies be combined?
+148. What are routing policy limitations?
+149. What are routing policy best practices?
+150. What are routing policy costs?
+151. How do you troubleshoot routing policies?
+152. Why is failover not working?
+153. Why is latency routing not working?
+154. Why is geolocation routing incorrect?
+155. Why is weighted routing not balanced?
+156. What are common routing policy interview questions?
+157. How do you implement disaster recovery?
+158. How do you implement global applications?
+159. How do you implement active-active architecture?
+160. How do you implement active-passive architecture?
+161. How do you implement canary deployments?
+162. How do you implement blue-green deployments?
+163. Real-world failover architecture?
+164. Real-world active-active architecture?
+165. Real-world global application architecture?
+166. Real-world multi-region architecture?
+167. Design routing for e-commerce platform.
+168. Design routing for banking application.
+169. Design routing for gaming platform.
+170. Design routing for streaming platform.
+171. Design routing for SaaS platform.
+172. Design latency-sensitive application.
+173. Design geo-restricted application.
+174. Design DR architecture using Route 53.
+175. Design highly available DNS architecture.
+176. Design DNS failover solution.
+177. Design global traffic distribution solution.
+178. Design multi-region routing solution.
+179. Design enterprise DNS routing strategy.
+180. Compare all Route 53 routing policies.
+
+---
+
+# CloudFront Fundamentals (181–230)
+
+181. What is CloudFront?
+182. Why use CloudFront?
+183. What is a CDN?
+184. How does CDN work?
+185. What is an edge location?
+186. What is regional edge cache?
+187. What is CloudFront POP?
+188. How does CloudFront reduce latency?
+189. How does CloudFront improve performance?
+190. How does CloudFront reduce origin load?
+191. What origins are supported?
+192. Can S3 be an origin?
+193. Can ALB be an origin?
+194. Can EC2 be an origin?
+195. Can on-prem servers be origins?
+196. What is origin failover?
+197. What is cache behavior?
+198. What is cache key?
+199. What is cache hit?
+200. What is cache miss?
+201. How does caching work?
+202. What is TTL in CloudFront?
+203. What is cache invalidation?
+204. When should invalidation be used?
+205. What is origin request policy?
+206. What is cache policy?
+207. What is response headers policy?
+208. What is signed URL?
+209. What is signed cookie?
+210. Why use signed URLs?
+211. Why use signed cookies?
+212. What is origin access control (OAC)?
+213. What is origin access identity (OAI)?
+214. Difference between OAC and OAI?
+215. How does CloudFront secure S3?
+216. How does CloudFront support HTTPS?
+217. How does CloudFront integrate with ACM?
+218. What is SSL termination?
+219. What is HTTP to HTTPS redirection?
+220. What are CloudFront logs?
+221. What metrics are available?
+222. How does CloudFront scale?
+223. What are CloudFront costs?
+224. What affects CloudFront pricing?
+225. How do you optimize CloudFront costs?
+226. What are CloudFront quotas?
+227. What are CloudFront best practices?
+228. What are CloudFront limitations?
+229. What are common CloudFront interview questions?
+230. Real-world CloudFront use cases?
+
+---
+
+# CloudFront Security, Optimization & Troubleshooting (231–300)
+
+231. How does CloudFront integrate with WAF?
+232. How does CloudFront mitigate DDoS attacks?
+233. How does CloudFront integrate with Shield?
+234. How does CloudFront support bot protection?
+235. What is geo-blocking?
+236. How does geo-restriction work?
+237. What is field-level encryption?
+238. How does field-level encryption work?
+239. What is Lambda@Edge?
+240. What is CloudFront Functions?
+241. Difference between Lambda@Edge and CloudFront Functions?
+242. When should Lambda@Edge be used?
+243. When should CloudFront Functions be used?
+244. How do you customize requests at edge?
+245. How do you customize responses at edge?
+246. What is edge computing?
+247. Why is content not cached?
+248. Why are cache hit ratios low?
+249. Why is origin traffic high?
+250. Why is CloudFront slow?
+251. Why is CloudFront returning 403?
+252. Why is CloudFront returning 404?
+253. Why is CloudFront returning 502?
+254. Why is CloudFront returning 503?
+255. Why is CloudFront returning 504?
+256. Why is HTTPS not working?
+257. Why is SSL certificate invalid?
+258. Why is S3 access denied through CloudFront?
+259. Why is origin failover not working?
+260. How do you troubleshoot cache issues?
+261. How do you troubleshoot latency issues?
+262. How do you troubleshoot invalidation issues?
+263. How do you troubleshoot signed URL issues?
+264. How do you troubleshoot OAC issues?
+265. How do you troubleshoot DNS issues with CloudFront?
+266. How do you monitor CloudFront performance?
+267. How do you monitor cache efficiency?
+268. How do you monitor edge location usage?
+269. How do you improve cache hit ratio?
+270. How do you optimize static website delivery?
+271. How do you optimize video streaming?
+272. How do you optimize API acceleration?
+273. How do you optimize global applications?
+274. Design CloudFront for static website hosting.
+275. Design CloudFront for media streaming.
+276. Design CloudFront for API acceleration.
+277. Design CloudFront for e-commerce application.
+278. Design CloudFront for gaming application.
+279. Design CloudFront for SaaS platform.
+280. Design CloudFront with ALB origin.
+281. Design CloudFront with S3 origin.
+282. Design CloudFront with multi-region origins.
+283. Design CloudFront with failover origins.
+284. Design secure content delivery architecture.
+285. Design global application delivery architecture.
+286. Design DDoS-protected architecture.
+287. Design low-latency worldwide architecture.
+288. Design enterprise CDN strategy.
+289. Design hybrid content delivery solution.
+290. Design highly available CDN architecture.
+291. Compare CloudFront and traditional CDN providers.
+292. Compare CloudFront and S3 website hosting.
+293. Compare CloudFront and ALB.
+294. Compare CloudFront and Global Accelerator.
+295. Compare all Route 53 routing policies with CloudFront.
+296. Explain complete DNS resolution flow from browser to Route 53.
+297. Explain complete CloudFront request flow from user to origin.
+298. Explain how Route 53 and CloudFront work together.
+299. What are the most commonly asked Route 53 and CloudFront interview questions for 5-year AWS engineers?
+300. Design a complete global architecture using Route 53, CloudFront, S3, ALB, Auto Scaling, WAF, Shield, ACM, and Multi-Region failover capable of serving millions of users worldwide.
