@@ -1,0 +1,327 @@
+ Infrastructure as Code (IaC) Fundamentals (1–60)
+
+1. What is Infrastructure as Code (IaC)?
+2. Why is IaC important?
+3. What problems does IaC solve?
+4. What are the benefits of IaC?
+5. What are the disadvantages of manual infrastructure provisioning?
+6. What is configuration drift?
+7. How does IaC reduce drift?
+8. What is declarative IaC?
+9. What is imperative IaC?
+10. Difference between declarative and imperative IaC?
+11. What AWS service provides IaC?
+12. What is CloudFormation?
+13. Why use CloudFormation?
+14. How does CloudFormation work?
+15. What resources can CloudFormation manage?
+16. What are CloudFormation templates?
+17. What template formats are supported?
+18. Difference between YAML and JSON templates?
+19. Why is YAML preferred?
+20. What is infrastructure automation?
+21. What is infrastructure provisioning?
+22. What is immutable infrastructure?
+23. What is reproducible infrastructure?
+24. What is idempotency?
+25. How does CloudFormation support idempotency?
+26. What are CloudFormation benefits?
+27. What are CloudFormation limitations?
+28. What is infrastructure version control?
+29. Why store templates in Git?
+30. What is GitOps?
+31. How does CloudFormation support GitOps?
+32. What is infrastructure lifecycle management?
+33. What is infrastructure governance?
+34. What is infrastructure compliance?
+35. What are CloudFormation quotas?
+36. What are CloudFormation limits?
+37. What are CloudFormation costs?
+38. Is CloudFormation free?
+39. What services incur charges?
+40. What are CloudFormation best practices?
+41. What are common CloudFormation interview questions?
+42. What is template validation?
+43. Why validate templates?
+44. What is change management?
+45. What is deployment automation?
+46. What is environment consistency?
+47. What is infrastructure standardization?
+48. What is enterprise IaC strategy?
+49. What is cloud automation?
+50. What is infrastructure orchestration?
+51. What is resource dependency management?
+52. What is rollback management?
+53. What is state management?
+54. What is drift management?
+55. Real-world IaC use cases?
+56. Real-world automation architecture?
+57. Design an IaC strategy.
+58. Design cloud automation workflows.
+59. Explain CloudFormation architecture.
+60. Explain IaC lifecycle.
+
+---
+
+# CloudFormation Templates (61–120)
+
+61. What is a CloudFormation template?
+62. What are template sections?
+63. What is AWSTemplateFormatVersion?
+64. What is Description section?
+65. What is Metadata section?
+66. What are Parameters?
+67. Why use Parameters?
+68. What are Mappings?
+69. Why use Mappings?
+70. What are Conditions?
+71. Why use Conditions?
+72. What are Resources?
+73. Why are Resources mandatory?
+74. What are Outputs?
+75. Why use Outputs?
+76. What is Transform?
+77. What is AWS SAM Transform?
+78. What is a Parameter type?
+79. What parameter types are available?
+80. What is NoEcho?
+81. Why use NoEcho?
+82. What are pseudo parameters?
+83. What is AWS::Region?
+84. What is AWS::AccountId?
+85. What is AWS::StackName?
+86. What is AWS::Partition?
+87. What is AWS::URLSuffix?
+88. What intrinsic functions are available?
+89. What is Ref?
+90. What is Fn::GetAtt?
+91. What is Fn::Join?
+92. What is Fn::Sub?
+93. What is Fn::FindInMap?
+94. What is Fn::ImportValue?
+95. What is Fn::If?
+96. What is Fn::Select?
+97. What is Fn::Split?
+98. What is Fn::Base64?
+99. What is Fn::GetAZs?
+100. What is dynamic reference?
+101. How do Secrets Manager references work?
+102. How do Parameter Store references work?
+103. What is template modularization?
+104. What is template reuse?
+105. What is template standardization?
+106. What is template validation?
+107. What is cfn-lint?
+108. What is template testing?
+109. What are template best practices?
+110. What are common template interview questions?
+111. Why is template validation failing?
+112. Why is intrinsic function failing?
+113. Why are parameters invalid?
+114. How do you troubleshoot templates?
+115. What are common syntax mistakes?
+116. Real-world template architecture?
+117. Design reusable templates.
+118. Design parameterized templates.
+119. Explain template processing workflow.
+120. Design enterprise template standards.
+
+---
+
+# Stacks & Stack Operations (121–180)
+
+121. What is a CloudFormation Stack?
+122. Why use Stacks?
+123. How does a Stack work?
+124. What resources belong to a Stack?
+125. What is stack creation?
+126. What is stack update?
+127. What is stack deletion?
+128. What is stack rollback?
+129. What is rollback trigger?
+130. Why does rollback occur?
+131. What is stack status?
+132. What stack statuses exist?
+133. What is CREATE_IN_PROGRESS?
+134. What is CREATE_COMPLETE?
+135. What is CREATE_FAILED?
+136. What is UPDATE_IN_PROGRESS?
+137. What is UPDATE_COMPLETE?
+138. What is UPDATE_ROLLBACK_COMPLETE?
+139. What is DELETE_COMPLETE?
+140. How does dependency management work?
+141. What is DependsOn?
+142. Why use DependsOn?
+143. How are resources created?
+144. How are resources deleted?
+145. What is stack policy?
+146. Why use stack policies?
+147. How do stack policies work?
+148. What is termination protection?
+149. Why use termination protection?
+150. What is stack import?
+151. What is resource import?
+152. What is stack export?
+153. What is cross-stack reference?
+154. How does ImportValue work?
+155. What are stack outputs?
+156. How do outputs help?
+157. What are stack best practices?
+158. What are stack limitations?
+159. What are common stack interview questions?
+160. Why is stack creation failing?
+161. Why is stack update failing?
+162. Why is rollback occurring?
+163. Why is resource creation failing?
+164. How do you troubleshoot stack failures?
+165. How do you troubleshoot rollback failures?
+166. What CloudTrail logs help?
+167. What CloudWatch logs help?
+168. Real-world stack architecture?
+169. Real-world multi-environment setup?
+170. Design stack management strategy.
+171. Design stack lifecycle management.
+172. Explain stack creation workflow.
+173. Explain stack update workflow.
+174. Explain rollback workflow.
+175. Explain dependency workflow.
+176. Compare Stack and StackSet.
+177. Compare Stack and Terraform state.
+178. Compare Stack exports and parameters.
+179. Design enterprise stack architecture.
+180. Design enterprise deployment strategy.
+
+---
+
+# Change Sets (181–220)
+
+181. What is a Change Set?
+182. Why use Change Sets?
+183. What problem do Change Sets solve?
+184. How do Change Sets work?
+185. What information do Change Sets provide?
+186. What is resource replacement?
+187. What is resource modification?
+188. What is resource deletion?
+189. What is resource addition?
+190. Why review changes before deployment?
+191. What are Change Set benefits?
+192. What are Change Set limitations?
+193. What is safe deployment?
+194. What is deployment preview?
+195. How do Change Sets improve governance?
+196. How do Change Sets improve compliance?
+197. What is execution of a Change Set?
+198. Can Change Sets be modified?
+199. Can Change Sets be deleted?
+200. What are common Change Set interview questions?
+201. Why is a resource being replaced?
+202. How do you identify destructive changes?
+203. How do you prevent accidental deletions?
+204. How do you review infrastructure changes?
+205. What is infrastructure approval workflow?
+206. What is deployment governance?
+207. What is infrastructure review process?
+208. What is infrastructure auditing?
+209. How do you troubleshoot Change Sets?
+210. What are Change Set best practices?
+211. What are Change Set limitations?
+212. Real-world deployment review workflow?
+213. Real-world governance workflow?
+214. Design safe deployment strategy.
+215. Design change approval workflow.
+216. Explain Change Set creation workflow.
+217. Explain Change Set execution workflow.
+218. Compare direct update vs Change Sets.
+219. Compare manual review vs Change Sets.
+220. Design enterprise change management.
+
+---
+
+# Nested Stacks & StackSets (221–260)
+
+221. What is a Nested Stack?
+222. Why use Nested Stacks?
+223. What problems do Nested Stacks solve?
+224. How do Nested Stacks work?
+225. What is template modularization?
+226. What is template reuse?
+227. What is parent stack?
+228. What is child stack?
+229. How do parent-child relationships work?
+230. What are Nested Stack benefits?
+231. What are Nested Stack limitations?
+232. How do updates propagate?
+233. How does rollback work?
+234. What are common Nested Stack interview questions?
+235. Why is Nested Stack creation failing?
+236. How do you troubleshoot Nested Stacks?
+237. What is StackSet?
+238. Why use StackSets?
+239. What problem do StackSets solve?
+240. How do StackSets work?
+241. What is multi-account deployment?
+242. What is multi-region deployment?
+243. What is service-managed StackSet?
+244. What is self-managed StackSet?
+245. How do StackSets integrate with Organizations?
+246. What is delegated administration?
+247. How does StackSet scaling work?
+248. What are StackSet best practices?
+249. What are StackSet limitations?
+250. What are StackSet quotas?
+251. What are common StackSet interview questions?
+252. Real-world multi-account architecture?
+253. Real-world governance architecture?
+254. Design multi-account deployment strategy.
+255. Design multi-region deployment strategy.
+256. Explain Nested Stack workflow.
+257. Explain StackSet workflow.
+258. Compare Nested Stacks and StackSets.
+259. Compare modular and monolithic templates.
+260. Design enterprise infrastructure architecture.
+
+---
+
+# Drift Detection, Custom Resources & Enterprise Architecture (261–300)
+
+261. What is Drift Detection?
+262. Why use Drift Detection?
+263. What is configuration drift?
+264. How does drift occur?
+265. How does Drift Detection work?
+266. What resources support drift detection?
+267. What are drift statuses?
+268. What is IN_SYNC?
+269. What is MODIFIED?
+270. What is DELETED?
+271. How do you remediate drift?
+272. What are drift management best practices?
+273. What are common drift interview questions?
+274. What is a Custom Resource?
+275. Why use Custom Resources?
+276. What problems do Custom Resources solve?
+277. How do Custom Resources work?
+278. How does Lambda integrate with Custom Resources?
+279. What is cfn-response?
+280. What is a resource provider?
+281. What are registry extensions?
+282. How do you extend CloudFormation?
+283. What are CloudFormation Hooks?
+284. Why use Hooks?
+285. What is policy enforcement?
+286. What is governance automation?
+287. What is infrastructure compliance?
+288. How do Organizations integrate with CloudFormation?
+289. How does Control Tower integrate?
+290. How do CI/CD pipelines integrate with CloudFormation?
+291. How does CodePipeline integrate?
+292. How does GitHub Actions integrate?
+293. How does Jenkins integrate?
+294. What are enterprise CloudFormation best practices?
+295. What are enterprise governance best practices?
+296. Compare CloudFormation and Terraform.
+297. Compare CloudFormation and CDK.
+298. Explain complete CloudFormation resource lifecycle from template deployment to stack creation and rollback.
+299. Explain complete enterprise IaC governance workflow.
+300. Design a complete enterprise-grade Infrastructure as Code platform using CloudFormation, Nested Stacks, Change Sets, StackSets, Drift Detection, Organizations, CI/CD pipelines, governance controls, compliance validation, and multi-account deployment automation.
