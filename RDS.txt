@@ -1,0 +1,372 @@
+ Amazon RDS Fundamentals (1–70)
+
+1. What is Amazon RDS?
+2. Why use RDS instead of self-managed databases?
+3. What problems does RDS solve?
+4. What are the benefits of RDS?
+5. What database engines does RDS support?
+6. What is Amazon Aurora?
+7. Difference between RDS and Aurora?
+8. What is a managed database service?
+9. What database administration tasks does AWS handle?
+10. What tasks remain customer responsibility?
+11. What is DB Instance?
+12. What is DB Cluster?
+13. What is DB Parameter Group?
+14. What is DB Option Group?
+15. What is a subnet group?
+16. Why is DB subnet group required?
+17. What is a database endpoint?
+18. What is a connection string?
+19. How do applications connect to RDS?
+20. What instance classes are available?
+21. How do you choose an RDS instance type?
+22. What storage types does RDS support?
+23. What is General Purpose SSD?
+24. What is Provisioned IOPS storage?
+25. What is magnetic storage?
+26. How does RDS achieve durability?
+27. What is database availability?
+28. What is database reliability?
+29. What are RDS quotas?
+30. What are RDS limits?
+31. Is RDS regional or global?
+32. Can RDS span multiple AZs?
+33. Can RDS span multiple regions?
+34. What is automated maintenance?
+35. What is maintenance window?
+36. What is backup window?
+37. What is storage autoscaling?
+38. How does storage autoscaling work?
+39. Can RDS storage be reduced?
+40. Can RDS storage be increased?
+41. What happens when storage becomes full?
+42. How do you monitor storage utilization?
+43. What CloudWatch metrics are available?
+44. What is CPU Utilization?
+45. What is Database Connections metric?
+46. What is Free Storage Space?
+47. What is Read IOPS?
+48. What is Write IOPS?
+49. What is Replica Lag?
+50. What is Enhanced Monitoring?
+51. What is Performance Insights?
+52. Why use Performance Insights?
+53. What are Performance Insights benefits?
+54. What are RDS costs?
+55. What affects RDS pricing?
+56. How do you optimize RDS costs?
+57. What are RDS best practices?
+58. What are RDS security best practices?
+59. What are common RDS interview questions?
+60. What are common RDS troubleshooting scenarios?
+61. Why is RDS slow?
+62. Why are database connections failing?
+63. How do you troubleshoot RDS?
+64. What is RDS lifecycle?
+65. What is RDS governance?
+66. What is RDS compliance?
+67. What workloads are suitable for RDS?
+68. What workloads are not suitable for RDS?
+69. Real-world RDS use cases?
+70. Design an RDS-based application architecture.
+
+---
+
+# Multi-AZ Deployments (71–130)
+
+71. What is Multi-AZ in RDS?
+72. Why use Multi-AZ?
+73. How does Multi-AZ work?
+74. What problem does Multi-AZ solve?
+75. What is a standby instance?
+76. Is standby readable?
+77. Can applications connect to standby?
+78. What replication method does Multi-AZ use?
+79. Is replication synchronous or asynchronous?
+80. Why does Multi-AZ use synchronous replication?
+81. What is RPO in Multi-AZ?
+82. What is RTO in Multi-AZ?
+83. What happens during failover?
+84. What events trigger failover?
+85. What happens if the primary AZ fails?
+86. What happens if the primary instance crashes?
+87. What happens if storage fails?
+88. How long does failover take?
+89. What endpoint changes occur during failover?
+90. Does application configuration change after failover?
+91. How do applications reconnect?
+92. What is automatic failover?
+93. What is manual failover?
+94. How do you test failover?
+95. What are Multi-AZ limitations?
+96. What are Multi-AZ costs?
+97. Why is Multi-AZ more expensive?
+98. How does Multi-AZ affect performance?
+99. What are Multi-AZ best practices?
+100. Can backups be taken from standby?
+101. Why are backups taken from standby?
+102. How does Multi-AZ improve availability?
+103. Does Multi-AZ improve read performance?
+104. Difference between Multi-AZ and Read Replica?
+105. Difference between HA and scalability?
+106. What is database redundancy?
+107. What is database resiliency?
+108. What are common Multi-AZ interview questions?
+109. What are common failover interview questions?
+110. Why did failover not occur?
+111. Why is failover taking too long?
+112. Why is Multi-AZ unavailable?
+113. How do you troubleshoot failover?
+114. How do you monitor failover events?
+115. How does CloudWatch help?
+116. How does EventBridge help?
+117. How do logs help during failover?
+118. What are Multi-AZ best practices for production?
+119. Real-world HA architecture?
+120. Real-world banking architecture?
+121. Real-world healthcare architecture?
+122. Design highly available RDS architecture.
+123. Design fault-tolerant database architecture.
+124. Design DR architecture using Multi-AZ.
+125. Explain Multi-AZ replication flow.
+126. Explain Multi-AZ failover flow.
+127. Explain Multi-AZ recovery workflow.
+128. Compare Multi-AZ and clustering.
+129. Compare Multi-AZ and replication.
+130. Design enterprise HA database strategy.
+
+---
+
+# Read Replicas (131–200)
+
+131. What is a Read Replica?
+132. Why use Read Replicas?
+133. What problem do Read Replicas solve?
+134. How do Read Replicas work?
+135. What replication method is used?
+136. Is replication synchronous or asynchronous?
+137. Why is asynchronous replication used?
+138. What is replica lag?
+139. Why does replica lag occur?
+140. How do you monitor replica lag?
+141. What are common causes of replica lag?
+142. How do you reduce replica lag?
+143. Can replicas be promoted?
+144. What happens when a replica is promoted?
+145. Can promoted replicas replicate back?
+146. What is read scaling?
+147. What is horizontal scaling?
+148. How many replicas can RDS support?
+149. Can replicas exist in another AZ?
+150. Can replicas exist in another region?
+151. What is cross-region replication?
+152. Why use cross-region replication?
+153. What is global disaster recovery?
+154. What are Read Replica endpoints?
+155. How do applications use replicas?
+156. How do you distribute reads?
+157. What workloads benefit from replicas?
+158. What workloads do not benefit?
+159. Can writes occur on replicas?
+160. Why are replicas read-only?
+161. What are Read Replica limitations?
+162. What are Read Replica costs?
+163. What are Read Replica best practices?
+164. What are common Read Replica interview questions?
+165. What is read scaling architecture?
+166. What is reporting architecture?
+167. What is analytics offloading?
+168. How do replicas support BI workloads?
+169. How do replicas support reporting?
+170. How do replicas support DR?
+171. Difference between Read Replica and Multi-AZ?
+172. Difference between standby and replica?
+173. Difference between failover and promotion?
+174. Why is replica lag high?
+175. Why is replica unavailable?
+176. Why is replica not syncing?
+177. How do you troubleshoot replication issues?
+178. How do you troubleshoot lag?
+179. How do you troubleshoot promotion failures?
+180. How do you monitor replicas?
+181. What CloudWatch metrics matter?
+182. How do logs help?
+183. How do you secure replicas?
+184. Can encrypted databases have replicas?
+185. How does KMS work with replicas?
+186. What is replica consistency?
+187. What is eventual consistency?
+188. Real-world reporting architecture?
+189. Real-world global architecture?
+190. Real-world analytics architecture?
+191. Design read-heavy application architecture.
+192. Design reporting architecture.
+193. Design DR architecture with replicas.
+194. Design global database architecture.
+195. Explain replication workflow.
+196. Explain promotion workflow.
+197. Explain cross-region replication workflow.
+198. Explain read scaling workflow.
+199. Compare all replication strategies.
+200. Design enterprise read scaling architecture.
+
+---
+
+# Backups & Snapshots (201–270)
+
+201. What are automated backups?
+202. Why use automated backups?
+203. How do automated backups work?
+204. What is backup retention period?
+205. What is point-in-time recovery?
+206. How does PITR work?
+207. What is backup window?
+208. What happens during backup?
+209. What is transaction log backup?
+210. What is snapshot?
+211. Difference between backup and snapshot?
+212. What is manual snapshot?
+213. What is automated snapshot?
+214. How do you create snapshots?
+215. How do you restore snapshots?
+216. Can snapshots be copied?
+217. Can snapshots be shared?
+218. Can snapshots be copied across regions?
+219. Why use cross-region snapshots?
+220. What are backup costs?
+221. What affects backup pricing?
+222. How do you reduce backup costs?
+223. What is backup retention strategy?
+224. What is long-term retention?
+225. What is backup lifecycle?
+226. What is backup compliance?
+227. How do backups support DR?
+228. How do backups support audits?
+229. What is immutable backup?
+230. What is backup encryption?
+231. How are backups encrypted?
+232. How does KMS integrate with backups?
+233. What are backup best practices?
+234. What are common backup interview questions?
+235. What is backup consistency?
+236. What is crash-consistent backup?
+237. What is application-consistent backup?
+238. What is backup validation?
+239. How do you test restores?
+240. Why is backup failing?
+241. Why is snapshot creation failing?
+242. Why is restore failing?
+243. How do you troubleshoot backup issues?
+244. How do you monitor backup health?
+245. What CloudWatch metrics help?
+246. What AWS Backup integration exists?
+247. What is AWS Backup?
+248. Why use AWS Backup with RDS?
+249. What is backup vault?
+250. What is backup policy?
+251. Real-world backup architecture?
+252. Real-world compliance backup strategy?
+253. Real-world DR backup strategy?
+254. Design backup strategy for banking.
+255. Design backup strategy for healthcare.
+256. Design backup strategy for SaaS.
+257. Explain backup workflow.
+258. Explain PITR workflow.
+259. Explain snapshot restore workflow.
+260. Explain cross-region backup workflow.
+261. Compare backup approaches.
+262. Compare PITR and snapshots.
+263. Compare automated and manual backups.
+264. Compare AWS Backup and RDS backups.
+265. Design enterprise backup strategy.
+266. Design enterprise retention strategy.
+267. Design audit-compliant backup architecture.
+268. Design ransomware recovery architecture.
+269. Design immutable backup architecture.
+270. Design complete DR backup strategy.
+
+---
+
+# Failover, Security, Monitoring & Architecture (271–350)
+
+271. What is failover?
+272. Why is failover important?
+273. What events trigger failover?
+274. How does RDS failover work?
+275. What is automatic failover?
+276. What is manual failover?
+277. What is planned failover?
+278. What is unplanned failover?
+279. How do applications handle failover?
+280. What is failover testing?
+281. What is failback?
+282. What are failover best practices?
+283. What are common failover interview questions?
+284. Why did failover not happen?
+285. Why did failover take too long?
+286. How do you troubleshoot failover?
+287. What are failover metrics?
+288. What is database encryption?
+289. How does RDS encryption work?
+290. What is KMS integration?
+291. How do you encrypt existing databases?
+292. What is SSL/TLS database connectivity?
+293. How do you secure database access?
+294. What are security groups in RDS?
+295. Why keep RDS private?
+296. What is database subnet group security?
+297. What are IAM database authentication features?
+298. What is IAM authentication?
+299. How does IAM authentication work?
+300. What are IAM authentication benefits?
+301. What are database audit logs?
+302. What logs does RDS provide?
+303. What is slow query logging?
+304. What is general query logging?
+305. What is error logging?
+306. How do you monitor RDS?
+307. What CloudWatch metrics matter most?
+308. What is Enhanced Monitoring?
+309. What is Performance Insights?
+310. How do you identify slow queries?
+311. How do you optimize database performance?
+312. What causes high CPU?
+313. What causes high memory usage?
+314. What causes high IOPS?
+315. What causes connection exhaustion?
+316. How do you troubleshoot database slowness?
+317. How do you troubleshoot connection failures?
+318. How do you troubleshoot high CPU?
+319. How do you troubleshoot replication lag?
+320. How do you troubleshoot storage exhaustion?
+321. What are RDS security best practices?
+322. What are RDS performance best practices?
+323. What are RDS availability best practices?
+324. What are RDS cost optimization best practices?
+325. Real-world banking database architecture?
+326. Real-world e-commerce architecture?
+327. Real-world healthcare architecture?
+328. Real-world SaaS architecture?
+329. Design highly available database architecture.
+330. Design read-heavy architecture.
+331. Design write-heavy architecture.
+332. Design global database architecture.
+333. Design disaster recovery architecture.
+334. Design multi-region architecture.
+335. Design secure database architecture.
+336. Design compliant database architecture.
+337. Design enterprise backup architecture.
+338. Design enterprise failover architecture.
+339. Design enterprise monitoring architecture.
+340. Explain complete RDS request flow.
+341. Explain complete failover flow.
+342. Explain complete backup flow.
+343. Explain complete replication flow.
+344. Explain complete restore flow.
+345. Compare Multi-AZ and Read Replicas.
+346. Compare RDS and Aurora.
+347. Compare RDS and self-managed databases.
+348. Compare all RDS backup options.
+349. Compare all RDS scaling options.
+350. Design a complete enterprise-grade database architecture using RDS, Multi-AZ, Read Replicas, automated backups, snapshots, failover, monitoring, encryption, IAM authentication, and disaster recovery.
