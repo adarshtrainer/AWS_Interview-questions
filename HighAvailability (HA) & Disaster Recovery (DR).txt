@@ -1,0 +1,685 @@
+ HA & DR Fundamentals (1–60)
+
+1. What is High Availability?
+2. What is Disaster Recovery?
+3. Difference between HA and DR?
+4. Why is High Availability important?
+5. Why is Disaster Recovery important?
+6. What is Business Continuity?
+7. What is Fault Tolerance?
+8. What is Resiliency?
+9. What is Redundancy?
+10. What is Single Point of Failure?
+11. How do you identify SPOFs?
+12. What is Availability?
+13. What is Reliability?
+14. What is Durability?
+15. What is uptime?
+16. What is SLA?
+17. What is SLO?
+18. What is RTO?
+19. What is RPO?
+20. Difference between RTO and RPO?
+21. What is Recovery Strategy?
+22. What is Failover?
+23. What is Failback?
+24. What is automatic failover?
+25. What is manual failover?
+26. What is planned failover?
+27. What is unplanned failover?
+28. What is backup?
+29. What is restore?
+30. What is replication?
+31. What is synchronous replication?
+32. What is asynchronous replication?
+33. Difference between synchronous and asynchronous replication?
+34. What AWS services support HA?
+35. What AWS services support DR?
+36. What are HA best practices?
+37. What are DR best practices?
+38. What are common HA interview questions?
+39. What are common DR interview questions?
+40. What are AWS Well-Architected Reliability Pillar principles?
+41. What is workload resiliency?
+42. What is regional resiliency?
+43. What is zonal resiliency?
+44. What is infrastructure resiliency?
+45. What is application resiliency?
+46. What is data resiliency?
+47. What is chaos engineering?
+48. Why perform DR testing?
+49. What is DR runbook?
+50. What is incident response?
+51. What is outage management?
+52. Real-world HA architecture?
+53. Real-world DR architecture?
+54. Real-world banking HA strategy?
+55. Real-world healthcare DR strategy?
+56. Design HA architecture.
+57. Design DR architecture.
+58. Explain HA workflow.
+59. Explain DR workflow.
+60. Design enterprise resiliency strategy.
+
+---
+
+# Multi-AZ Architecture (61–100)
+
+61. What is Multi-AZ?
+
+62. Why use Multi-AZ?
+
+63. How does Multi-AZ work?
+
+64. Which AWS services support Multi-AZ?
+
+65. How does RDS Multi-AZ work?
+
+66. How does ECS Multi-AZ work?
+
+67. How does EKS Multi-AZ work?
+
+68. How does ALB support Multi-AZ?
+
+69. How does Auto Scaling support Multi-AZ?
+
+70. What happens if one AZ fails?
+
+71. How does failover occur?
+
+72. What is standby instance?
+
+73. What is synchronous replication?
+
+74. Why is Multi-AZ highly available?
+
+75. What are Multi-AZ benefits?
+
+76. What are Multi-AZ limitations?
+
+77. What are Multi-AZ costs?
+
+78. What workloads require Multi-AZ?
+
+79. What workloads do not require Multi-AZ?
+
+80. What are Multi-AZ best practices?
+
+81. What are common Multi-AZ interview questions?
+
+82. How do you troubleshoot Multi-AZ failover?
+
+83. How do you test AZ failures?
+
+84. How do you design Multi-AZ VPCs?
+
+85. How do you design Multi-AZ databases?
+
+86. How do you design Multi-AZ applications?
+
+87. How do you design Multi-AZ load balancing?
+
+88. What CloudWatch metrics should be monitored?
+
+89. What logs help during failover?
+
+90. What alarms should be configured?
+
+91. Real-world Multi-AZ architecture?
+
+92. Design highly available RDS architecture.
+
+93. Design highly available ECS architecture.
+
+94. Design highly available EKS architecture.
+
+95. Explain Multi-AZ failover workflow.
+
+96. Compare Single AZ vs Multi-AZ.
+
+97. Compare Multi-AZ vs Multi-Region.
+
+98. Design enterprise HA architecture.
+
+99. Design fault-tolerant architecture.
+
+100. Explain complete Multi-AZ lifecycle.
+
+---
+
+# Multi-Region Architecture (101–150)
+
+101. What is Multi-Region architecture?
+
+102. Why use Multi-Region?
+
+103. What problems does Multi-Region solve?
+
+104. Difference between Multi-AZ and Multi-Region?
+
+105. What services support Multi-Region?
+
+106. How does Route 53 support Multi-Region?
+
+107. How does CloudFront support Multi-Region?
+
+108. How does S3 support Multi-Region?
+
+109. How does DynamoDB Global Tables support Multi-Region?
+
+110. How does Aurora Global Database support Multi-Region?
+
+111. What is cross-region replication?
+
+112. What is active-active Multi-Region?
+
+113. What is active-passive Multi-Region?
+
+114. What is global resiliency?
+
+115. What is regional outage protection?
+
+116. What are Multi-Region benefits?
+
+117. What are Multi-Region limitations?
+
+118. What are Multi-Region costs?
+
+119. What are Multi-Region best practices?
+
+120. What are common Multi-Region interview questions?
+
+121. How do you handle regional failures?
+
+122. How do you test regional failover?
+
+123. How do you design global applications?
+
+124. How do you design global databases?
+
+125. How do you design global DNS?
+
+126. How do you design global content delivery?
+
+127. What metrics should be monitored?
+
+128. What replication metrics matter?
+
+129. What is replication lag?
+
+130. How do you monitor global workloads?
+
+131. Real-world global architecture?
+
+132. Real-world banking architecture?
+
+133. Real-world SaaS architecture?
+
+134. Design Multi-Region web application.
+
+135. Design Multi-Region database architecture.
+
+136. Design global e-commerce platform.
+
+137. Explain Multi-Region failover workflow.
+
+138. Explain global replication workflow.
+
+139. Compare Multi-Region and DR strategies.
+
+140. Compare active-active and active-passive.
+
+---
+
+# Active-Active vs Active-Passive (151–200)
+
+151. What is Active-Active architecture?
+
+152. What is Active-Passive architecture?
+
+153. Difference between Active-Active and Active-Passive?
+
+154. When should Active-Active be used?
+
+155. When should Active-Passive be used?
+
+156. What are Active-Active benefits?
+
+157. What are Active-Passive benefits?
+
+158. What are Active-Active challenges?
+
+159. What are Active-Passive challenges?
+
+160. What is traffic distribution?
+
+161. How does Route 53 support Active-Active?
+
+162. How does Route 53 support Active-Passive?
+
+163. What routing policies are used?
+
+164. What is health checking?
+
+165. What is DNS failover?
+
+166. How does global load balancing work?
+
+167. What is data synchronization?
+
+168. What is conflict resolution?
+
+169. How do Global Tables support Active-Active?
+
+170. How does Aurora Global Database support Active-Passive?
+
+171. What are RPO characteristics?
+
+172. What are RTO characteristics?
+
+173. What are failover characteristics?
+
+174. What are failback characteristics?
+
+175. What monitoring is required?
+
+176. What security considerations exist?
+
+177. What compliance considerations exist?
+
+178. What are common interview questions?
+
+179. What are common design scenarios?
+
+180. How do you troubleshoot failover?
+
+181. Real-world Active-Active architecture?
+
+182. Real-world Active-Passive architecture?
+
+183. Design banking Active-Active architecture.
+
+184. Design healthcare Active-Passive architecture.
+
+185. Design SaaS global architecture.
+
+186. Explain Active-Active workflow.
+
+187. Explain Active-Passive workflow.
+
+188. Compare Route 53 routing policies.
+
+189. Compare global architectures.
+
+190. Design enterprise HA strategy.
+
+---
+
+# Backup Strategies & Disaster Recovery Design (201–250)
+
+201. What is a backup strategy?
+
+202. Why is backup important?
+
+203. What AWS backup options exist?
+
+204. What is AWS Backup?
+
+205. How does AWS Backup work?
+
+206. What resources support AWS Backup?
+
+207. What is backup retention?
+
+208. What is backup lifecycle?
+
+209. What is backup vault?
+
+210. What is backup encryption?
+
+211. What is point-in-time recovery?
+
+212. What is snapshot-based backup?
+
+213. What is incremental backup?
+
+214. What is full backup?
+
+215. Difference between full and incremental backup?
+
+216. What is cross-region backup?
+
+217. What is cross-account backup?
+
+218. Why use cross-account backups?
+
+219. What is immutable backup?
+
+220. What is ransomware protection?
+
+221. What is pilot light DR?
+
+222. What is warm standby DR?
+
+223. What is backup and restore DR?
+
+224. What is multi-site active-active DR?
+
+225. Difference between DR strategies?
+
+226. Which DR strategy is cheapest?
+
+227. Which DR strategy has lowest RTO?
+
+228. Which DR strategy has lowest RPO?
+
+229. What are DR testing best practices?
+
+230. What is DR automation?
+
+231. How do you back up EC2?
+
+232. How do you back up RDS?
+
+233. How do you back up DynamoDB?
+
+234. How do you back up EFS?
+
+235. How do you back up EBS?
+
+236. How do you back up S3?
+
+237. How do you validate backups?
+
+238. How do you restore workloads?
+
+239. How do you perform DR drills?
+
+240. How do you measure DR readiness?
+
+241. Real-world backup architecture?
+
+242. Real-world DR architecture?
+
+243. Design banking DR strategy.
+
+244. Design healthcare DR strategy.
+
+245. Design enterprise backup architecture.
+
+246. Explain backup lifecycle.
+
+247. Explain DR recovery workflow.
+
+248. Compare backup strategies.
+
+249. Compare DR architectures.
+
+250. Design a complete enterprise-grade HA & DR solution using Multi-AZ, Multi-Region, Route 53 Failover, Aurora Global Database, DynamoDB Global Tables, AWS Backup, cross-account backups, automated failover, DR testing, monitoring, governance, and compliance.
+
+---
+
+# Service 25: Real-Time AWS Troubleshooting Scenarios (1–220)
+
+## EC2 Scenarios (1–40)
+
+1. EC2 instance is unreachable via SSH. How do you troubleshoot?
+
+2. EC2 status checks are failing. What do you check?
+
+3. EC2 CPU is 100%. What steps do you take?
+
+4. Instance is running but application is inaccessible. Why?
+
+5. Security Group appears correct but access still fails. Why?
+
+6. NACL issue troubleshooting?
+
+7. Route table issue troubleshooting?
+
+8. Public IP changed after reboot. Why?
+
+9. EBS volume not mounting. Why?
+
+10. Disk full on EC2. How do you resolve?
+
+11. Application port not reachable.
+
+12. User data script failed.
+
+13. Instance stuck in stopping state.
+
+14. Instance stuck in pending state.
+
+15. Instance terminated unexpectedly.
+
+16. IMDS issues.
+
+17. DNS resolution failing.
+
+18. EC2 cannot access S3.
+
+19. IAM role permissions failing.
+
+20. CloudWatch Agent not sending metrics.
+
+
+---
+
+## Load Balancer & ASG Scenarios (41–80)
+
+41. ALB returning 503 error. How do you troubleshoot?
+
+42. ALB returning 502 error.
+
+43. Health checks failing.
+
+44. Targets showing unhealthy.
+
+45. Load Balancer DNS not resolving.
+
+46. SSL certificate issue.
+
+47. Sticky sessions not working.
+
+48. Traffic not reaching backend.
+
+49. Listener misconfiguration troubleshooting.
+
+50. Rule priority issue troubleshooting.
+
+51. ASG not launching instances.
+
+52. ASG launching then terminating instances.
+
+53. Desired capacity not maintained.
+
+54. Scaling policy not triggering.
+
+55. CloudWatch alarm not scaling ASG.
+
+56. Launch template issue.
+
+57. User data issue.
+
+58. Capacity shortage issue.
+
+59. Spot interruption handling.
+
+60. Multi-AZ scaling issue.
+
+
+---
+
+## S3 & Route 53 Scenarios (81–120)
+
+81. S3 Access Denied error.
+
+82. S3 bucket policy issue.
+
+83. IAM permissions issue.
+
+84. CORS issue troubleshooting.
+
+85. Static website not loading.
+
+86. CloudFront showing Access Denied.
+
+87. S3 replication not working.
+
+88. Lifecycle policy not executing.
+
+89. Object Lock issue.
+
+90. Multipart upload issue.
+
+91. Route 53 record not resolving.
+
+92. DNS propagation issue.
+
+93. Alias record issue.
+
+94. Health check failure.
+
+95. Failover routing not working.
+
+96. Weighted routing issue.
+
+97. Geolocation routing issue.
+
+98. Domain transfer issue.
+
+99. NS record issue.
+
+100. MX record issue.
+
+
+---
+
+## Lambda, RDS & Database Scenarios (121–170)
+
+121. Lambda function timing out.
+
+122. Lambda cold start issue.
+
+123. Lambda throttling.
+
+124. Lambda permissions failure.
+
+125. Lambda not triggering.
+
+126. EventBridge trigger issue.
+
+127. SNS trigger issue.
+
+128. SQS trigger issue.
+
+129. API Gateway integration issue.
+
+130. Lambda VPC networking issue.
+
+131. RDS failover occurred unexpectedly.
+
+132. RDS Multi-AZ failover troubleshooting.
+
+133. Read Replica lag issue.
+
+134. High CPU in RDS.
+
+135. Connection exhaustion.
+
+136. Slow query issue.
+
+137. Backup failure.
+
+138. Snapshot restore failure.
+
+139. Storage full issue.
+
+140. Replication issue.
+
+141. DynamoDB throttling.
+
+142. Hot partition issue.
+
+143. Global Table replication issue.
+
+144. DAX cache miss issue.
+
+145. ElastiCache failover issue.
+
+146. Redis memory full.
+
+147. Redis replication lag.
+
+148. Aurora failover issue.
+
+149. Aurora Global Database lag.
+
+150. Database migration issue.
+
+
+---
+
+## Enterprise Architecture & Incident Response (171–220)
+
+171. Design highly available web application architecture.
+
+172. Design zero-downtime deployment architecture.
+
+173. Design multi-region architecture.
+
+174. Design DR architecture for banking.
+
+175. Design DR architecture for healthcare.
+
+176. Design globally distributed SaaS architecture.
+
+177. Design highly scalable e-commerce platform.
+
+178. Design serverless architecture.
+
+179. Design event-driven architecture.
+
+180. Design Kubernetes production architecture.
+
+181. A production website is down. What steps do you take?
+
+182. CloudWatch alarms are firing across multiple services. How do you investigate?
+
+183. Regional outage occurred. How do you respond?
+
+184. Ransomware attack detected. What is your response plan?
+
+185. AWS bill increased by 300%. How do you investigate?
+
+186. S3 data accidentally deleted. How do you recover?
+
+187. RDS database corrupted. What is recovery strategy?
+
+188. Load Balancer overloaded. What actions do you take?
+
+189. Kubernetes cluster unavailable. How do you recover?
+
+190. API latency increased dramatically. How do you troubleshoot?
+
+191. Security incident response workflow.
+
+192. Root account compromise scenario.
+
+193. IAM privilege escalation scenario.
+
+194. DDoS attack scenario.
+
+195. Data exfiltration scenario.
+
+196. DR drill scenario.
+
+197. Failover testing scenario.
+
+198. Cost optimization incident scenario.
+
+199. Multi-account governance incident scenario.
+
+200. Compliance audit preparation scenario.
+
