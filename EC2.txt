@@ -1,0 +1,280 @@
+## Fundamentals (1–40)
+
+1. What is EC2?
+2. Why is EC2 called Elastic Compute Cloud?
+3. What are the benefits of EC2?
+4. What is virtualization?
+5. What is a hypervisor?
+6. What hypervisor does AWS use?
+7. What is Nitro System?
+8. What is an EC2 instance?
+9. What is an AMI?
+10. What are the components of an AMI?
+11. What is instance type?
+12. What are EC2 families?
+13. Difference between t2 and t3?
+14. What are burstable instances?
+15. What is CPU credit?
+16. What is a vCPU?
+17. What is dedicated hardware?
+18. What is multi-tenancy?
+19. What operating systems are supported?
+20. What are Amazon Linux benefits?
+21. How do you launch an EC2 instance?
+22. What parameters are required during launch?
+23. What is user data?
+24. What is cloud-init?
+25. What is bootstrap?
+26. What is key pair?
+27. Why do we need key pairs?
+28. Difference between public and private key?
+29. What is PEM file?
+30. What happens if PEM file is lost?
+31. What is security group?
+32. Why is security group stateful?
+33. Difference between inbound and outbound rules?
+34. Can security groups deny traffic?
+35. What is Elastic IP?
+36. Why use Elastic IP?
+37. Difference between Public IP and Elastic IP?
+38. What is private IP?
+39. What is hostname?
+40. What is instance metadata?
+
+## Instance Lifecycle (41–70)
+
+41. Explain EC2 lifecycle.
+42. What happens during launch?
+43. What happens during reboot?
+44. What happens during stop?
+45. What happens during start?
+46. What happens during terminate?
+47. Difference between stop and terminate?
+48. Can terminated instances be recovered?
+49. What happens to public IP after stop/start?
+50. What happens to EBS after termination?
+51. What is Delete On Termination?
+52. What is hibernation?
+53. Difference between stop and hibernate?
+54. What happens to RAM in hibernation?
+55. Which instance types support hibernation?
+56. Can instance type be changed?
+57. Can instance family be changed?
+58. Can OS be changed after launch?
+59. Can Availability Zone be changed?
+60. Can Region be changed?
+61. How to clone an instance?
+62. How to create AMI from instance?
+63. How to restore from AMI?
+64. What happens if root volume is deleted?
+65. Can root volume be detached?
+66. What is instance retirement?
+67. What is scheduled maintenance?
+68. What is recovery action?
+69. What are EC2 status checks?
+70. Difference between system and instance status checks?
+
+---
+
+## Storage (71–110)
+
+71. What is EBS?
+72. What is instance store?
+73. Difference between EBS and Instance Store?
+74. What are EBS volume types?
+75. Explain gp2.
+76. Explain gp3.
+77. Explain io1.
+78. Explain io2.
+79. Explain st1.
+80. Explain sc1.
+81. What is provisioned IOPS?
+82. What is throughput?
+83. How do you attach EBS volume?
+84. How do you detach EBS volume?
+85. Can EBS be attached to multiple instances?
+86. What is Multi-Attach?
+87. What is EBS snapshot?
+88. How snapshots work?
+89. Are snapshots incremental?
+90. Where are snapshots stored?
+91. Can snapshots be copied across regions?
+92. Can encrypted snapshot create unencrypted volume?
+93. Can volume size be increased?
+94. Can volume size be decreased?
+95. How to resize filesystem after increasing EBS?
+96. What is volume encryption?
+97. How EBS encryption works?
+98. What is root volume?
+99. What is data volume?
+100. Can root volume be replaced?
+101. What is RAID?
+102. How to implement RAID on EC2?
+103. What is RAID 0?
+104. What is RAID 1?
+105. What is RAID 5?
+106. What is RAID 10?
+107. How do you monitor EBS performance?
+108. What is burst balance?
+109. What causes EBS latency?
+110. Troubleshooting EBS performance issues.
+
+---
+
+## Networking (111–150)
+
+111. What is ENI?
+112. Can multiple ENIs be attached?
+113. What is primary ENI?
+114. What is secondary ENI?
+115. What is source/destination check?
+116. Why disable source/destination check?
+117. What is MAC address?
+118. What is private DNS?
+119. What is public DNS?
+120. What is IPv4?
+121. What is IPv6?
+122. How to assign IPv6 to EC2?
+123. What is Elastic IP association?
+124. Difference between public subnet and private subnet?
+125. Can private subnet EC2 access internet?
+126. What is NAT Gateway?
+127. What is Internet Gateway?
+128. How does internet traffic reach EC2?
+129. Why is EC2 unreachable from internet?
+130. What networking components are checked during troubleshooting?
+131. What is route table?
+132. What is NACL?
+133. Difference between NACL and Security Group?
+134. What happens if SG allows but NACL denies?
+135. What is VPC Flow Log?
+136. How to troubleshoot network traffic?
+137. What is packet loss?
+138. What causes packet drops?
+139. How to test connectivity?
+140. What is traceroute?
+141. What is telnet testing?
+142. What is nc command?
+143. What is ping?
+144. Why ping may fail?
+145. What ports are required for SSH?
+146. What ports are required for RDP?
+147. What ports are required for HTTP?
+148. What ports are required for HTTPS?
+149. Why does timeout occur?
+150. Difference between timeout and connection refused?
+
+---
+
+## Monitoring & Logging (151–180)
+
+151. What is CloudWatch?
+152. What EC2 metrics are available?
+153. What is CPU utilization?
+154. What is network in?
+155. What is network out?
+156. What is disk read?
+157. What is disk write?
+158. What is status check metric?
+159. What is detailed monitoring?
+160. Difference between basic and detailed monitoring?
+161. What is CloudWatch Agent?
+162. How to monitor memory utilization?
+163. How to monitor disk utilization?
+164. What is CloudWatch Alarm?
+165. How to configure alarm?
+166. What is SNS integration?
+167. How to receive email alerts?
+168. What is EC2 log collection?
+169. How to send logs to CloudWatch?
+170. What is CloudTrail?
+171. Difference between CloudTrail and CloudWatch?
+172. How to audit EC2 activity?
+173. How to identify who terminated instance?
+174. How to identify who modified SG?
+175. How to identify login attempts?
+176. What logs help troubleshooting?
+177. What is system log?
+178. How to retrieve console logs?
+179. What is serial console?
+180. When would you use serial console?
+
+---
+
+## Cost Optimization (181–205)
+
+181. What is On-Demand Instance?
+182. What is Reserved Instance?
+183. What is Savings Plan?
+184. What is Spot Instance?
+185. Difference between RI and Savings Plan?
+186. Difference between Spot and On-Demand?
+187. When should Spot be used?
+188. What workloads fit Spot?
+189. What is Spot interruption?
+190. How much discount can Spot provide?
+191. How much discount can Reserved provide?
+192. What is EC2 right sizing?
+193. What is Trusted Advisor?
+194. How to identify idle instances?
+195. How to reduce EC2 cost?
+196. What is schedule-based shutdown?
+197. What is Compute Optimizer?
+198. What is idle CPU threshold?
+199. How to optimize storage cost?
+200. How to reduce snapshot cost?
+201. How to reduce EBS cost?
+202. What is orphaned EBS?
+203. What is unattached EBS?
+204. How to identify unused Elastic IPs?
+205. Why does AWS charge for unused Elastic IPs?
+
+---
+
+## Advanced & Scenario Based (206–250)
+
+206. EC2 is running but website is inaccessible. Troubleshoot.
+207. SSH is failing. What checks would you perform?
+208. RDP is failing. What checks would you perform?
+209. EC2 CPU is 100%. What would you do?
+210. Memory utilization is 95%. Troubleshooting steps?
+211. Disk utilization is 100%. What actions would you take?
+212. Instance is unreachable after reboot.
+213. Instance failed both status checks.
+214. Application is slow though CPU is low.
+215. How would you troubleshoot latency?
+216. How would you migrate EC2 to another AZ?
+217. How would you migrate EC2 to another Region?
+218. How would you clone production server?
+219. How would you patch EC2 servers?
+220. How would you automate server provisioning?
+221. How would you create golden AMIs?
+222. What is immutable infrastructure?
+223. How would you implement Blue-Green deployment?
+224. How would you implement Canary deployment?
+225. What is rolling deployment?
+226. How would you secure EC2 instances?
+227. How would you harden Linux servers?
+228. How would you rotate SSH keys?
+229. How would you disable root login?
+230. How would you manage secrets securely?
+231. How would you recover deleted EC2?
+232. How would you recover deleted EBS volume?
+233. How would you perform disaster recovery?
+234. How would you design highly available architecture?
+235. What is Multi-AZ deployment?
+236. How does Auto Scaling work with EC2?
+237. How does Load Balancer interact with EC2?
+238. How would you handle traffic spikes?
+239. What causes intermittent downtime?
+240. How would you investigate random reboots?
+241. How would you investigate high network traffic?
+242. How would you investigate unauthorized access?
+243. How would you perform capacity planning?
+244. How would you perform load testing?
+245. What is EC2 Fleet?
+246. What is Spot Fleet?
+247. What is Launch Template?
+248. Difference between Launch Template and Launch Configuration?
+249. What EC2 topics are most commonly asked in 5-year DevOps interviews?
+250. Design a highly available, secure, scalable EC2 architecture for an e-commerce application serving 1 million users.
