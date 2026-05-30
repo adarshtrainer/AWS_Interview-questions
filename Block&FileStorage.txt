@@ -1,0 +1,327 @@
+# Amazon EBS Fundamentals (1–60)
+
+1. What is Amazon EBS?
+2. Why is EBS called block storage?
+3. What are the benefits of EBS?
+4. Difference between EBS and S3?
+5. Difference between EBS and EFS?
+6. What is an EBS volume?
+7. How does EBS work?
+8. Is EBS regional or AZ-specific?
+9. Can EBS span multiple AZs?
+10. What is persistence in EBS?
+11. What is an EBS-backed instance?
+12. What is root volume?
+13. What is data volume?
+14. Can root volume be detached?
+15. Can root volume be replaced?
+16. How do you create an EBS volume?
+17. How do you attach an EBS volume?
+18. How do you detach an EBS volume?
+19. What happens if you detach a volume without unmounting?
+20. How do you mount EBS on Linux?
+21. How do you mount EBS on Windows?
+22. What is filesystem creation in EBS?
+23. Difference between ext4 and xfs?
+24. Can one EBS volume attach to multiple instances?
+25. What is EBS Multi-Attach?
+26. Which volume types support Multi-Attach?
+27. What are EBS limits?
+28. What is EBS throughput?
+29. What is IOPS?
+30. What is latency?
+31. How does EBS provide durability?
+32. What happens if an EC2 instance stops?
+33. What happens if EC2 terminates?
+34. What is Delete on Termination?
+35. How do you preserve EBS after termination?
+36. What is EBS optimization?
+37. Why enable EBS optimization?
+38. What is burst performance?
+39. What is burst balance?
+40. What is EBS performance monitoring?
+41. Which CloudWatch metrics monitor EBS?
+42. What is Volume Queue Length?
+43. What causes EBS bottlenecks?
+44. What causes high latency?
+45. What causes low throughput?
+46. What is EBS durability SLA?
+47. What are EBS best practices?
+48. How do you scale EBS?
+49. Can EBS be resized?
+50. Can EBS be reduced in size?
+51. How do you extend an EBS filesystem?
+52. How do you monitor disk usage?
+53. How do you monitor EBS health?
+54. How do you replace a failed EBS volume?
+55. What are EBS quotas?
+56. What is gp2 burst mechanism?
+57. What is Nitro architecture impact on EBS?
+58. How do EBS volumes survive reboots?
+59. How do EBS volumes survive stop/start?
+60. Real-world EBS use cases?
+
+---
+
+# EBS Volume Types (61–120)
+
+61. What are EBS volume types?
+62. Difference between SSD and HDD volumes?
+63. What is gp2?
+64. What is gp3?
+65. Difference between gp2 and gp3?
+66. Why is gp3 recommended?
+67. What is io1?
+68. What is io2?
+69. Difference between io1 and io2?
+70. What is io2 Block Express?
+71. What workloads use io2?
+72. What is provisioned IOPS?
+73. What is st1?
+74. What is sc1?
+75. Difference between st1 and sc1?
+76. Which volume type is cheapest?
+77. Which volume type offers highest performance?
+78. Which volume type is best for databases?
+79. Which volume type is best for SAP?
+80. Which volume type is best for logs?
+81. Which volume type is best for backups?
+82. Which volume type is best for analytics?
+83. Which volume type is best for big data?
+84. What is maximum IOPS in gp3?
+85. What is maximum throughput in gp3?
+86. What is maximum IOPS in io2?
+87. How do you choose volume types?
+88. Can volume type be changed?
+89. How do you migrate gp2 to gp3?
+90. Can volume performance be modified online?
+91. What is Elastic Volumes?
+92. How does Elastic Volumes work?
+93. Can volume size and performance be changed together?
+94. What is throughput optimization?
+95. What is cost optimization using gp3?
+96. How do you benchmark EBS?
+97. What tools test EBS performance?
+98. What affects EBS performance?
+99. What is EBS bandwidth?
+100. How do instance types affect EBS performance?
+101. What are EBS limits by instance type?
+102. Why does EBS show low performance?
+103. How do you troubleshoot slow EBS?
+104. How do you identify bottlenecks?
+105. What is storage workload profiling?
+106. What are random IOPS?
+107. What are sequential IOPS?
+108. What is throughput-intensive workload?
+109. What is transaction-intensive workload?
+110. Which workloads need io2?
+111. Which workloads need gp3?
+112. Which workloads need st1?
+113. Which workloads need sc1?
+114. What are common mistakes when choosing volume types?
+115. What is over-provisioning?
+116. What is under-provisioning?
+117. How do you optimize EBS cost?
+118. Real-world database storage design?
+119. Real-world SAP storage design?
+120. Real-world analytics storage design?
+
+---
+
+# EBS Snapshots (121–180)
+
+121. What is an EBS snapshot?
+122. Why use snapshots?
+123. How do snapshots work?
+124. Where are snapshots stored?
+125. Are snapshots incremental?
+126. What is first snapshot behavior?
+127. What is incremental backup?
+128. How do snapshot chains work?
+129. What is snapshot consistency?
+130. How do you create a snapshot?
+131. Can snapshots be automated?
+132. What is AWS Backup integration?
+133. Can snapshots be scheduled?
+134. What is snapshot archive?
+135. What is snapshot retention?
+136. How do you restore a snapshot?
+137. How do you create a volume from snapshot?
+138. Can snapshots be copied across regions?
+139. Can snapshots be copied across accounts?
+140. What is encrypted snapshot?
+141. What metadata is stored?
+142. What is Fast Snapshot Restore?
+143. Why use Fast Snapshot Restore?
+144. What are FSR costs?
+145. How do you monitor snapshots?
+146. What happens if snapshot creation fails?
+147. What is application-consistent backup?
+148. What is crash-consistent backup?
+149. How do you take database backups?
+150. How do you backup production systems?
+151. How do you backup SAP systems?
+152. How do you recover deleted data?
+153. How do you recover deleted volume?
+154. What are snapshot best practices?
+155. How do you automate DR?
+156. What is cross-region DR?
+157. How do snapshots support DR?
+158. What are snapshot costs?
+159. How do you reduce snapshot costs?
+160. What are orphaned snapshots?
+161. How do you identify unused snapshots?
+162. What are snapshot lifecycle policies?
+163. How do you secure snapshots?
+164. Can snapshots be shared publicly?
+165. Why is public snapshot dangerous?
+166. What are compliance requirements?
+167. What is snapshot audit?
+168. What is snapshot governance?
+169. What is immutable backup?
+170. How do snapshots help ransomware recovery?
+171. What is point-in-time recovery?
+172. How do snapshot archives save cost?
+173. What are snapshot quotas?
+174. How do you troubleshoot snapshot issues?
+175. Snapshot copy failed. Troubleshoot.
+176. Snapshot restore slow. Troubleshoot.
+177. Snapshot inaccessible. Troubleshoot.
+178. Real-world DR architecture?
+179. Real-world backup architecture?
+180. Real-world snapshot strategy?
+
+---
+
+# EBS Encryption (181–220)
+
+181. What is EBS encryption?
+182. Why encrypt EBS volumes?
+183. How does EBS encryption work?
+184. What is KMS?
+185. What is a CMK?
+186. Difference between AWS-managed and customer-managed keys?
+187. What gets encrypted in EBS?
+188. Is data encrypted at rest?
+189. Is data encrypted in transit?
+190. Are snapshots encrypted?
+191. Can unencrypted volume become encrypted?
+192. How do you encrypt existing volumes?
+193. Can encrypted volume become unencrypted?
+194. Can encrypted snapshots be shared?
+195. What is envelope encryption?
+196. What is data key?
+197. What is KMS key rotation?
+198. What are encryption best practices?
+199. How do you enforce encryption?
+200. What are compliance requirements?
+201. What is PCI DSS requirement?
+202. What is HIPAA requirement?
+203. What is GDPR requirement?
+204. How do you audit encryption?
+205. What are encryption costs?
+206. What happens if KMS key is disabled?
+207. What happens if KMS key is deleted?
+208. How do you recover encrypted data?
+209. What is encryption overhead?
+210. Does encryption affect performance?
+211. Can snapshots remain encrypted?
+212. Can replication preserve encryption?
+213. How do cross-account encrypted copies work?
+214. What IAM permissions are required?
+215. What are encryption troubleshooting scenarios?
+216. Volume won't attach due to KMS issue. Troubleshoot.
+217. Snapshot copy failed due to KMS. Troubleshoot.
+218. Key access denied. Troubleshoot.
+219. Real-world encryption architecture?
+220. Enterprise encryption strategy?
+
+---
+
+# Amazon EFS (221–260)
+
+221. What is Amazon EFS?
+222. Why use EFS?
+223. Difference between EFS and EBS?
+224. Difference between EFS and S3?
+225. What is a file system?
+226. How does EFS work?
+227. Is EFS regional?
+228. How does EFS provide high availability?
+229. What is NFS?
+230. Which NFS version does EFS use?
+231. Can multiple EC2 instances access EFS?
+232. Why is EFS useful for shared storage?
+233. What are EFS mount targets?
+234. Why are mount targets required?
+235. How does EFS scale automatically?
+236. What is EFS throughput mode?
+237. What is Bursting Mode?
+238. What is Provisioned Throughput?
+239. What is Elastic Throughput?
+240. What are EFS performance modes?
+241. What is General Purpose mode?
+242. What is Max I/O mode?
+243. What are EFS storage classes?
+244. What is EFS Standard?
+245. What is EFS IA?
+246. What is EFS Archive?
+247. How do lifecycle policies work in EFS?
+248. How is EFS secured?
+249. How does EFS encryption work?
+250. How do you mount EFS on Linux?
+251. Can Windows use EFS?
+252. What are EFS costs?
+253. How do you reduce EFS costs?
+254. What workloads use EFS?
+255. How does EFS support containers?
+256. How does EFS support EKS?
+257. How do you troubleshoot EFS mounts?
+258. How do you troubleshoot performance issues?
+259. Real-world EFS architecture?
+260. Enterprise EFS best practices?
+
+---
+
+# Amazon FSx (261–300)
+
+261. What is Amazon FSx?
+262. Why use FSx instead of EFS?
+263. What FSx offerings exist?
+264. What is FSx for Windows File Server?
+265. What is FSx for Lustre?
+266. What is FSx for NetApp ONTAP?
+267. What is FSx for OpenZFS?
+268. Difference between EFS and FSx?
+269. When should FSx be used?
+270. What workloads require Windows FSx?
+271. What workloads require Lustre?
+272. What workloads require ONTAP?
+273. What workloads require OpenZFS?
+274. How does FSx integrate with Active Directory?
+275. What is SMB protocol?
+276. What is NFS protocol?
+277. What is Lustre file system?
+278. Why is Lustre used in HPC?
+279. What is HPC?
+280. What is scratch deployment?
+281. What is persistent deployment?
+282. How does FSx integrate with S3?
+283. How does FSx support machine learning?
+284. How does FSx support analytics?
+285. What are FSx performance tiers?
+286. What are FSx storage tiers?
+287. How does FSx encryption work?
+288. How does FSx backup work?
+289. How does FSx replication work?
+290. How does FSx high availability work?
+291. How do you secure FSx?
+292. What are FSx monitoring options?
+293. What are FSx costs?
+294. How do you optimize FSx costs?
+295. How do you troubleshoot FSx performance issues?
+296. How do you troubleshoot connectivity issues?
+297. Real-world FSx architecture for enterprise Windows workloads?
+298. Real-world FSx architecture for HPC workloads?
+299. Real-world FSx architecture for SAP workloads?
+300. Design a complete enterprise storage architecture using EBS, EFS, FSx, backups, encryption, monitoring, disaster recovery, and cost optimization.
