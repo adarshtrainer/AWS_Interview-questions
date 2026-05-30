@@ -1,0 +1,277 @@
+ CloudTrail Fundamentals (1–60)
+
+1. What is AWS CloudTrail?
+2. Why is CloudTrail required?
+3. What problems does CloudTrail solve?
+4. What is auditing?
+5. What is governance?
+6. What is compliance logging?
+7. What is security auditing?
+8. What is operational auditing?
+9. Is CloudTrail a global service?
+10. How does CloudTrail work?
+11. What activities does CloudTrail record?
+12. What AWS services integrate with CloudTrail?
+13. What is an event in CloudTrail?
+14. What information is stored in an event?
+15. What is API activity logging?
+16. Why is API logging important?
+17. What is user activity tracking?
+18. What is account activity tracking?
+19. What is resource activity tracking?
+20. What is Event History?
+21. How long does Event History retain data?
+22. Is Event History enabled by default?
+23. What events are visible in Event History?
+24. What are CloudTrail Trails?
+25. Why create a Trail?
+26. Difference between Event History and Trail?
+27. What is an Organization Trail?
+28. What is a Multi-Region Trail?
+29. What is a Single-Region Trail?
+30. What is a Management Event?
+31. What is a Data Event?
+32. What is an Insights Event?
+33. Difference between Management and Data Events?
+34. Difference between Data Events and Insights Events?
+35. What is event delivery?
+36. How are logs delivered?
+37. Where are logs stored?
+38. Can logs be stored in S3?
+39. Can logs be analyzed with Athena?
+40. Can logs be integrated with CloudWatch?
+41. Can logs be integrated with Security Hub?
+42. Can logs be integrated with GuardDuty?
+43. What are CloudTrail costs?
+44. What affects CloudTrail pricing?
+45. What are CloudTrail quotas?
+46. What are CloudTrail limits?
+47. What are CloudTrail best practices?
+48. What are common CloudTrail interview questions?
+49. What compliance standards require CloudTrail?
+50. How does CloudTrail support PCI DSS?
+51. How does CloudTrail support HIPAA?
+52. How does CloudTrail support SOC 2?
+53. How does CloudTrail support ISO 27001?
+54. What is audit readiness?
+55. What is forensic investigation?
+56. What is activity tracking?
+57. What is account accountability?
+58. Real-world CloudTrail use cases?
+59. Real-world compliance use cases?
+60. Design an auditing solution using CloudTrail.
+
+---
+
+# Event History (61–100)
+
+61. What is Event History?
+62. Why use Event History?
+63. How is Event History different from Trails?
+64. What events are included?
+65. What events are excluded?
+66. How far back can Event History search?
+67. Can Event History be disabled?
+68. What filters are supported?
+69. Can events be filtered by username?
+70. Can events be filtered by resource?
+71. Can events be filtered by service?
+72. Can events be filtered by event name?
+73. Can events be filtered by time range?
+74. What is event lookup?
+75. How does event lookup work?
+76. What event attributes are available?
+77. What is Event ID?
+78. What is Request ID?
+79. What is Event Source?
+80. What is Event Name?
+81. What is Event Time?
+82. What is User Identity?
+83. What is Source IP Address?
+84. What is AWS Region field?
+85. What is User Agent field?
+86. How do you identify who deleted an EC2 instance?
+87. How do you identify who modified a Security Group?
+88. How do you identify who deleted an S3 bucket?
+89. How do you identify who changed IAM permissions?
+90. How do you identify failed login attempts?
+91. How do you identify root account activity?
+92. What are Event History limitations?
+93. Why might an event not appear?
+94. How do you troubleshoot Event History?
+95. What are common Event History interview questions?
+96. How do auditors use Event History?
+97. How do security teams use Event History?
+98. Real-world incident investigation scenario?
+99. Real-world audit scenario?
+100. Explain Event History workflow.
+
+---
+
+# Trail Management (101–170)
+
+101. What is a Trail?
+102. Why create a Trail?
+103. How does a Trail work?
+104. What logs are captured by a Trail?
+105. What are Trail destinations?
+106. What is an S3 log destination?
+107. What is CloudWatch Logs integration?
+108. What is SNS integration?
+109. What is EventBridge integration?
+110. What is Multi-Region Trail?
+111. Why use Multi-Region Trails?
+112. What is Single-Region Trail?
+113. When should Single-Region Trails be used?
+114. What is an Organization Trail?
+115. Why use Organization Trails?
+116. How do Organization Trails work?
+117. What AWS Organizations permissions are required?
+118. What is centralized logging?
+119. What is centralized auditing?
+120. What is delegated administration?
+121. How do Trails support compliance?
+122. What is log file validation?
+123. Why use log file validation?
+124. How does validation work?
+125. What is log integrity?
+126. How do you prevent log tampering?
+127. What is encryption for CloudTrail?
+128. How does KMS integrate with CloudTrail?
+129. What permissions are required for Trail delivery?
+130. What is log retention strategy?
+131. How do you manage long-term retention?
+132. What is lifecycle management for CloudTrail logs?
+133. How do you archive CloudTrail logs?
+134. How do you query CloudTrail logs?
+135. How does Athena integrate with CloudTrail?
+136. How does OpenSearch integrate with CloudTrail?
+137. What is Lake Formation integration?
+138. What is CloudTrail Lake?
+139. What is event data store?
+140. Why use CloudTrail Lake?
+141. What are CloudTrail Lake benefits?
+142. What are Trail costs?
+143. What affects Trail costs?
+144. What are Trail best practices?
+145. What are Trail limitations?
+146. What are common Trail interview questions?
+147. Why are logs not being delivered?
+148. Why is S3 integration failing?
+149. Why is CloudWatch integration failing?
+150. How do you troubleshoot Trails?
+151. How do you audit Trail configuration?
+152. How do you secure Trail logs?
+153. How do you protect against deletion?
+154. What is immutable logging?
+155. How does CloudTrail support DR?
+156. How does CloudTrail support governance?
+157. Real-world enterprise logging architecture?
+158. Real-world compliance architecture?
+159. Real-world audit architecture?
+160. Design centralized Trail architecture.
+161. Design multi-account Trail architecture.
+162. Design secure log storage.
+163. Design long-term retention strategy.
+164. Explain Trail creation workflow.
+165. Explain log delivery workflow.
+166. Explain encryption workflow.
+167. Explain validation workflow.
+168. Compare Single vs Multi-Region Trails.
+169. Compare Organization vs Account Trails.
+170. Design enterprise audit logging.
+
+---
+
+# Management Events (171–200)
+
+171. What are Management Events?
+172. Why are Management Events important?
+173. What activities are included?
+174. What activities are excluded?
+175. What are Read Events?
+176. What are Write Events?
+177. Difference between Read and Write Events?
+178. Why log Read Events?
+179. Why log Write Events?
+180. What IAM actions generate Management Events?
+181. What EC2 actions generate Management Events?
+182. What RDS actions generate Management Events?
+183. What S3 actions generate Management Events?
+184. What Lambda actions generate Management Events?
+185. What networking actions generate Management Events?
+186. How do you identify resource modifications?
+187. How do you identify permission changes?
+188. How do you identify account changes?
+189. How do you identify root user actions?
+190. How do you identify failed API calls?
+191. What are Management Event best practices?
+192. What are common interview questions?
+193. Why are events missing?
+194. How do you troubleshoot event collection?
+195. Real-world governance use case?
+196. Real-world audit use case?
+197. Real-world security use case?
+198. Explain Management Event workflow.
+199. Explain account activity tracking.
+200. Explain governance monitoring.
+
+---
+
+# Data Events & Insights Events (201–230)
+
+201. What are Data Events?
+202. Why use Data Events?
+203. What resources support Data Events?
+204. How do S3 Data Events work?
+205. How do Lambda Data Events work?
+206. How do DynamoDB Data Events work?
+207. Difference between Management and Data Events?
+208. Why are Data Events more expensive?
+209. When should Data Events be enabled?
+210. What are Data Event best practices?
+211. What are Insights Events?
+212. Why use Insights Events?
+213. How do Insights Events work?
+214. What anomalies can Insights detect?
+215. What is unusual API activity?
+216. What is unusual error activity?
+217. What is unusual account behavior?
+218. How do Insights help security teams?
+219. How do Insights help operations teams?
+220. What are Insights costs?
+221. What are Insights limitations?
+222. What are common Insights interview questions?
+223. Why are Insights not generated?
+224. How do you troubleshoot Insights?
+225. Real-world anomaly detection use case?
+226. Real-world insider threat detection?
+227. Explain Data Event workflow.
+228. Explain Insights workflow.
+229. Compare Management, Data, and Insights Events.
+230. Design anomaly detection architecture.
+
+---
+
+# Security, Compliance, Investigation & Architecture (231–250)
+
+231. How does CloudTrail support security operations?
+232. How does CloudTrail support compliance?
+233. How does CloudTrail support forensics?
+234. How does CloudTrail support incident response?
+235. How does CloudTrail integrate with GuardDuty?
+236. How does CloudTrail integrate with Security Hub?
+237. How does CloudTrail integrate with Config?
+238. How does CloudTrail integrate with CloudWatch?
+239. How does CloudTrail integrate with EventBridge?
+240. How do you investigate unauthorized access?
+241. How do you investigate deleted resources?
+242. How do you investigate privilege escalation?
+243. How do you investigate suspicious API activity?
+244. How do you identify compromised credentials?
+245. What are CloudTrail security best practices?
+246. What are CloudTrail compliance best practices?
+247. What are CloudTrail monitoring best practices?
+248. Compare CloudTrail, CloudWatch, and AWS Config.
+249. Explain complete CloudTrail event lifecycle from API call to log storage and analysis.
+250. Design a complete enterprise auditing architecture using CloudTrail, CloudTrail Lake, Event History, Organization Trails, KMS encryption, Athena, CloudWatch, Security Hub, GuardDuty, and long-term compliance retention.
